@@ -7,7 +7,6 @@ def mfs(T, K):
     frequent = [patterns.pop()]
     while len(patterns) > 0:
         candidate = patterns.pop()
-        print(len(patterns))
         super = True
         for f in frequent:
             if all(elem in f for elem in candidate):

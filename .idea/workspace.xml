@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="" />
+    <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mvsBoxplot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running version of 5-8/deviations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running version of 5-8/mvsStand5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running version of 5-8/simplifyDeleteTracesStand5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmStand1-8-1127.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmStand2-8-1305.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deviations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvsStand5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplifyDeleteTracesStand5.py" beforeDir="false" afterPath="$PROJECT_DIR$/simplifyDeleteTracesStand5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplifyStand2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/testscript.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +29,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1OkGVmqwOtsjysHJ3vz2fVWsUt7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/AlgorithmStand7.py" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -173,21 +194,29 @@
       <workItem from="1564515036975" duration="61474000" />
       <workItem from="1564772710328" duration="41453000" />
       <workItem from="1564938241402" duration="3466000" />
-      <workItem from="1564942271205" duration="45430000" />
+      <workItem from="1564942271205" duration="51452000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/simplifyStand2.py</url>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -199,8 +228,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonCode$Algorithm.coverage" NAME="Algorithm Coverage Results" MODIFIED="1565097674478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$AlgorithmStand3_8.coverage" NAME="Algorithm7 Coverage Results" MODIFIED="1565174038762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1565173158508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$AlgorithmStand3_8.coverage" NAME="Algorithm7 Coverage Results" MODIFIED="1565181592538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1565181500326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$PythonCode.coverage" NAME="Algorithmalt Coverage Results" MODIFIED="1564751483013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$Algorthm5.coverage" NAME="Algorthm5 Coverage Results" MODIFIED="1565116992626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
