@@ -6,7 +6,7 @@ import time
 #import log (parameters={"max_no_traces_to_import": n} to have a faster workflow), specify sensitive values and how time should be handled
 log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")#, parameters={"max_no_traces_to_import": 1000})
 sensitive = ['Age', 'Diagnose']
-spectime = "hours"
+spectime = "seconds"
 cont = ['Age']
 #contBord * standard deviation is similar
 
@@ -16,9 +16,9 @@ start = time.time()
 logsimple, T = simplifyDeleteTracesStand5.simplify(log, sensitive, spectime)
 logtime = time.time()
 print(logtime-start)
-L = 3
-K = 5
-C = 0.5
+L = 10
+K = 15
+C = 0.9
 # Output: Minimal violating sequence V (T )
 violating = mvsBoxplot.mvs(T, L, K, C, sensitive, logsimple, cont)
 del L, K, C, cont

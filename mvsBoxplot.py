@@ -18,7 +18,6 @@ def mvs(T, L, K, C, sensitive, logsimple, cont):
     prob = {v: {el: [] for el in sensitive} for v in X1}
     el_trace = {el: [] for el in X1}
     for q in X1:
-
         #creating prob(q|s) and count(q)
         for key, value in logsimple.items():
             tr = value["trace"]
