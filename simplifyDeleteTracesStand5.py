@@ -52,7 +52,7 @@ def simplify(log, sensitive, spectime):
                 # create trace with pairs (event,time)
                 trace.append(tu)
             #just adding pair if the timestamp is bigger then the one before
-            elif pair[1] < trace[len(trace)-1][1] or pair[0] == trace[len(trace)-1][0]:
+            elif pair[1] < trace[len(trace)-1][1] or (pair[0] == trace[len(trace)-1][0] and pair[1] == trace[len(trace)-1][1]):
                 bol = False
                 break
             else:
