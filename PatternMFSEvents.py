@@ -1,18 +1,25 @@
 import pyfpgrowth
-
+from operator import itemgetter
 
 def mfs(T, K):
     T_ = []
     for t in T:
         tr = []
+        c = []
         for el in t:
-            tr.append(el[0])
+            count_el = c.count(el[0])
+            tr.append((el[0],count_el + 1))
+            c.append(el[0])
         T_.append(tr)
     print(T_)
-    patterns = pyfpgrowth.find_frequent_patterns(T_,K)
+    import time
+    logtime = time.time()
+    patterns = pyfpgrowth.find_frequent_patterns(T_,100)
+    second = time.time()
+    print(second-logtime)
     print(len(patterns))
     patterns = sorted(list(patterns.keys()), key=len)
-    print(len(patterns))
+    print(patterns)
     frequent = [patterns.pop()]
     while len(patterns) > 0:
         candidate = patterns.pop()
