@@ -21,7 +21,7 @@ import createEventLog
 
 logtime = time.time()
 print(logtime-start)
-K = 50
+K = 500
 
 frequent = PatternMFSEvents.mfs(T, K)
 print(len(frequent))

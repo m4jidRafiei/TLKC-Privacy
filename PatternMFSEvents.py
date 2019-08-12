@@ -12,7 +12,7 @@ def mfs(T, K):
             c.append(el[0])
         T_.append(tr)
     import time
-    patterns = pyfpgrowth.find_frequent_patterns(T_,500)
+    patterns = pyfpgrowth.find_frequent_patterns(T_,K)
     patterns = sorted(list(patterns.keys()), key=len)
     frequent = [patterns.pop()]
     while len(patterns) > 0:
