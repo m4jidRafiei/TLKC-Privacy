@@ -15,7 +15,7 @@ cont = ['Age']
 
 start = time.time()
 #T are all traces
-logsimple, T = simplifyDeleteTracesStand5.simplify(log, sensitive, spectime)
+logsimple, T,m = simplifyDeleteTracesStand5.simplify(log, sensitive, spectime)
 logtime = time.time()
 print("simplify:", logtime-start)
 L = 2
@@ -23,6 +23,8 @@ K = 5
 C = 0.5
 # Output: Minimal violating sequence V (T )
 violating = mvsBoxplot.mvs(T, L, K, C, sensitive, logsimple, cont)
+print(violating)
+K=500
 frequent = PatternMFSEvents.mfs(T, K)
 mvstime = time.time()
 print("MVS and MFS:", mvstime-logtime)

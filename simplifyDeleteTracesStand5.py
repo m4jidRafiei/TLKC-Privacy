@@ -9,7 +9,7 @@ def simplify(log, sensitive, spectime):
     time = ['time:timestamp']
     logsimple = {}
     traces = []
-    sensitives = {}
+    sensitives = {el: [] for el in sensitive}
     for case_index, case in enumerate(log):
         #as cache for each case
         sens = {}
@@ -64,4 +64,7 @@ def simplify(log, sensitive, spectime):
         #list with all traces without CaseID
             traces.append(trace)
             # sample all values for a specific sensitive attribute (key) in dict
-    return logsimple, traces
+            for key in sens.keys():
+            # sample all values for a specific sensitive attribute (key) in dict
+                sensitives[key].append(sens[key])
+    return logsimple, traces, sensitives

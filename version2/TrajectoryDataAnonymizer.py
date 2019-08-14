@@ -1,4 +1,6 @@
 import operator
+
+
 def suppression(violating,frequent):
     sup = []
     X1 = []
@@ -37,11 +39,14 @@ def suppression(violating,frequent):
     #9: end
     return sup
 
+
+#privGain(p)/(UtilityLoss(p) +1)
 def score(violating, frequent, X1):
     priv = {v: 0 for v in X1}
     ut = {f: 0 for f in X1}
     mvsEle = {v: [] for v in X1}
     mfsEle = {f: [] for f in X1}
+    #Calculate privGain
     for v in violating:
         if isinstance(v[0], str):
             priv[v] += 1
@@ -50,21 +55,25 @@ def score(violating, frequent, X1):
             for el in v:
                 priv[el] += 1
                 mvsEle[el].append(v)
+    #Calculate utilityLoss
     for f in frequent:
-        if isinstance(f[0],str):
+        if isinstance(f[0], str):
             ut[f] += 1
             mfsEle[f].append(f)
         else:
             for el in f:
                 ut[el] += 1
                 mfsEle[el].append(f)
+    #calculate score and delete scoe ==0
     score = {el: 0 for el in X1}
     for el in X1:
         score[el] = priv[el]/(ut[el] + 1)
         if score[el] == 0:
             del score[el]
-    return score,mvsEle,mfsEle
+    return score, mvsEle, mfsEle
 
+
+#delete the elements in the traces
 def suppressT(logsimple, sup):
     for key in logsimple.keys():
         list_trace = logsimple[key]['trace']

@@ -80,7 +80,7 @@ def mvs(T, L, K, C, sensitive, logsimple, cont):
     for q in gen:
         # 6: if |T(q)|< K or P(s|q) > C then
         if count[q] < K:
-            violating[0].append(q)
+            violating[0].append([q])
         else:
             highestC = 0
             for s in sensitive:
@@ -90,7 +90,7 @@ def mvs(T, L, K, C, sensitive, logsimple, cont):
                     break
             # 7: Add q to Vi;
             if highestC > C:
-                violating[0].append(q)
+                violating[0].append([q])
             # 8: else
             # 9: Add q to Wi;
             else:

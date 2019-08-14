@@ -1,7 +1,6 @@
 from pm4py.objects.log.importer.xes import factory as xes_import_factory
 import simplifyDeleteTracesStand5
-import mvsBoxplot
-import PatternMFS
+import MVS
 import time
 #import log (parameters={"max_no_traces_to_import": n} to have a faster workflow), specify sensitive values and how time should be handled
 log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")#, parameters={"max_no_traces_to_import": 1000})
@@ -13,7 +12,7 @@ cont = ['Age']
 
 start = time.time()
 #T are all traces
-logsimple, T = simplifyDeleteTracesStand5.simplify(log, sensitive, spectime)
+logsimple, T, sensitives = simplifyDeleteTracesStand5.simplify(log, sensitive, spectime)
 
 #del log[0].events[0]
 #log[0]._list.remove(log[0][21])
@@ -25,20 +24,9 @@ L = 2
 K = 5
 C = 0.5
 # Output: Minimal violating sequence V (T )
-violating = mvsBoxplot.mvs(T, L, K, C, sensitive, logsimple, cont)
-print(len(violating))
-print(violating)
-frequent = PatternMFS.mfs(T, K)
-print(len(frequent))
-print(frequent)
-import TrajectoryDataAnonymizer
-sup = TrajectoryDataAnonymizer.suppression(violating, frequent)
 
-T_ = TrajectoryDataAnonymizer.suppressT(logsimple, sup)
-print(T_)
-log = createEventLog.createEventLog(log, T_, spectime)
-print(log)
-#print("sup",sup)
-#print("T'",T_)
-mvstime = time.time()
-print(mvstime-logtime)
+mvs = MVS.MVS(T,logsimple,sensitive,cont,sensitives)
+contBound = {'Age': 10}
+violating = mvs.mvs(L,K,C,"dev",contBound)
+
+print(violating)

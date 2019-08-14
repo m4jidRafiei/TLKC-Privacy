@@ -23,7 +23,7 @@ logtime = time.time()
 print(logtime-start)
 K = 500
 
-frequent = PatternMFSEvents.mfs(T, K)
+violating = mvsBoxplot.mvs()
 print(len(frequent))
 print(frequent)
 

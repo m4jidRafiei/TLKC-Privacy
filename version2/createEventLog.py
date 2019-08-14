@@ -1,22 +1,30 @@
 import datetime
 
 
-def createEventLog(log,simplifiedlog, spectime):
+def createEventLog(log, simplifiedlog, spectime):
     deleteLog = []
-    for i in range(0,len(log)):
+    #for each case
+    for i in range(0, len(log)):
         caseId = log[i].attributes["concept:name"]
+        #deleted traces will be deleted in the end
         if caseId not in simplifiedlog.keys():
             deleteLog.append(i)
             continue
+        #get trace of case
         trace = simplifiedlog[caseId]["trace"]
         k = 0
-        j=0
-        while j <len(log[i]):
+        #length of trace
+        j = 0
+        while j < len(log[i]):
+            #if the next event in trace of the log is the same as in the suppressed log
             if trace[k][0] == log[i][j]["concept:name"]:
                 if spectime == "seconds":
                     if j == 0:
                         starttime = log[i][j]['time:timestamp']
-                        log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1,day=1,hour=0,minute=0,second=0)
+                        #give it a new anonym timestamp
+                        log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1, hour=0,
+                                                                        minute=0,
+                                                                        second=0)
                     else:
                         timedif = log[i][j]['time:timestamp'] - starttime
                         years = int(timedif.days/365)
@@ -24,7 +32,7 @@ def createEventLog(log,simplifiedlog, spectime):
                         if daystime <= 30:
                            month = 0
                            days = daystime
-                        elif daystime<=58:
+                        elif daystime <= 58:
                             month = 1
                             days = daystime - 30
                         elif daystime <= 89:
@@ -173,10 +181,14 @@ def createEventLog(log,simplifiedlog, spectime):
                         #60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
                         hours = int(sectim/3600)
                         log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1+month, day=1+days, hour=hours)
-                        k += 1
+                # go in suppressed log one further
+                k += 1
+                # go in normal log one further
                 j += 1
+            #if not the same event delete event from trace
             else:
                 log[i]._list.remove(log[i][j])
+    #delete traces
     for i in sorted(deleteLog, reverse=True):
         log._list.remove(log[i])
 

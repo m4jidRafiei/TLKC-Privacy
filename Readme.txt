@@ -14,7 +14,7 @@ createEventLog
 ->the changed simplified log is used to change the original log
 
 PatternMFSEvent
--> will be creating the mfs based on just the events
+-> creating the mfs based on events
 
 Algorithm
 ->everything that is running combined in one script
@@ -22,3 +22,8 @@ Algorithm
 testscript
 ->used for testing the modules while writing them
 
+folder version 1 contains a running version (run algoirthm) with mvs boxplot and mfs with tuples
+
+folder version 2 runned by main contains is running mvs boxplot and mfs with just events
+
+commented versions in folder 1 and 2
