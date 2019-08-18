@@ -1,5 +1,6 @@
 from collections import Counter
 import operator
+import datetime
 
 
 class ELRepresentation():
@@ -27,8 +28,7 @@ class ELRepresentation():
         return el, counts
 
 
-
-    def simplify_LKC(self, sensitive, spectime):
+    def simplify_LKC_with_time(self, sensitive, spectime):
         concept = ["concept:name"]
         time = ['time:timestamp']
         logsimple = {}
@@ -44,7 +44,6 @@ class ELRepresentation():
                 pair = [[], []]
                 for key, value in event.items():
                     # Filtering out the needed attributes and create new log out of it
-
                     # simplify timestamp to timeintervalls as precise as spectime
                     # pair[1] = time
                     if key in time:
@@ -93,6 +92,45 @@ class ELRepresentation():
                 for key in sens.keys():
                     # sample all values for a specific sensitive attribute (key) in dict
                     sensitives[key].append(sens[key])
+        return logsimple, traces, sensitives
+
+    def simplify_LKC_without_time_count(self, sensitive, spectime):
+        concept = ["concept:name"]
+        time = ['time:timestamp']
+        logsimple = {}
+        traces = []
+        sensitives = {el: [] for el in sensitive}
+        for case_index, case in enumerate(self.log):
+            # as cache for each case
+            sens = {}
+            trace = []
+            c = []
+            for event_index, event in enumerate(case):
+                # basis for tuple of (event,time)
+                pair = [[], []]
+                for key, value in event.items():
+                    # Filtering out the needed attributes and create new log out of it
+
+                    # simplify timestamp to timeintervalls as precise as spectime
+                    if key in concept:
+                        pair[0] = value
+                    elif key in sensitive:
+                        # sample all sensitive values for one trace in sens
+                        sens[key] = value
+                #pair of event, occurence
+                count_el = c.count(pair[0])
+                tu = (pair[0], count_el + 1)
+                c.append(pair[0])
+                # create trace with pairs (event,time)
+                trace.append(tu)
+            #create simplified log
+            logsimple[case.attributes["concept:name"]] = {"trace": trace, "sensitive": sens}
+            # list with all traces without CaseID
+            traces.append(trace)
+            # sample all values for a specific sensitive attribute (key) in dict
+            for key in sens.keys():
+               # sample all values for a specific sensitive attribute (key) in dict
+                sensitives[key].append(sens[key])
         return logsimple, traces, sensitives
 
     def suppression(self, violating, frequent):
@@ -170,3 +208,120 @@ class ELRepresentation():
             logsimple[key]['trace'] = list_trace
         return logsimple
 
+    def createEventLog(self, simplifiedlog, spectime):
+        deleteLog = []
+        log = self.log
+        for i in range(0, len(log)):
+            caseId = log[i].attributes["concept:name"]
+            if caseId not in simplifiedlog.keys():
+                deleteLog.append(i)
+                continue
+            trace = simplifiedlog[caseId]["trace"]
+            k = 0
+            j = 0
+            while j < len(log[i]):
+                if trace[k][0] == log[i][j]["concept:name"]:
+                    if spectime == "seconds":
+                        if j == 0:
+                            starttime = log[i][j]['time:timestamp']
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                                                                            hour=0, minute=0, second=0)
+                        else:
+                            timedif = log[i][j]['time:timestamp'] - starttime
+                            years = int(timedif.days / 365)
+                            daystime = timedif.days - years * 365
+                            month, days = self.month_translate(daystime)
+                            sectim = timedif.seconds
+                            # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
+                            hours = int(sectim / 3600)
+                            sectim = sectim - hours * 3600
+                            minutes = int(sectim / 60)
+                            sectim = sectim - minutes * 60
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                                                                            day=1 + days, hour=hours,
+                                                                            minute=minutes, second=sectim)
+                            k += 1
+                    elif spectime == "minutes":
+                        if j == 0:
+                            starttime = log[i][j]['time:timestamp']
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                                                                            hour=0, minute=0)
+                        else:
+                            timedif = log[i][j]['time:timestamp'] - starttime
+                            years = int(timedif.days / 365)
+                            daystime = timedif.days - years * 365
+                            month, days = self.month_translate(daystime)
+                            sectim = timedif.seconds
+                            # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
+                            hours = int(sectim / 3600)
+                            sectim = sectim - hours * 3600
+                            minutes = int(sectim / 60)
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                                                                            day=1 + days, hour=hours,
+                                                                            minute=minutes)
+
+                            k += 1
+                    elif spectime == "hours":
+                        if j == 0:
+                            starttime = log[i][j]['time:timestamp']
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                                                                            hour=0)
+                        else:
+                            timedif = log[i][j]['time:timestamp'] - starttime
+                            years = int(timedif.days / 365)
+                            daystime = timedif.days - years * 365
+                            month, days = self.month_translate(daystime)
+                            sectim = timedif.seconds
+                            # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
+                            hours = int(sectim / 3600)
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                                                                            day=1 + days, hour=hours)
+                            k += 1
+                    j += 1
+                else:
+                    log[i]._list.remove(log[i][j])
+        for i in sorted(deleteLog, reverse=True):
+            log._list.remove(log[i])
+
+        return log
+
+    def month_translate(self, daystime):
+        if daystime <= 30:
+            month = 0
+            days = daystime
+        elif daystime <= 58:
+            month = 1
+            days = daystime - 30
+        elif daystime <= 89:
+            month = 2
+            days = daystime - 58
+        elif daystime <= 119:
+            month = 3
+            days = daystime - 89
+        elif daystime <= 150:
+            month = 4
+            days = daystime - 119
+        elif daystime <= 180:
+            month = 5
+            days = daystime - 150
+        elif daystime <= 211:
+            month = 6
+            days = daystime - 180
+        elif daystime <= 242:
+            month = 7
+            days = daystime - 211
+        elif daystime <= 273:
+            month = 8
+            days = daystime - 242
+        elif daystime <= 303:
+            month = 9
+            days = daystime - 273
+        elif daystime <= 334:
+            month = 10
+            days = daystime - 303
+        elif daystime <= 365:
+            month = 11
+            days = daystime - 334
+        if days != 0:
+            days -= 1
+        return month, days

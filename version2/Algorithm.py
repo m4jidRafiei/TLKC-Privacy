@@ -2,7 +2,6 @@
 import simplifyDeleteTracesStand5
 import mvsBoxplot
 import PatternMFSEvents
-import time
 import TrajectoryDataAnonymizer
 
 def anonymization(log,sensitive,spectime,cont, L,K,C,K_):
