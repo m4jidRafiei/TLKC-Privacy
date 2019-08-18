@@ -8,13 +8,14 @@ import numpy as np
 import operator
 class MVS():
 
-    def __init__(self,T, logsimple, sensitive, cont, sensitives):
+    def __init__(self,T, logsimple, sensitive, cont, sensitives, count=False):
         self.T = T
         self.logsimple = logsimple
         self.sensitive = sensitive
         self.cont = cont
         self.sensitives = sensitives
         self.dev = []
+        self.count = count
 
 
     def mvs(self, L, K, C, type=None, contbound=None):
@@ -44,8 +45,14 @@ class MVS():
         while len(w[0]) > 1:
             candidate = w[0].pop(0)
             for comb in w[0]:
-                if comb[0][1] >= candidate[0][1]:
-                    X1.append([candidate, comb])
+                if self.count:
+                    if comb[0] != candidate[0]:
+                        X1.append([candidate, comb])
+                    elif comb[1] == candidate[1] + 1:
+                        X1.append([candidate, comb])
+                else:
+                    if comb[0][1] >= candidate[0][1]:
+                        X1.append([candidate, comb])
         # 13: for %q & Xi+1 do
         # should not be necessary for first round
         # 15: Remove q from Xi+1;
@@ -81,21 +88,43 @@ class MVS():
             for comb in w[i]:
                 if comb[i][1] < candidate[i][1]:
                     break
-                if candidate[0:i - 1] == comb[0:i - 1] and candidate[i][1] <= comb[i][1]:
-                    X1.append([])
-                    X1[len(X1) - 1] = candidate[:]
-                    X1[len(X1) - 1].append(comb[i])
-                    if X1[len(X1) - 1] in X1[0:len(X1) - 2]:
-                        del X1[-1]
-                    else:
-                        # 13: for %q & Xi+1 do
-                        # 14: if q is a super sequence of any v & Vi then
-                        # 15: Remove q from Xi+1;
-                        for v in violating[i]:
-                            if len(X1) == 0:
-                                break
-                            if all(elem in X1[len(X1) - 1] for elem in v):
-                                del X1[-1]
+                if self.count:
+                    add = False
+                    if comb[i] not in candidate:
+                        add = True
+                    elif comb[i][1] == candidate[candidate[::-1].index(comb[i])][1] + 1:
+                        add = True
+                    if add:
+                        X1.append([])
+                        X1[len(X1) - 1] = candidate[:]
+                        X1[len(X1) - 1].append(comb[i])
+                        if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
+                            del X1[-1]
+                        else:
+                            # 13: for %q & Xi+1 do
+                            # 14: if q is a super sequence of any v & Vi then
+                            # 15: Remove q from Xi+1;
+                            for v in violating[i]:
+                                if len(X1) == 0:
+                                    break
+                                if all(elem in X1[len(X1) - 1] for elem in v):
+                                    del X1[-1]
+                else:
+                    if candidate[0:i - 1] == comb[0:i - 1] and candidate[i][1] <= comb[i][1]:
+                        X1.append([])
+                        X1[len(X1) - 1] = candidate[:]
+                        X1[len(X1) - 1].append(comb[i])
+                        if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
+                            del X1[-1]
+                        else:
+                            # 13: for %q & Xi+1 do
+                            # 14: if q is a super sequence of any v & Vi then
+                            # 15: Remove q from Xi+1;
+                            for v in violating[i]:
+                                if len(X1) == 0:
+                                    break
+                                if all(elem in X1[len(X1) - 1] for elem in v):
+                                    del X1[-1]
         return X1
 
     def w_violating(self,gen,count,violating,prob, K,C,w, i):
