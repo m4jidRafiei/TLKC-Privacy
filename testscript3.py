@@ -29,7 +29,19 @@ logtime = time.time()
 print("Time creating:", logtime-start)
 K = 500
 
+
+#remove counts from tuples!
+T_onlyActivity = T_count.copy()
+mfs.remove_counts(T_onlyActivity)
+
+
+
 frequent = mfs.frequent_seq_activity(T_count, K)   #this is PatternMFSEvent
+
+
+frequent_items = mfs.frequent_set_miner(T_onlyActivity, 500/len(T_onlyActivity))
+frequent_items_count = mfs.frequent_set_miner(T_count, 500/len(T_count))
+
 frequent2 = mfs.frequent_seq_activityTime(T,K)  # this is PatternMFS
 mfstime = time.time()
 print("PatternMFSEvent len frequent", len(frequent))
@@ -39,7 +51,6 @@ print("Time MFS:", mfstime-logtime)
 L = 2
 K = 5
 C = 0.5
-
 mvs = MVS(T,logsimple,sensitive,cont,sensitives)
 contBound = {'Age': 10}
 violating = mvs.mvs(L,K,C)
@@ -47,6 +58,7 @@ print("len violating boxplot", len(violating))
 violating2 = mvs.mvs(L,K,C, "dev", contBound)
 print("len violating deviations", len(violating2))
 mvs2 = MVS(T_count,logsimple_count,sensitives_count,cont,sensitives_count,True)
+
 L = 2
 K = 50
 C = 0.5
@@ -65,3 +77,5 @@ anonymizertime = time.time()
 print("Annonymizer: ", anonymizertime-suptime)
 
 log_new = repres.createEventLog(logsimple, spectime)
+
+print("Done!!")

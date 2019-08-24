@@ -1,4 +1,8 @@
 import pyfpgrowth
+from mlxtend.frequent_patterns import apriori
+import pandas as pd
+from mlxtend.preprocessing import TransactionEncoder
+
 import operator
 
 class MFS():
@@ -46,4 +50,30 @@ class MFS():
                 frequent.append(candidate)
         return frequent
 
+    def frequent_set_miner(self, T, K):
+
+        te = TransactionEncoder()
+        te_ary = te.fit(T).transform(T)
+        df = pd.DataFrame(te_ary, columns=te.columns_)
+        frequent_itemsets = apriori(df, min_support=K, use_colnames=True)
+        #convert to list of list
+        listofList = []
+        for item in list(frequent_itemsets['itemsets']):
+            list_item = list(item)
+            listofList.append(list_item)
+
+        return listofList
+
+    def remove_counts(self, T_count):
+
+        for index, seq in enumerate(T_count):
+            only_activity = []
+            for item in seq:
+                item_list = list(item)
+                item_list[1] = 0
+                item_tuple = tuple(item_list)
+                only_activity.append(item_tuple)
+            T_count[index] = only_activity
+
+        return T_count
 
