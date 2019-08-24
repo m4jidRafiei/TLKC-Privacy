@@ -40,6 +40,8 @@ def suppression(violating,frequent):
 def score(violating, frequent, X1):
     priv = {v: 0 for v in X1}
     ut = {f: 0 for f in X1}
+    #for each element in which violating/frequent subtraces it is containe
+    #TODO could be better maybe
     mvsEle = {v: [] for v in X1}
     mfsEle = {f: [] for f in X1}
     for v in violating:

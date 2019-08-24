@@ -43,17 +43,17 @@ C = 0.5
 mvs = MVS(T,logsimple,sensitive,cont,sensitives)
 contBound = {'Age': 10}
 violating = mvs.mvs(L,K,C)
+print("len violating boxplot", len(violating))
 violating2 = mvs.mvs(L,K,C, "dev", contBound)
+print("len violating deviations", len(violating2))
 mvs2 = MVS(T_count,logsimple_count,sensitives_count,cont,sensitives_count,True)
 L = 2
 K = 50
 C = 0.5
 violating_count = mvs2.mvs(L,K,C)
+print("len violating boxplot count", len(violating_count))
 violating2_count = mvs2.mvs(L,K,C, "dev", contBound)
 mvstime = time.time()
-#print("len violating boxplot", len(violating))
-#print("len violating deviations", len(violating2))
-print("len violating boxplot count", len(violating_count))
 print("len violating deviations count", len(violating2_count))
 print("Time MVS: ", mvstime - logtime)
 
