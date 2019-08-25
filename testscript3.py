@@ -23,7 +23,7 @@ frequency = mfs.frequent_variants(variants, counts, threshold) #new method to ex
 
 
 logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive, spectime) #this is simplifyDeleteTracesStand5.simplify()
-logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(sensitive, spectime)
+logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(sensitive)
 
 logtime = time.time()
 print("Time creating:", logtime-start)

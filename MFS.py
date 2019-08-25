@@ -61,8 +61,20 @@ class MFS():
         for item in list(frequent_itemsets['itemsets']):
             list_item = list(item)
             listofList.append(list_item)
+        #we just want to have the biggest sets
+        patterns = sorted(list(listofList), key=len)
+        frequent = [patterns.pop()]
+        while len(patterns) > 0:
+            candidate = patterns.pop()
+            super = True
+            for f in frequent:
+                if all(elem in f for elem in candidate):
+                    super = False
+                    break
+            if super:
+                frequent.append(candidate)
 
-        return listofList
+        return frequent
 
     def remove_counts(self, T_count):
 

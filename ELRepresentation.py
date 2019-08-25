@@ -94,7 +94,7 @@ class ELRepresentation():
                     sensitives[key].append(sens[key])
         return logsimple, traces, sensitives
 
-    def simplify_LKC_without_time_count(self, sensitive, spectime):
+    def simplify_LKC_without_time_count(self, sensitive):
         concept = ["concept:name"]
         time = ['time:timestamp']
         logsimple = {}
@@ -127,6 +127,121 @@ class ELRepresentation():
             logsimple[case.attributes["concept:name"]] = {"trace": trace, "sensitive": sens}
             # list with all traces without CaseID
             traces.append(trace)
+            # sample all values for a specific sensitive attribute (key) in dict
+            for key in sens.keys():
+               # sample all values for a specific sensitive attribute (key) in dict
+                sensitives[key].append(sens[key])
+        return logsimple, traces, sensitives
+
+    def simplify_LKC_without_time_count_set(self, sensitive):
+        concept = ["concept:name"]
+        time = ['time:timestamp']
+        logsimple = {}
+        traces = []
+        sensitives = {el: [] for el in sensitive}
+        for case_index, case in enumerate(self.log):
+            # as cache for each case
+            sens = {}
+            trace = []
+            c = []
+            for event_index, event in enumerate(case):
+                # basis for tuple of (event,time)
+                pair = [[], []]
+                for key, value in event.items():
+                    # Filtering out the needed attributes and create new log out of it
+
+                    # simplify timestamp to timeintervalls as precise as spectime
+                    if key in concept:
+                        pair[0] = value
+                    elif key in sensitive:
+                        # sample all sensitive values for one trace in sens
+                        sens[key] = value
+                #pair of event, occurence
+                count_el = c.count(pair[0])
+                tu = (pair[0], count_el + 1)
+                c.append(pair[0])
+                # create trace with pairs (event,time)
+                trace.append(tu)
+            #create simplified log
+            logsimple[case.attributes["concept:name"]] = {"trace": sorted(trace), "sensitive": sens}
+            # list with all traces without CaseID
+            traces.append(sorted(trace))
+            # sample all values for a specific sensitive attribute (key) in dict
+            for key in sens.keys():
+               # sample all values for a specific sensitive attribute (key) in dict
+                sensitives[key].append(sens[key])
+        return logsimple, traces, sensitives
+
+    def simplify_LKC_without_time(self, sensitive):
+        concept = ["concept:name"]
+        time = ['time:timestamp']
+        logsimple = {}
+        traces = []
+        sensitives = {el: [] for el in sensitive}
+        for case_index, case in enumerate(self.log):
+            # as cache for each case
+            sens = {}
+            trace = []
+            c = []
+            for event_index, event in enumerate(case):
+                # basis for tuple of (event,time)
+                pair = [[], []]
+                for key, value in event.items():
+                    # Filtering out the needed attributes and create new log out of it
+
+                    # simplify timestamp to timeintervalls as precise as spectime
+                    if key in concept:
+                        pair[0] = value
+                    elif key in sensitive:
+                        # sample all sensitive values for one trace in sens
+                        sens[key] = value
+                #pair of event, occurence
+                tu = (pair[0], 1)
+                c.append(pair[0])
+                # create trace with pairs (event,time)
+                trace.append(tu)
+            #create simplified log
+            logsimple[case.attributes["concept:name"]] = {"trace": trace, "sensitive": sens}
+            # list with all traces without CaseID
+            traces.append(trace)
+            # sample all values for a specific sensitive attribute (key) in dict
+            for key in sens.keys():
+               # sample all values for a specific sensitive attribute (key) in dict
+                sensitives[key].append(sens[key])
+        return logsimple, traces, sensitives
+
+    def simplify_LKC_without_time_set(self, sensitive):
+        concept = ["concept:name"]
+        time = ['time:timestamp']
+        logsimple = {}
+        traces = []
+        sensitives = {el: [] for el in sensitive}
+        for case_index, case in enumerate(self.log):
+            # as cache for each case
+            sens = {}
+            trace = []
+            c = []
+            for event_index, event in enumerate(case):
+                # basis for tuple of (event,time)
+                pair = [[], []]
+                for key, value in event.items():
+                    # Filtering out the needed attributes and create new log out of it
+
+                    # simplify timestamp to timeintervalls as precise as spectime
+                    if key in concept:
+                        pair[0] = value
+                    elif key in sensitive:
+                        # sample all sensitive values for one trace in sens
+                        sens[key] = value
+                #pair of event, occurence
+                tu = (pair[0], 1)
+                c.append(pair[0])
+                # create trace with pairs (event,time)
+                trace.append(tu)
+            #create simplified log
+            logsimple[case.attributes["concept:name"]] = {"trace": sorted(trace), "sensitive": sens}
+            # list with all traces without CaseID
+            traces.append(sorted(trace))
             # sample all values for a specific sensitive attribute (key) in dict
             for key in sens.keys():
                # sample all values for a specific sensitive attribute (key) in dict

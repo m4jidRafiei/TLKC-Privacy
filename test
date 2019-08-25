@@ -1,0 +1,61 @@
+from pm4py.objects.log.importer.xes import factory as xes_import_factory
+from ELRepresentation import ELRepresentation
+from MFS import MFS
+from MVS import MVS
+import time
+
+log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")#, parameters={"max_no_traces_to_import": 1000})
+sensitive = ['Age', 'Diagnose']
+spectime = "seconds"
+cont = ['Age']
+
+
+repres = ELRepresentation(log)  #All the event log manipulations (changes in representation) are supposed to be done in this class
+mfs = MFS()  # All the methods assiciated with MFS are supposed to be developed in this class
+
+logsimple_onlyActivity, T_onlyActivity, sensitives_count = repres.simplify_LKC_without_time(sensitive)
+logsimple_count, T_count, sensitives_count2 = repres.simplify_LKC_without_time_count(sensitive)
+logsimple_set, T_set, sensitives_set = repres.simplify_LKC_without_time_set(sensitive)
+logsimple_set_count, T_set_count, sensitives_set_count = repres.simplify_LKC_without_time_count_set(sensitive)
+logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive,spectime)
+#remove counts from tuples!
+#T_onlyActivity = T_count.copy()
+#mfs.remove_counts(T_onlyActivity)
+frequent_items_set = mfs.frequent_set_miner(T_onlyActivity, 500/len(T_onlyActivity))
+print("frequent set", frequent_items_set, "\n", len(frequent_items_set))
+frequent_items_count_set = mfs.frequent_set_miner(T_set_count, 500/len(T_set_count))
+print("frequent set and count", frequent_items_count_set, "\n", len(frequent_items_count_set))
+frequent_count = mfs.frequent_seq_activity(T_count, 500)
+print("frequent count", frequent_count, "\n", len(frequent_count))
+frequent_time = mfs.frequent_seq_activityTime(T, 5)
+print("frequent time", frequent_time, "\n", len(frequent_time))
+
+L = 2
+K = 50
+C = 0.5
+mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set=True)
+violating_set = mvs.mvs(L,K,C)
+print("violating set:", violating_set)
+mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True,True)
+violating_count_set = mvs.mvs(L,K,C)
+print("violating count and set:", violating_count_set)
+mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True)
+violating_count = mvs.mvs(L,K,C)
+print("violating count:", violating_count)
+mvs = MVS(T, logsimple, sensitive, cont, sensitives)
+violating = mvs.mvs(L,5,C)
+print("violating:", violating)
+
+contbound = {"Age":1}
+mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set=True)
+violating_set = mvs.mvs(L,K,C,type="dev",contbound=contbound)
+print("violating set:", violating_set)
+mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True,True)
+violating_count_set = mvs.mvs(L,K,C,type="dev",contbound=contbound)
+print("violating count and set:", violating_count_set)
+mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True)
+violating_count = mvs.mvs(L,K,C,type="dev",contbound=contbound)
+print("violating count:", violating_count)
+mvs = MVS(T, logsimple, sensitive, cont, sensitives)
+violating = mvs.mvs(L,5,C,type="dev",contbound=contbound)
+print("violating:", violating)
