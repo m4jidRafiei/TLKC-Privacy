@@ -3,7 +3,7 @@ from ELRepresentation import ELRepresentation
 from MFS import MFS
 from MVS import MVS
 import time
-
+start = time. time()
 log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")#, parameters={"max_no_traces_to_import": 1000})
 sensitive = ['Age', 'Diagnose']
 spectime = "seconds"
@@ -18,44 +18,144 @@ logsimple_count, T_count, sensitives_count2 = repres.simplify_LKC_without_time_c
 logsimple_set, T_set, sensitives_set = repres.simplify_LKC_without_time_set(sensitive)
 logsimple_set_count, T_set_count, sensitives_set_count = repres.simplify_LKC_without_time_count_set(sensitive)
 logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive,spectime)
+simplify = time.time()
+print("simplify", simplify - start)
 #remove counts from tuples!
 #T_onlyActivity = T_count.copy()
 #mfs.remove_counts(T_onlyActivity)
-frequent_items_set = mfs.frequent_set_miner(T_onlyActivity, 500/len(T_onlyActivity))
+frequent_items_set = mfs.frequent_set_miner(T_onlyActivity, 300/len(T_onlyActivity))
 print("frequent set", frequent_items_set, "\n", len(frequent_items_set))
-frequent_items_count_set = mfs.frequent_set_miner(T_set_count, 500/len(T_set_count))
+frequent_items_count_set = mfs.frequent_set_miner(T_set_count, 300/len(T_set_count))
 print("frequent set and count", frequent_items_count_set, "\n", len(frequent_items_count_set))
-frequent_count = mfs.frequent_seq_activity(T_count, 500)
+frequent_count = mfs.frequent_seq_activity(T_count, 300)
 print("frequent count", frequent_count, "\n", len(frequent_count))
 frequent_time = mfs.frequent_seq_activityTime(T, 5)
 print("frequent time", frequent_time, "\n", len(frequent_time))
+mfstime = time.time()
+print("mfs", mfstime-simplify)
+
 
 L = 2
 K = 50
 C = 0.5
 mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set=True)
 violating_set = mvs.mvs(L,K,C)
-print("violating set:", violating_set)
+print("violating set:", violating_set, "\n", len(violating_set))
 mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True,True)
 violating_count_set = mvs.mvs(L,K,C)
-print("violating count and set:", violating_count_set)
+print("violating count and set:", violating_count_set, "\n", len(violating_count_set))
 mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True)
 violating_count = mvs.mvs(L,K,C)
-print("violating count:", violating_count)
+print("violating count:", violating_count, "\n", len(violating_count))
 mvs = MVS(T, logsimple, sensitive, cont, sensitives)
 violating = mvs.mvs(L,5,C)
-print("violating:", violating)
+print("violating:", violating, "\n", len(violating))
 
 contbound = {"Age":1}
 mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set=True)
-violating_set = mvs.mvs(L,K,C,type="dev",contbound=contbound)
-print("violating set:", violating_set)
+violating_set_dev = mvs.mvs(L,K,C,type="dev",contbound=contbound)
+print("violating set dev:", violating_set_dev, "\n", len(violating_set_dev))
 mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True,True)
-violating_count_set = mvs.mvs(L,K,C,type="dev",contbound=contbound)
-print("violating count and set:", violating_count_set)
+violating_count_set_dev = mvs.mvs(L,K,C,type="dev",contbound=contbound)
+print("violating count and set dev:", violating_count_set_dev, "\n", len(violating_count_set_dev))
 mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True)
-violating_count = mvs.mvs(L,K,C,type="dev",contbound=contbound)
-print("violating count:", violating_count)
+violating_count_dev = mvs.mvs(L,K,C,type="dev",contbound=contbound)
+print("violating count dev:", violating_count_dev, "\n", len(violating_count_dev))
 mvs = MVS(T, logsimple, sensitive, cont, sensitives)
-violating = mvs.mvs(L,5,C,type="dev",contbound=contbound)
-print("violating:", violating)
+violating_dev = mvs.mvs(L,5,C,type="dev",contbound=contbound)
+print("violating dev:", violating_dev, "\n", len(violating_dev))
+mvstime = time.time()
+print("mvs", mvstime-mfstime)
+
+sup_set = repres.suppression(violating_set, frequent_items_set)
+sup_set_dev = repres.suppression(violating_set_dev, frequent_items_set)
+sup_set_count = repres.suppression(violating_count_set, frequent_items_count_set)
+sup_set_count_dev = repres.suppression(violating_count_set_dev, frequent_items_count_set)
+
+sup_count = repres.suppression(violating_count, frequent_count)
+sup_count_dev = repres.suppression(violating_count_dev, frequent_count)
+sup_time = repres.suppression(violating, frequent_time)
+sup_time_dev = repres.suppression(violating_dev, frequent_time)
+suptime = time.time()
+print("Suppresion: ", suptime-mvstime)
+T_set = repres.suppressT(logsimple, sup_set)
+T_set_dev = repres.suppressT(logsimple, sup_set_dev)
+T_count = repres.suppressT(logsimple, sup_count)
+T_count_dev = repres.suppressT(logsimple, sup_count_dev)
+T_set_count = repres.suppressT(logsimple, sup_set_count)
+T_set_count_dev = repres.suppressT(logsimple, sup_set_count_dev)
+T_time = repres.suppressT(logsimple, sup_time)
+T_time_dev = repres.suppressT(logsimple, sup_time_dev)
+anonymizertime = time.time()
+print("Annonymizer: ", anonymizertime-suptime)
+
+log_set = repres.createEventLog(T_set, spectime)
+print("set",log_set)
+log_set_dev = repres.createEventLog(T_set_dev, spectime)
+print("set dev", log_set_dev)
+log_count = repres.createEventLog(T_count, spectime)
+print("count", log_count)
+log_count_dev = repres.createEventLog(T_count_dev, spectime)
+print("count dev", log_count_dev)
+log_set_count = repres.createEventLog(T_set_count, spectime)
+print("set count", log_set_count)
+log_set_count_dev = repres.createEventLog(T_set_count_dev, spectime)
+print("set count dev", log_set_count_dev)
+log_time = repres.createEventLog(T_time, spectime)
+print("time", log_time)
+log_time_dev = repres.createEventLog(T_time_dev, spectime)
+print("time dev", log_time_dev)
+logtime = time.time()
+print("log", logtime-anonymizertime)
+print("Done!!")
+
+
+from pm4py.algo.discovery.inductive import factory as inductive_miner
+from pm4py.evaluation.replay_fitness import factory as replay_factory
+from pm4py.evaluation.precision import factory as precision_factory
+
+net, initial_marking, final_marking = inductive_miner.apply(log)
+fitness = replay_factory.apply(log, net, initial_marking, final_marking)
+precision = precision_factory.apply(log, net, initial_marking, final_marking)
+print("original", "\n","fitness", fitness, "\n","precision", precision)
+
+net_set, initial_marking_set, final_marking_set = inductive_miner.apply(log_set)
+fitness_set = replay_factory.apply(log, net_set, initial_marking_set, final_marking_set)
+precision_set = precision_factory.apply(log, net_set, initial_marking_set, final_marking_set)
+print("set", "\n","fitness", fitness_set, "\n","precision", precision_set)
+net_set_dev, initial_marking_set_dev, final_marking_set_dev = inductive_miner.apply(log_set_dev)
+fitness_set_dev = replay_factory.apply(log, net_set_dev, initial_marking_set_dev, final_marking_set_dev)
+precision_set_dev = precision_factory.apply(log, net_set_dev, initial_marking_set_dev, final_marking_set_dev)
+print("set and dev", "\n","fitness", fitness_set_dev, "\n","precision", precision_set_dev)
+net_count, initial_marking_count, final_marking_count = inductive_miner.apply(log_count)
+fitness_count = replay_factory.apply(log, net_count, initial_marking_count, final_marking_count)
+precision_count = precision_factory.apply(log, net_count, initial_marking_count, final_marking_count)
+print("count", "\n","fitness", fitness_count, "\n","precision", precision_count)
+net_count_dev, initial_marking_count_dev, final_marking_count_dev = inductive_miner.apply(log_count_dev)
+fitness_count_dev = replay_factory.apply(log, net_count_dev, initial_marking_count_dev
+                                         , final_marking_count_dev)
+precision_count_dev = precision_factory.apply(log, net_count_dev, initial_marking_count_dev
+                                              , final_marking_count_dev)
+print("count and dev", "\n","fitness", fitness_count_dev, "\n","precision", precision_count_dev)
+net_set_count, initial_marking_set_count, final_marking_set_count = inductive_miner.apply(log_set_count)
+fitness_set_count = replay_factory.apply(log, net_set_count, initial_marking_set_count
+                                         , final_marking_set_count)
+precision_set_count = precision_factory.apply(log, net_set_count, initial_marking_set_count
+                                              , final_marking_set_count)
+print("set and count", "\n","fitness", fitness_set_count, "\n","precision", precision_set_count)
+net_set_count_dev, initial_marking_set_count_dev, final_marking_set_count_dev = inductive_miner.apply(log_set_count_dev)
+fitness_set_count_dev = replay_factory.apply(log, net_set_count_dev, initial_marking_set_count_dev
+                                             , final_marking_set_count_dev)
+precision_set_count_dev = precision_factory.apply(log, net_set_count_dev
+                                                  , initial_marking_set_count_dev, final_marking_set_count_dev)
+print("set and count dev", "\n","fitness", fitness_set_count_dev, "\n","precision", precision_set_count_dev)
+net_time, initial_marking_time, final_marking_time = inductive_miner.apply(log_time)
+fitness_time = replay_factory.apply(log, net_time, initial_marking_time, final_marking_time)
+precision_time = precision_factory.apply(log, net_time, initial_marking_time, final_marking_time)
+print("time", "\n","fitness", fitness_time, "\n","precision", precision_time)
+net_time_dev, initial_marking_time_dev, final_marking_time_dev = inductive_miner.apply(log_time_dev)
+fitness_time_dev = replay_factory.apply(log, net_time_dev, initial_marking_time_dev, final_marking_time_dev)
+precision_time_dev = precision_factory.apply(log, net_time_dev, initial_marking_time_dev
+                                             , final_marking_time_dev)
+print("time dev", "\n","fitness", fitness_time_dev, "\n","precision", precision_time_dev)
+

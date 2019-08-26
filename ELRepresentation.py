@@ -326,6 +326,7 @@ class ELRepresentation():
     def createEventLog(self, simplifiedlog, spectime):
         deleteLog = []
         log = self.log
+        print("before", self.log)
         for i in range(0, len(log)):
             caseId = log[i].attributes["concept:name"]
             if caseId not in simplifiedlog.keys():
@@ -397,7 +398,7 @@ class ELRepresentation():
                     log[i]._list.remove(log[i][j])
         for i in sorted(deleteLog, reverse=True):
             log._list.remove(log[i])
-
+        print("after", self.log)
         return log
 
     def month_translate(self, daystime):
