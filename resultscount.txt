@@ -1,0 +1,9 @@
+original
+fitness{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision0.164739833380401
+count 
+fitness{'perc_fit_traces': 0.0, 'average_trace_fitness': 0.21684658929338094, 'log_fitness': 0.5377046399185682}
+ precision0.81244221371021
+count and dev 
+fitness{'perc_fit_traces': 0.0, 'average_trace_fitness': 0.21684658929338094, 'log_fitness': 0.5377046399185682}
+ precision0.81244221371021
