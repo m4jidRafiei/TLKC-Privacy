@@ -2,12 +2,160 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resultscount.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resultsset.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resultssetcount.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resultstime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotUsed/createresults.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotUsed/testscript.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/count_results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/original.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.1_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.2_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.3_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.4_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.5_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.6_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_10_0.2_0.7_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.1_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.2_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.3_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.4_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.5_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.6_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.7_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.8_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_days_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_days_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_hours_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_hours_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_minutes_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_minutes_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_seconds_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/r2_5_0.2_0.9_seconds_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/resultscount.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/resultscount2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/resultsset.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/resultssetcount.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first results/resultstime.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/original.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resultsset2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resultssetcount2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resultstime2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runFunction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/set_count_results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/set_results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/time_results.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ELRepresentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/ELRepresentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MVS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultscount.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultsset.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultssetcount.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultstime.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testscript3.py" beforeDir="false" afterPath="$PROJECT_DIR$/NotUsed/testscript3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,18 +181,19 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/set_count_results.py" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\running 16.08" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\version2" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\NotUsed" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -59,8 +208,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="Algorithm" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.count_set_results">
+    <configuration name="count_set_results" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,7 +222,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8\Algorithm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set_count_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +231,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Algorthm5" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="countresults" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +244,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AlgorithmStand5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/count_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +253,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="results" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,12 +261,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/version2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/version2/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\NotUsed\createresults.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="set_results" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,57 +319,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testscript" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8\testscript.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="testscript3" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testscript3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Python.countresults" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.testscript3" />
-      <item itemvalue="Python.Algorithm" />
-      <item itemvalue="Python.Algorthm5" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.testscript" />
+      <item itemvalue="Python.set_results" />
+      <item itemvalue="Python.count_set_results" />
+      <item itemvalue="Python.results" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -216,7 +342,12 @@
       <workItem from="1564772710328" duration="41453000" />
       <workItem from="1564938241402" duration="3466000" />
       <workItem from="1564942271205" duration="137844000" />
-      <workItem from="1566466897820" duration="48386000" />
+      <workItem from="1566466897820" duration="49723000" />
+      <workItem from="1567492128877" duration="13871000" />
+      <workItem from="1567517150337" duration="2618000" />
+      <workItem from="1567520955667" duration="17460000" />
+      <workItem from="1567598940399" duration="249000" />
+      <workItem from="1567599209563" duration="32040000" />
     </task>
     <servers />
   </component>
@@ -254,33 +385,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MVS.py</url>
-          <line>384</line>
+          <line>385</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MVS.py</url>
-          <line>439</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test</url>
-          <line>94</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test</url>
-          <line>144</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test</url>
-          <line>198</line>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test</url>
-          <line>40</line>
+          <line>638</line>
           <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test</url>
+          <line>327</line>
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -293,15 +409,20 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonCode$testscript3.coverage" NAME="testscript3 Coverage Results" MODIFIED="1566148807356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$results.coverage" NAME="results Coverage Results" MODIFIED="1567619403202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$countresults.coverage" NAME="countresults Coverage Results" MODIFIED="1567690826176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$count_set_results.coverage" NAME="count_set_results Coverage Results" MODIFIED="1567702092366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1565775460611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$PythonCode.coverage" NAME="Algorithmalt Coverage Results" MODIFIED="1564751483013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$Algorthm5.coverage" NAME="Algorthm5 Coverage Results" MODIFIED="1565116992626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$testscript3.coverage" NAME="testscript3 Coverage Results" MODIFIED="1567535703210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$AlgorithmStand3_8.coverage" NAME="Algorithm7 Coverage Results" MODIFIED="1565181592538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$Algorithm.coverage" NAME="Algorithm Coverage Results" MODIFIED="1565775343823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$Algorithm7.coverage" NAME="Algorithm7 Coverage Results" MODIFIED="1565181728979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$main.coverage" NAME="main Coverage Results" MODIFIED="1565532130715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/version2" />
     <SUITE FILE_PATH="coverage/PythonCode$testscript2.coverage" NAME="testscript2 Coverage Results" MODIFIED="1565774282574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1565775460611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$PythonCode.coverage" NAME="Algorithmalt Coverage Results" MODIFIED="1564751483013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$test.coverage" NAME="test Coverage Results" MODIFIED="1566927908429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$Algorthm5.coverage" NAME="Algorthm5 Coverage Results" MODIFIED="1565116992626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$testscriptFinal.coverage" NAME="testscriptFinal Coverage Results" MODIFIED="1567535714970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$test.coverage" NAME="test Coverage Results" MODIFIED="1567690041426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$set_results.coverage" NAME="set_results Coverage Results" MODIFIED="1567691564155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

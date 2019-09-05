@@ -39,14 +39,16 @@ mfs.remove_counts(T_onlyActivity)
 frequent = mfs.frequent_seq_activity(T_count, K)   #this is PatternMFSEvent
 
 
-frequent_items = mfs.frequent_set_miner(T_onlyActivity, 500/len(T_onlyActivity))
-frequent_items_count = mfs.frequent_set_miner(T_count, 500/len(T_count))
+frequent_items = mfs.frequent_set_miner(T_onlyActivity, 0.1*len(T_onlyActivity))
+frequent_items_count = mfs.frequent_set_miner(T_count, 0.1*len(T_count))
 
 frequent2 = mfs.frequent_seq_activityTime(T,K)  # this is PatternMFS
 mfstime = time.time()
-print("PatternMFSEvent len frequent", len(frequent))
+print("set len frequent", len(frequent_items))
+print("set count len frequent", len(frequent_items_count))
 print("PatternMFS len frequent", len(frequent2))
 print("Time MFS:", mfstime-logtime)
+
 
 L = 2
 K = 5

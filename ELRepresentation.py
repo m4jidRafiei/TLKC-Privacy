@@ -174,7 +174,6 @@ class ELRepresentation():
 
     def simplify_LKC_without_time(self, sensitive):
         concept = ["concept:name"]
-        time = ['time:timestamp']
         logsimple = {}
         traces = []
         sensitives = {el: [] for el in sensitive}
@@ -234,7 +233,7 @@ class ELRepresentation():
                         # sample all sensitive values for one trace in sens
                         sens[key] = value
                 #pair of event, occurence
-                tu = (pair[0], 1)
+                tu = (pair[0], 0)
                 c.append(pair[0])
                 # create trace with pairs (event,time)
                 trace.append(tu)
@@ -326,7 +325,8 @@ class ELRepresentation():
     def createEventLog(self, simplifiedlog, spectime):
         deleteLog = []
         log = self.log
-        print("before", self.log)
+        d = 0
+        d_l = 0
         for i in range(0, len(log)):
             caseId = log[i].attributes["concept:name"]
             if caseId not in simplifiedlog.keys():
@@ -396,10 +396,11 @@ class ELRepresentation():
                     j += 1
                 else:
                     log[i]._list.remove(log[i][j])
+                    d += 1
         for i in sorted(deleteLog, reverse=True):
             log._list.remove(log[i])
-        print("after", self.log)
-        return log
+            d_l += 1
+        return log, d, d_l
 
     def month_translate(self, daystime):
         if daystime <= 30:

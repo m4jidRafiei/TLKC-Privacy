@@ -102,6 +102,7 @@ class MVS():
             # 12: Xi+1 ! Wi ! Wi;
             X1 = self.w_create(w, i, X1, violating)
             # 18: i++;
+            w[i - 1] = []
             i += 1
         # 19: end while
         # 20: return V (T) = V1 ' · · · ' Vi−1;

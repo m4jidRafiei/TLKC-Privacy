@@ -1,0 +1,58 @@
+
+ count 
+frequent: 9 violating: 155 violating dev: 101
+sup 
+sup 
+supT 
+supT 
+
+ deleted
+elements in trace 13896 traces 0
+elements in trace dev13896 traces 0
+fitness count{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision count0.2816395691289789fitness count and dev{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision count and dev0.2816395691289789
+process time 49.44146800041199
+
+ set 
+frequent: 0 violating: 4 violating dev: 6
+sup 
+sup 
+supT 
+supT 
+elements in trace 13720 traces 0
+elements in trace dev 13720 traces 0
+fitness set{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision set0.26254353760707894
+fitness set and dev{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision set and dev0.26254353760707894
+process time 73.35770964622498
+
+ set and count 
+frequent: 0 violating: 35 violating dev: 39
+sup 
+sup 
+supT 
+supT 
+elements in trace 12689 traces 0
+elements in trace dev12689 traces 0
+fitness set count{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision set count0.21840581756565947
+fitness set count dev{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision set count dev0.21840581756565947
+process time 52.846917390823364
+
+ time 
+frequent: 1 violating: 687 violating dev: 622
+sup 
+sup 
+supT 
+supT 
+elements in trace 11015 traces 127
+elements in trace dev 11015 traces 127
+fitness time{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision time0.2624117480937588
+time dev 
+fitness{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
+ precision0.2624117480937588
+process time 45.7079815864563

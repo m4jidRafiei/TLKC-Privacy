@@ -23,7 +23,10 @@ class MFS():
     def frequent_seq_activityTime(self, T, K):
         patterns = pyfpgrowth.find_frequent_patterns(T, K)
         patterns = sorted(list(patterns.keys()), key=len)
-        frequent = [patterns.pop()]
+        if len(patterns) > 0:
+            frequent = [patterns.pop()]
+        else:
+            frequent = []
         while len(patterns) > 0:
             candidate = patterns.pop()
             super = True
@@ -38,7 +41,10 @@ class MFS():
     def frequent_seq_activity(self, T, K):
         patterns = pyfpgrowth.find_frequent_patterns(T, K)
         patterns = sorted(list(patterns.keys()), key=len)
-        frequent = [patterns.pop()]
+        if len(patterns) > 0:
+            frequent = [patterns.pop()]
+        else:
+            frequent = []
         while len(patterns) > 0:
             candidate = patterns.pop()
             super = True
@@ -51,7 +57,6 @@ class MFS():
         return frequent
 
     def frequent_set_miner(self, T, K):
-
         te = TransactionEncoder()
         te_ary = te.fit(T).transform(T)
         df = pd.DataFrame(te_ary, columns=te.columns_)
@@ -63,7 +68,10 @@ class MFS():
             listofList.append(list_item)
         #we just want to have the biggest sets
         patterns = sorted(list(listofList), key=len)
-        frequent = [patterns.pop()]
+        if len(patterns) > 0:
+            frequent = [patterns.pop()]
+        else:
+            frequent = []
         while len(patterns) > 0:
             candidate = patterns.pop()
             super = True
