@@ -54,7 +54,7 @@ def set_count(l, k, c, k2, l1, l2, d_set_count, d_l_set_count, fitness_set_count
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     repres = ELRepresentation(log)
     logsimple_set_count, T_set_count, sensitives_set_count = repres.simplify_LKC_without_time_count_set(sensitive)
-    frequent_items_count_set = mfs.frequent_set_miner(T_set_count, k2 * len(T_set_count))
+    frequent_items_count_set = mfs.frequent_set_miner(T_set_count, k2)
     print("frequent set and count", "\n", len(frequent_items_count_set))
     mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True, True)
     violating_count_set = mvs.mvs(l, k, c)
@@ -69,7 +69,7 @@ def set_count(l, k, c, k2, l1, l2, d_set_count, d_l_set_count, fitness_set_count
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     net_set_count, initial_marking_set_count, final_marking_set_count = inductive_miner.apply(log_set_count)
     fitness_set_count.put(replay_factory.apply(log, net_set_count, initial_marking_set_count
-                                                 , final_marking_set_count))
+                                                 , final_marking_set_count)["log_fitness"])
     precision_set_count.put(precision_factory.apply(log, net_set_count, initial_marking_set_count
                                                       , final_marking_set_count))
 
@@ -78,7 +78,7 @@ def set_count_dev(l, k, c, k2, l1, l2, d_set_count, d_l_set_count, fitness_set_c
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     repres = ELRepresentation(log)
     logsimple_set_count, T_set_count, sensitives_set_count = repres.simplify_LKC_without_time_count_set(sensitive)
-    frequent_items_count_set = mfs.frequent_set_miner(T_set_count, k2 * len(T_set_count))
+    frequent_items_count_set = mfs.frequent_set_miner(T_set_count, k2)
     print("frequent set and count", "\n", len(frequent_items_count_set))
     mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True, True)
     violating_count_set = mvs.mvs(l, k, c, type="dev", contbound=contbound)
@@ -147,6 +147,7 @@ if __name__ == '__main__':
                                 l2.put(-1)
                                 d_set_count.put(-1)
                                 d_l_set_count.put(-1)
+
                             worksheet3.write_number(i, 7, l1.get())
                             worksheet3.write_number(i, 8, l2.get())
 
@@ -226,6 +227,10 @@ if __name__ == '__main__':
                                     p.join()
                                     precision_set_count.put(-1)
                                     fitness_set_count.put(-1)
+                                    l1.put(-1)
+                                    l2.put(-1)
+                                    d_set_count.put(-1)
+                                    d_l_set_count.put(-1)
 
                                 worksheet.write_number(i, 8, l1.get())
                                 worksheet.write_number(i, 9, l2.get())
