@@ -10,13 +10,13 @@ import time
 from multiprocessing import Process, Queue
 import xlsxwriter
 gc.collect()
-timeout = 100
-L = [2,  8, 16]
-C = [0.4, 0.8]
-K = [40, 80]
-K2 = [0.7,  0.9]
+timeout = 20000
+L = [8, 16]
+C = [0.4]#, 0.8]
+K = [400]#, 80]
+K2 = [0.9]
 sensitive = ['Age', 'Diagnose']
-spectime2 = ["days", "minutes"]
+spectime2 = ["minutes"]#["days", "minutes"]
 cont = ['Age']
 contbound2 = [{"Age":1}]#, {"Age": 2}]
 #
