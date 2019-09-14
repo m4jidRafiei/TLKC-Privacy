@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log>
+  <string key="source" value="CPN Tools simulation"/>
+  <string key="concept:name" value="teleclaims.mxml"/>
+  <string key="lifecycle:model" value="standard"/>
+  <string key="description" value="Simulated process"/>
+  <extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+  <extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext"/>
+  <extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+  <extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+  <extension name="Semantic" prefix="semantic" uri="http://www.xes-standard.org/semantic.xesext"/>
+  <global>
+    <string key="concept:name" value="__INVALID__"/>
+  </global>
+  <global>
+    <string key="concept:name" value="__INVALID__"/>
+    <string key="lifecycle:transition" value="complete"/>
+  </global>
+  <classifier name="MXML Legacy Classifier" keys="concept:name lifecycle:transition"/>
+  <classifier name="Event Name" keys="concept:name"/>
+  <classifier name="Resource" keys="org:resource"/>
+  <trace>
+    <string key="concept:name" value="0"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <string key="org:resource" value="m"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="location" value="Brisbane"/>
+      <string key="concept:name" value="d3"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:02:00.000"/>
+      <string key="concept:name" value="f6"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:03:00.000"/>
+      <string key="concept:name" value="c7"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="1"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <int key="Age" value="40"/>
+      <string key="Diagnose" value="Flu"/>
+      <string key="call centre" value="Brisbane"/>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="f6"/>
+    </event>
+    <event>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T01:02:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="location" value="Brisbane"/>
+      <string key="concept:name" value="c7"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:09:00.000"/>
+      <string key="concept:name" value="e8"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="2"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <int key="Age" value="35"/>
+      <string key="Diagnose" value="Fever"/>
+      <string key="call centre" value="Brisbane"/>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="d3"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T01:08:00.000"/>
+      <string key="concept:name" value="f6"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T03:10:00.000"/>
+      <string key="concept:name" value="e8"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="3"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="location" value="Brisbane"/>
+      <string key="concept:name" value="c5"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:57:00.000"/>
+      <string key="concept:name" value="c7"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T03:07:00.000"/>
+      <string key="concept:name" value="e8"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="4"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <int key="Age" value="37"/>
+      <string key="Diagnose" value="Fever"/>
+      <string key="call centre" value="Brisbane"/>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="d3"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:59:00.000"/>
+      <string key="concept:name" value="c7"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T03:09:00.000"/>
+      <string key="concept:name" value="e8"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="5"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <int key="Age" value="39"/>
+      <string key="Diagnose" value="Diabetes"/>
+      <string key="call centre" value="Brisbane"/>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="c5"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T01:56:00.000"/>
+      <string key="concept:name" value="f6"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:56:00.000"/>
+      <string key="concept:name" value="e8"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="6"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="location" value="Brisbane"/>
+      <string key="concept:name" value="f6"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:57:00.000"/>
+      <string key="concept:name" value="c7"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T03:07:00.000"/>
+      <string key="concept:name" value="e8"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="7"/>
+    <string key="description" value="Simulated process instance"/>
+    <event>
+      <string key="org:resource" value="j"/>
+      <date key="time:timestamp" value="0001-01-01T00:00:00.000"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="location" value="Brisbane"/>
+      <string key="concept:name" value="c5"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:01:00.000"/>
+      <string key="concept:name" value="f6"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+    <event>
+      <string key="org:resource" value="p"/>
+      <date key="time:timestamp" value="0001-01-01T02:07:00.000"/>
+      <string key="concept:name" value="c7"/>
+      <string key="lifecycle:transition" value="complete"/>
+    </event>
+  </trace>
+</log>

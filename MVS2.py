@@ -36,7 +36,7 @@ class MVS():
 
         #prob(q|s)
         count = {el: 0 for el in X1}
-        prob = {v: {el: [] for el in self.sensitive} for v in X1}
+        prob = {v: {el: [] for el in list(self.sensitive.keys())} for v in X1}
         el_trace = {el: [] for el in X1}
         prob, count, el_trace = self.prob(X1, count, el_trace, prob, i, type)
         # 5: for all q  in Xi where |T(q)| > 0 do
@@ -91,7 +91,7 @@ class MVS():
             w.append([])
             violating.append([])
             count = {tuple(el): 0 for el in X1}
-            prob = {tuple(v): {el: [] for el in self.sensitive} for v in X1}
+            prob = {tuple(v): {el: [] for el in list(self.sensitive.keys())} for v in X1}
             prob, count, el_trace = self.prob(X1, count, el_trace, prob, i, type)
             # 5: for all q  in Xi where |T(q)| > 0 do
             gen = [q for q in X1 if count[tuple(q)] > 0]
@@ -212,7 +212,7 @@ class MVS():
                     violating[0].append([q])
                 else:
                     highestC = 0
-                    for s in self.sensitive:
+                    for s in list(self.sensitive.keys()):
                         if highestC > C:
                             break
                         if prob[q][s] > highestC:
@@ -231,7 +231,7 @@ class MVS():
                     violating[i].append(q)
                 else:
                     highestC = 0
-                    for s in self.sensitive:
+                    for s in list(self.sensitive.keys()):
                         if highestC > C:
                             break
                         if prob[tuple(q)][s] > highestC:
@@ -247,9 +247,9 @@ class MVS():
 
     def prob(self, X1, count, el_trace, prob, i, type):
         if i == 0:
-            for q in X1:
+            for key, value in self.logsimple.items():
                 #creating prob(q|s) and count(q)
-                for key, value in self.logsimple.items():
+                for q in X1:
                     tr = value["trace"]
                     S = value["sensitive"]
                     if q in tr:
@@ -257,8 +257,10 @@ class MVS():
                         el_trace[q].append(value)
                         #listing all values of the different sensitive attributes (key2)
                         for key2, value2 in S.items():
-                            prob[q][key2].append(value2)
+                            if value2 in self.sensitive[key2]:
+                                prob[q][key2].append(value2)
                 #calculating the distribution of s for q
+            for q in X1:
                 if type == "dev":
                     prob = self.sens_dev(prob, q, i)
                 else:
@@ -282,7 +284,8 @@ class MVS():
                                 count[tuple(q)] += 1
                                 newel_trace[tuple(q)].append(value)
                                 for key2, value2 in S.items():
-                                    prob[tuple(q)][key2].append(value2)
+                                    if value2 in self.sensitive[key2]:
+                                        prob[tuple(q)][key2].append(value2)
                     else:
                         for value in el_trace[tuple(q[0:i])]:
                             tr = value["trace"]
@@ -310,7 +313,7 @@ class MVS():
                             tr = value["trace"]
                             S = value["sensitive"]
                             included = True
-                            if q[i] not in tr:
+                            if not all(el in tr for el in q):
                                 included = False
                             if included:
                                 count[tuple(q)] += 1
@@ -322,7 +325,7 @@ class MVS():
                             tr = value["trace"]
                             S = value["sensitive"]
                             included = True
-                            if q[i] not in tr:
+                            if not all(el in tr for el in q):
                                 included = False
                             if included:
                                 count[tuple(q)] += 1
@@ -339,7 +342,7 @@ class MVS():
     def sens_boxplot(self, prob, count, q, i):
         if i == 0:
             # calculating the distribution of s for q
-            for key in self.sensitive:
+            for key in list(self.sensitive.keys()):
                 highest = 0
                 if key in self.cont:
                     freq = {"low": 0, "middle": 0, "high": 0}
@@ -384,7 +387,7 @@ class MVS():
                             highest = newhighest
                 prob[q][key] = highest
         else:
-            for key in self.sensitive:
+            for key in list(self.sensitive.keys()):
                 highest = 0
                 if prob[tuple(q)][key] == []:
                     prob[tuple(q)][key] = 0
@@ -436,7 +439,7 @@ class MVS():
     def sens_dev(self, prob, q, i):
         if i == 0:
             # calculating the distribution of s for q
-            for key in self.sensitive:
+            for key in list(self.sensitive.keys()):
                 freq = {v: 0 for v in prob[q][key]}
                 for item in prob[q][key]:
                     # continious variables are handled with standard deviation
@@ -465,7 +468,7 @@ class MVS():
                         highest = newhighest
                 prob[q][key] = highest
         else:
-            for key in self.sensitive:
+            for key in list(self.sensitive.keys()):
                 freq = {v: 0 for v in prob[tuple(q)][key]}
                 for item in prob[tuple(q)][key]:
                     # continious variables are handled with standard deviation

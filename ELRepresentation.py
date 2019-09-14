@@ -335,7 +335,7 @@ class ELRepresentation():
             trace = simplifiedlog[caseId]["trace"]
             k = 0
             j = 0
-            while j < len(log[i]):
+            while j < len(log[i]) and k < len(trace):
                 if trace[k][0] == log[i][j]["concept:name"]:
                     if spectime == "seconds":
                         if j == 0:
@@ -356,7 +356,6 @@ class ELRepresentation():
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
                                                                             day=1 + days, hour=hours,
                                                                             minute=minutes, second=sectim)
-                            k += 1
                     elif spectime == "minutes":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
@@ -375,8 +374,6 @@ class ELRepresentation():
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
                                                                             day=1 + days, hour=hours,
                                                                             minute=minutes)
-
-                            k += 1
                     elif spectime == "hours":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
@@ -392,11 +389,15 @@ class ELRepresentation():
                             hours = int(sectim / 3600)
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
                                                                             day=1 + days, hour=hours)
-                            k += 1
+                    k += 1
                     j += 1
                 else:
                     log[i]._list.remove(log[i][j])
                     d += 1
+            while j < len(log[i]):
+                log[i]._list.remove(log[i][j])
+                d += 1
+                j += 1
         for i in sorted(deleteLog, reverse=True):
             log._list.remove(log[i])
             d_l += 1
