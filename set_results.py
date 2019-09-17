@@ -3,9 +3,12 @@ from pm4py.objects.log.importer.xes import factory as xes_import_factory
 from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.evaluation.replay_fitness import factory as replay_factory
 from pm4py.evaluation.precision import factory as precision_factory
+from pm4py.statistics.traces.tracelog import case_statistics
+from pm4py.evaluation.replay_fitness import factory as replay_fitness_factory
+from pm4py.algo.conformance.alignments import factory as align_factory
 from ELRepresentation import ELRepresentation
 from MFS import MFS
-from MVS import MVS
+from MVS3 import MVS
 import time
 from multiprocessing import Process, Queue
 import xlsxwriter
@@ -20,17 +23,33 @@ spectime2 = ["hours","minutes"]#["days", "minutes"]
 cont = ['Age']
 contbound2 = [{"Age":1}]#, {"Age": 2}]
 #
-log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")#, parameters={"max_no_traces_to_import": 1000})
-# #print(log)
-net, initial_marking, final_marking = inductive_miner.apply(log)
-fitness = replay_factory.apply(log, net, initial_marking, final_marking)
-precision = precision_factory.apply(log, net, initial_marking, final_marking)
+# log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")#, parameters={"max_no_traces_to_import": 1000})
+# var_with_count = case_statistics.get_variant_statistics(log)
+# activ_or = {""}
+# for el in var_with_count:
+#     el['variant'] = el['variant'].split(',')
+#     activ_or.update(el['variant'])
+# activ_or.remove("")
+# activ_or = len(activ_or)
+# variants_count = sum([1 for x in var_with_count])
+# # #print(log)
+# net, initial_marking, final_marking = inductive_miner.apply(log)
+# fitness = replay_factory.apply(log, net, initial_marking, final_marking)
+# precision = precision_factory.apply(log, net, initial_marking, final_marking)
+# alignments = align_factory.apply_log(log, net, initial_marking, final_marking)
+# log_fitness = replay_fitness_factory.evaluate(alignments, variant="alignments")
 workbook2 = xlsxwriter.Workbook('resultsset2.xlsx')
-worksheet2 = workbook2.add_worksheet("original")
-worksheet2.write_string(0,0, "fitness")
-worksheet2.write_string(0,1, "precision")
-worksheet2.write_number(1,0,fitness["log_fitness"])
-worksheet2.write_number(1,1,precision)
+# worksheet2 = workbook2.add_worksheet("original")
+# worksheet2.write_string(0,0, "fitness")
+# worksheet2.write_string(0,1, "precision")
+# worksheet2.write_number(1,0,fitness["log_fitness"])
+# worksheet2.write_number(1,1,precision)
+# worksheet2.write_string(0,2, "variants")
+# worksheet2.write_number(1,2,variants_count)
+# worksheet2.write_string(0,3, "activities")
+# worksheet2.write_number(1,3,activ_or)
+# worksheet2.write_string(0,4,"alignment fitness")
+# worksheet2.write_number(1,4,log_fitness["percFitTraces"])
 worksheet2 = workbook2.add_worksheet("set")
 worksheet2.write_string(0,0, "L")
 worksheet2.write_string(0,1, "K")
@@ -45,19 +64,22 @@ worksheet2.write_string(0,9, "deleted elements")
 worksheet2.write_string(0,10, "deleted traces")
 worksheet2.write_string(0,11, "time")
 worksheet2.write_string(0,12, "error")
+worksheet2.write_string(0,13, "variants")
+worksheet2.write_string(0,14, "activities")
+worksheet2.write_string(0,15,"alignment fitness")
 
 
 
 mfs = MFS()
 
 
-def set(l, k, c, k2, l1, l2, d_set, d_l_set, fitness_set, precision_set, spec):
+def set1(l, k, c, k2, l1, l2, d_set, d_l_set, fitness_set, precision_set, spec,fit_al,activ,variants):
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     repres = ELRepresentation(log)
     logsimple_set, T_set, sensitives_set = repres.simplify_LKC_without_time_set(sensitive)
     frequent_items_set = mfs.frequent_set_miner(T_set, k2)
     print("frequent set", "\n", len(frequent_items_set))
-    mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set=True)
+    mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set1=True)
     violating_set = mvs.mvs(l, k, c)
     print("violating set:", "\n", len(violating_set))
     l1.put(len(frequent_items_set))
@@ -71,14 +93,25 @@ def set(l, k, c, k2, l1, l2, d_set, d_l_set, fitness_set, precision_set, spec):
     net_set, initial_marking_set, final_marking_set = inductive_miner.apply(log_set)
     fitness_set.put(replay_factory.apply(log, net_set, initial_marking_set, final_marking_set)["log_fitness"])
     precision_set.put(precision_factory.apply(log, net_set, initial_marking_set, final_marking_set))
+    alignments = align_factory.apply_log(log, net_set, initial_marking_set, final_marking_set)
+    log_fitness = replay_fitness_factory.evaluate(alignments, variant="alignments")
+    fit_al.put(log_fitness["percFitTraces"])
+    var_with_count = case_statistics.get_variant_statistics(log_set)
+    activ_time = {""}
+    for el in var_with_count:
+        el['variant'] = el['variant'].split(',')
+        activ_time.update(el['variant'])
+    activ_time.remove("")
+    activ.put(len(activ_time))
+    variants.put(sum([1 for x in var_with_count]))
 
-def set_dev(l, k, c, k2, l1, l2, d_set, d_l_set, fitness_set, precision_set,spec,contbound):
+def set_dev(l, k, c, k2, l1, l2, d_set, d_l_set, fitness_set, precision_set,spec,contbound,fit_al,activ,variants):
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     repres = ELRepresentation(log)
     logsimple_set, T_set, sensitives_set = repres.simplify_LKC_without_time_set(sensitive)
     frequent_items_set = mfs.frequent_set_miner(T_set, k2)
     print("frequent set", "\n", len(frequent_items_set))
-    mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set=True)
+    mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set1=True)
     violating_set = mvs.mvs(l, k, c,type="dev",contbound=contbound)
     print("violating set:", "\n", len(violating_set))
     l1.put(len(frequent_items_set))
@@ -92,6 +125,17 @@ def set_dev(l, k, c, k2, l1, l2, d_set, d_l_set, fitness_set, precision_set,spec
     net_set, initial_marking_set, final_marking_set = inductive_miner.apply(log_set)
     fitness_set.put(replay_factory.apply(log, net_set, initial_marking_set, final_marking_set)["log_fitness"])
     precision_set.put(precision_factory.apply(log, net_set, initial_marking_set, final_marking_set))
+    alignments = align_factory.apply_log(log, net_set, initial_marking_set, final_marking_set)
+    log_fitness = replay_fitness_factory.evaluate(alignments, variant="alignments")
+    fit_al.put(log_fitness["percFitTraces"])
+    var_with_count = case_statistics.get_variant_statistics(log_set)
+    activ_time = {""}
+    for el in var_with_count:
+        el['variant'] = el['variant'].split(',')
+        activ_time.update(el['variant'])
+    activ_time.remove("")
+    activ.put(len(activ_time))
+    variants.put(sum([1 for x in var_with_count]))
 
 
 
@@ -120,8 +164,11 @@ if __name__ == '__main__':
                             d_l_set = Queue()
                             fitness_set = Queue()
                             precision_set = Queue()
-                            p = Process(target=set, name="set", args=(l,k,c,k2,l1,l2,d_set,d_l_set,fitness_set,
-                                                                      precision_set,spec))
+                            fit_al = Queue()
+                            activ = Queue()
+                            variants = Queue()
+                            p = Process(target=set1, name="set1", args=(l,k,c,k2,l1,l2,d_set,d_l_set,fitness_set,
+                                                                      precision_set,spec,fit_al,activ,variants))
                             p.start()
                             # Wait a maximum of 10 seconds for foo
                             # Usage: join([timeout in seconds])
@@ -140,6 +187,9 @@ if __name__ == '__main__':
                                 l2.put(-1)
                                 d_set.put(-1)
                                 d_l_set.put(-1)
+                                fit_al.put(-1)
+                                activ.put(-1)
+                                variants.put(-1)
 
 
                             worksheet2.write_number(i, 7, l1.get())
@@ -150,6 +200,9 @@ if __name__ == '__main__':
                             #print("set", "\n", "fitness", fitness_set.get(), "\n", "precision", precision_set.get())
                             worksheet2.write_number(i, 5, fitness_set.get())
                             worksheet2.write_number(i, 6, precision_set.get())
+                            worksheet2.write_number(i, 13, variants.get())
+                            worksheet2.write_number(i, 14, activ.get())
+                            worksheet2.write_number(i, 15, fit_al.get())
                             finish1 = time.time()
                             t = finish1 - start
                             worksheet2.write_number(i, 11, t)
@@ -175,6 +228,9 @@ if __name__ == '__main__':
     worksheet.write_string(0, 11, "deleted traces")
     worksheet.write_string(0, 12, "time")
     worksheet.write_string(0, 13, "error")
+    worksheet.write_string(0, 14, "variants")
+    worksheet.write_string(0, 15, "activities")
+    worksheet.write_string(0, 16, "alignment fitness")
 
 
 
@@ -201,9 +257,13 @@ if __name__ == '__main__':
                                 d_l_set = Queue()
                                 fitness_set = Queue()
                                 precision_set = Queue()
+                                variants = Queue()
+                                fit_al = Queue()
+                                activ = Queue()
                                 p = Process(target=set_dev, name="set_dev", args=(l, k, c, k2, l1, l2, d_set,
                                                                                   d_l_set, fitness_set,
-                                                                                  precision_set,spec,contbound))
+                                                                                  precision_set,spec,contbound,fit_al,
+                                                                                  activ,variants))
                                 p.start()
                                 # Wait a maximum of 10 seconds for foo
                                 # Usage: join([timeout in seconds])
@@ -222,6 +282,9 @@ if __name__ == '__main__':
                                     l2.put(-1)
                                     d_set.put(-1)
                                     d_l_set.put(-1)
+                                    variants.put(-1)
+                                    fit_al.put(-1)
+                                    activ.put(-1)
 
                                 worksheet.write_number(i, 8, l1.get())
                                 worksheet.write_number(i, 9, l2.get())
@@ -230,6 +293,9 @@ if __name__ == '__main__':
                                 #print("set", "\n", "fitness", fitness_set.get(), "\n", "precision", precision_set.get())
                                 worksheet.write_number(i, 6, fitness_set.get())
                                 worksheet.write_number(i, 7, precision_set.get())
+                                worksheet.write_number(i, 14, variants.get())
+                                worksheet.write_number(i, 15, activ.get())
+                                worksheet.write_number(i, 16, fit_al.get())
                                 finish1 = time.time()
                                 t = finish1 - start
                                 worksheet.write_number(i, 12 , t)

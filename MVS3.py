@@ -8,7 +8,7 @@ import numpy as np
 import operator
 class MVS():
 
-    def __init__(self, T, logsimple, sensitive, cont, sensitives, count=False, set1=False):
+    def __init__(self, T, logsimple, sensitive, cont, sensitives, count=False, set1=False, dict_safe={}):
         self.T = T
         self.logsimple = logsimple
         self.sensitive = sensitive
@@ -19,79 +19,93 @@ class MVS():
         self.set = set1
         self.allEl = []
         self.contbound = {}
+        self.dict_safe = dict_safe
 
 
     def mvs(self, L, K, C, type=None, contbound=None):
-        i = 0
+        i = L-1
+        if self.count:
+            self.allEl = list(set([item for sublist in self.T for item in sublist])).copy()
+        w = [[] for i in range(0,i+1)]
+        violating = [[] for i in range(0,i+1)]
+        while i > 0:
+            if self.dict_safe[L][K][C][type]["w"] != []:
+                w[i] = self.dict_safe[L][K][C][type]["w"]
+                X1 = self.dict_safe[L][K][C][type]["x"]
+                violating[i] = self.dict_safe[L][K][C][type]["w"]
+                break
+            i -= 1
+
         if type == "dev":
             self.contbound = contbound
         # 1: X1 <- set of all distinct pairs in T;
-        flat_list = [item for sublist in self.T for item in sublist]
-        X1 = list(set(flat_list))
-        if self.count:
-            self.allEl = X1.copy()
-            X1 = [item for item in X1 if item[1] == 1]
-        # 2: i = 1;
-        #count(q)
+        if i == 0:
+            flat_list = [item for sublist in self.T for item in sublist]
+            X1 = list(set(flat_list))
+            if self.count:
+                self.allEl = X1.copy()
+                X1 = [item for item in X1 if item[1] == 1]
+            # 2: i = 1;
+            #count(q)
 
-        #prob(q|s)
-        count = {el: 0 for el in X1}
-        prob = {v: {el: [] for el in list(self.sensitive.keys())} for v in X1}
-        el_trace = {el: [] for el in X1}
-        prob, count, el_trace = self.prob(X1, count, el_trace, prob, i, type)
-        # 5: for all q  in Xi where |T(q)| > 0 do
-        gen = [q for q in X1 if count[tuple(q)] > 0]
-        violating = [[]]
-        w = [[]]
-        w, violating = self.w_violating(gen, count, violating, prob, K, C, w, i)
-        # 10: end if
-        # 11: end for
-        w[0].sort(key=operator.itemgetter(1))
-        X1.clear()
-        # 12: Xi+1 ! Wi ! Wi;
-        if not self.set and not self.count:
-            while len(w[0]) > 1:
-                candidate = w[0].pop(0)
-                for comb in w[0]:
-                    if comb[0][1] >= candidate[0][1]:
-                        X1.append([candidate, comb])
-        elif not self.set and self.count:
-            while len(w[0]) > 1:
-                candidate = w[0].pop(0)
-                for comb in self.allEl:
-                    if comb[0] != candidate[0] and comb[1] == 1:
-                        X1.append([candidate, comb])
-                    elif comb[1] == candidate[1] - 1:
-                        X1.append([candidate, comb])
-        elif self.set and not self.count:
-            while len(w[0]) > 1:
-                candidate = w[0].pop(0)
-                for comb in w[0]:
-                    if sorted([candidate, comb]) not in X1:
-                        X1.append(sorted([candidate, comb]))
-        elif self.set and self.count:
-            while len(w[0]) > 1:
-                candidate = w[0].pop(0)
-                for comb in self.allEl:
-                    if comb[0] != candidate[0] and comb[1] == 1:
+            #prob(q|s)
+            count = {el: 0 for el in X1}
+            prob = {v: {el: [] for el in self.sensitive} for v in X1}
+            el_trace = {el: [] for el in X1}
+            prob, count, el_trace = self.prob(X1, count, el_trace, prob, i, type)
+            # 5: for all q  in Xi where |T(q)| > 0 do
+            gen = [q for q in X1 if count[tuple(q)] > 0]
+            violating = [[]]
+            w = [[]]
+            w, violating = self.w_violating(gen, count, violating, prob, K, C, w, i)
+            # 10: end if
+            # 11: end for
+            w[0].sort(key=operator.itemgetter(1))
+            X1.clear()
+            # 12: Xi+1 ! Wi ! Wi;
+            if not self.set and not self.count:
+                while len(w[0]) > 1:
+                    candidate = w[0].pop(0)
+                    for comb in w[0]:
+                        if comb[0][1] >= candidate[0][1]:
+                            X1.append([candidate, comb])
+            elif not self.set and self.count:
+                while len(w[0]) > 1:
+                    candidate = w[0].pop(0)
+                    for comb in self.allEl:
+                        if comb[0] != candidate[0] and comb[1] == 1:
+                            X1.append([candidate, comb])
+                        elif comb[1] == candidate[1] - 1:
+                            X1.append([candidate, comb])
+            elif self.set and not self.count:
+                while len(w[0]) > 1:
+                    candidate = w[0].pop(0)
+                    for comb in w[0]:
                         if sorted([candidate, comb]) not in X1:
                             X1.append(sorted([candidate, comb]))
-                    elif comb[0] == candidate[0] and comb[1] == candidate[1] + 1:
-                        if sorted([candidate, comb]) not in X1:
-                            X1.append(sorted([candidate, comb]))
-        # 13: for %q & Xi+1 do
-        # should not be necessary for first round
-        # 15: Remove q from Xi+1;
-        # 16: end if
-        # 17: end for
-        i = 1
+            elif self.set and self.count:
+                while len(w[0]) > 1:
+                    candidate = w[0].pop(0)
+                    for comb in self.allEl:
+                        if comb[0] != candidate[0] and comb[1] == 1:
+                            if sorted([candidate, comb]) not in X1:
+                                X1.append(sorted([candidate, comb]))
+                        elif comb[0] == candidate[0] and comb[1] == candidate[1] + 1:
+                            if sorted([candidate, comb]) not in X1:
+                                X1.append(sorted([candidate, comb]))
+            # 13: for %q & Xi+1 do
+            # should not be necessary for first round
+            # 15: Remove q from Xi+1;
+            # 16: end if
+            # 17: end for
+            i = 1
         # 3: while i <= L or Xi not empty do
         while i < L and len(X1) > 0:
             # 4: Scan T to compute |T(q)| and P(s|q), for all q in Xi, for all s in S;
             w.append([])
             violating.append([])
             count = {tuple(el): 0 for el in X1}
-            prob = {tuple(v): {el: [] for el in list(self.sensitive.keys())} for v in X1}
+            prob = {tuple(v): {el: [] for el in self.sensitive} for v in X1}
             prob, count, el_trace = self.prob(X1, count, el_trace, prob, i, type)
             # 5: for all q  in Xi where |T(q)| > 0 do
             gen = [q for q in X1 if count[tuple(q)] > 0]
@@ -102,12 +116,15 @@ class MVS():
             # 12: Xi+1 ! Wi ! Wi;
             X1 = self.w_create(w, i, X1, violating)
             # 18: i++;
-            w[i - 1] = []
             i += 1
         # 19: end while
         # 20: return V (T) = V1 ' · · · ' Vi−1;
+        self.dict_safe[i][K][C][type]["w"] = w[i-1]
+        self.dict_safe[i][K][C][type]["x"] = X1
+
         violatingConj = [item for sublist in violating for item in sublist]
-        return violatingConj
+        self.dict_safe[i][K][C][type]["v"] = violatingConj
+        return violatingConj, self.dict_safe
 
 
     def w_create(self, w, i, X1, violating):
@@ -212,7 +229,7 @@ class MVS():
                     violating[0].append([q])
                 else:
                     highestC = 0
-                    for s in list(self.sensitive.keys()):
+                    for s in self.sensitive:
                         if highestC > C:
                             break
                         if prob[q][s] > highestC:
@@ -231,7 +248,7 @@ class MVS():
                     violating[i].append(q)
                 else:
                     highestC = 0
-                    for s in list(self.sensitive.keys()):
+                    for s in self.sensitive:
                         if highestC > C:
                             break
                         if prob[tuple(q)][s] > highestC:
@@ -247,9 +264,9 @@ class MVS():
 
     def prob(self, X1, count, el_trace, prob, i, type):
         if i == 0:
-            for key, value in self.logsimple.items():
+            for q in X1:
                 #creating prob(q|s) and count(q)
-                for q in X1:
+                for key, value in self.logsimple.items():
                     tr = value["trace"]
                     S = value["sensitive"]
                     if q in tr:
@@ -257,10 +274,8 @@ class MVS():
                         el_trace[q].append(value)
                         #listing all values of the different sensitive attributes (key2)
                         for key2, value2 in S.items():
-                            if value2 in self.sensitive[key2]:
-                                prob[q][key2].append(value2)
+                            prob[q][key2].append(value2)
                 #calculating the distribution of s for q
-            for q in X1:
                 if type == "dev":
                     prob = self.sens_dev(prob, q, i)
                 else:
@@ -284,8 +299,7 @@ class MVS():
                                 count[tuple(q)] += 1
                                 newel_trace[tuple(q)].append(value)
                                 for key2, value2 in S.items():
-                                    if value2 in self.sensitive[key2]:
-                                        prob[tuple(q)][key2].append(value2)
+                                    prob[tuple(q)][key2].append(value2)
                     else:
                         for value in el_trace[tuple(q[0:i])]:
                             tr = value["trace"]
@@ -301,8 +315,7 @@ class MVS():
                                 count[tuple(q)] += 1
                                 newel_trace[tuple(q)].append(value)
                                 for key2, value2 in S.items():
-                                    if value2 in self.sensitive[key2]:
-                                        prob[tuple(q)][key2].append(value2)
+                                    prob[tuple(q)][key2].append(value2)
                     if type == "dev":
                         prob = self.sens_dev(prob, q, i)
                     else:
@@ -314,34 +327,25 @@ class MVS():
                             tr = value["trace"]
                             S = value["sensitive"]
                             included = True
-                            if q == [('d3',1),('e8',1)]:
-                                print(tr)
-                                print(S)
-                            if not all(el in tr for el in q):
+                            if q[i] not in tr:
                                 included = False
-                            if q == [('d3',1),('e8',1)]:
-                                print(tr)
-                                print(S)
-                                print(included)
                             if included:
                                 count[tuple(q)] += 1
                                 newel_trace[tuple(q)].append(value)
                                 for key2, value2 in S.items():
-                                    if value2 in self.sensitive[key2]:
-                                        prob[tuple(q)][key2].append(value2)
+                                    prob[tuple(q)][key2].append(value2)
                     else:
                         for key, value in self.logsimple.items():
                             tr = value["trace"]
                             S = value["sensitive"]
                             included = True
-                            if not all(el in tr for el in q):
+                            if q[i] not in tr:
                                 included = False
                             if included:
                                 count[tuple(q)] += 1
                                 newel_trace[tuple(q)].append(value)
                                 for key2, value2 in S.items():
-                                    if value2 in self.sensitive[key2]:
-                                        prob[tuple(q)][key2].append(value2)
+                                    prob[tuple(q)][key2].append(value2)
                     if type == "dev":
                         prob = self.sens_dev(prob, q, i)
                     else:
@@ -352,7 +356,7 @@ class MVS():
     def sens_boxplot(self, prob, count, q, i):
         if i == 0:
             # calculating the distribution of s for q
-            for key in list(self.sensitive.keys()):
+            for key in self.sensitive:
                 highest = 0
                 if key in self.cont:
                     freq = {"low": 0, "middle": 0, "high": 0}
@@ -397,7 +401,7 @@ class MVS():
                             highest = newhighest
                 prob[q][key] = highest
         else:
-            for key in list(self.sensitive.keys()):
+            for key in self.sensitive:
                 highest = 0
                 if prob[tuple(q)][key] == []:
                     prob[tuple(q)][key] = 0
@@ -449,7 +453,7 @@ class MVS():
     def sens_dev(self, prob, q, i):
         if i == 0:
             # calculating the distribution of s for q
-            for key in list(self.sensitive.keys()):
+            for key in self.sensitive:
                 freq = {v: 0 for v in prob[q][key]}
                 for item in prob[q][key]:
                     # continious variables are handled with standard deviation
@@ -478,7 +482,7 @@ class MVS():
                         highest = newhighest
                 prob[q][key] = highest
         else:
-            for key in list(self.sensitive.keys()):
+            for key in self.sensitive:
                 freq = {v: 0 for v in prob[tuple(q)][key]}
                 for item in prob[tuple(q)][key]:
                     # continious variables are handled with standard deviation

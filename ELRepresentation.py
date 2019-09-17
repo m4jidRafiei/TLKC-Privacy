@@ -64,6 +64,7 @@ class ELRepresentation():
                                            - starttime.replace(hour=0, minute=0, second=0,
                                                                microsecond=0)).total_seconds() \
                                           / 8640
+                            starttime = value
                     # pair[0] = event
                     elif key in concept:
                         pair[0] = value
@@ -76,7 +77,7 @@ class ELRepresentation():
                     # create trace with pairs (event,time)
                     trace.append(tu)
                 # just adding pair if the timestamp is bigger then the one before
-                elif pair[1] < trace[len(trace) - 1][1] or (
+                elif pair[1] < 0 or (
                         pair[0] == trace[len(trace) - 1][0] and pair[1] == trace[len(trace) - 1][1]):
                     bol = False
                     break
