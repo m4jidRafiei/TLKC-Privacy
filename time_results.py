@@ -6,13 +6,13 @@ from pm4py.evaluation.precision import factory as precision_factory
 from pm4py.statistics.traces.tracelog import case_statistics
 from ELRepresentation import ELRepresentation
 from MFS import MFS
-from MVS3 import MVS
+from MVS import MVS
 import time
 from multiprocessing import Process, Queue
 import xlsxwriter
 
 gc.collect()
-timeout = 200
+timeout = 20000
 L = [2, 4]
 C = [ 0.4, 0.8]
 K = [ 40, 80]
@@ -77,7 +77,7 @@ def time2(l, k, c, k2, l1, l2, d_time, d_l_time, fitness_time, precision_time, s
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     repres = ELRepresentation(log)
     logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive, spec)
-    frequent_time = mfs.frequent_seq_activityTime(T, k2 * len(T))
+    frequent_time = mfs.frequent_seq_activityTime(T, k2*len(T))
     print("frequent time", "\n", len(frequent_time))
     mvs = MVS(T, logsimple, sensitive, cont, sensitives)
     violating = mvs.mvs(l, k, c)
@@ -107,7 +107,7 @@ def time_dev(l, k, c, k2, l1, l2, d_time_dev, d_l_time_dev, fitness_time, precis
     log = xes_import_factory.apply("Sepsis Cases - Event Log.xes")
     repres = ELRepresentation(log)
     logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive, spec)
-    frequent_time = mfs.frequent_seq_activityTime(T, k2 * len(T))
+    frequent_time = mfs.frequent_seq_activityTime(T, k2*len(T))
     print("frequent time", "\n", len(frequent_time))
     mvs = MVS(T, logsimple, sensitive, cont, sensitives)
     violating_dev = mvs.mvs(l, k, c, type="dev", contbound=contbound)

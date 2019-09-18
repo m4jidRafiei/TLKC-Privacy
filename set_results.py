@@ -8,7 +8,7 @@ from pm4py.evaluation.replay_fitness import factory as replay_fitness_factory
 from pm4py.algo.conformance.alignments import factory as align_factory
 from ELRepresentation import ELRepresentation
 from MFS import MFS
-from MVS3 import MVS
+from MVS import MVS
 import time
 from multiprocessing import Process, Queue
 import xlsxwriter

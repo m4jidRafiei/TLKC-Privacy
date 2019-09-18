@@ -13,7 +13,7 @@ import time
 from multiprocessing import Process, Manager, Queue
 import xlsxwriter
 gc.collect()
-timeout = 1000
+timeout = 20000
 L = [2, 4]
 C = [ 0.4, 0.8]
 K = [ 40, 80]
@@ -266,14 +266,12 @@ if __name__ == '__main__':
                                 variants = Queue()
                                 activ = Queue()
                                 fit_al = Queue()
-                                dict2 = Manager().Queue()
-                                dict2.put(dict1)
                                 p = Process(target=set_count_dev, name="set_count_dev", args=(l, k, c, k2, l1, l2,
                                                                                               d_set_count, d_l_set_count,
                                                                                               fitness_set_count,
                                                                                               precision_set_count,spec,
                                                                                               contbound,variants,activ,
-                                                                                              fit_al, dict2))
+                                                                                              fit_al))
                                 p.start()
                                 # Wait a maximum of 10 seconds for foo
                                 # Usage: join([timeout in seconds])
@@ -307,7 +305,6 @@ if __name__ == '__main__':
                                 finish1 = time.time()
                                 t = finish1 - start
                                 worksheet.write_number(i, 12 , t)
-                                dict1 = dict2.get_nowait()
                                 worksheet.write_number(i, 14, variants.get())
                                 worksheet.write_number(i, 15, activ.get())
                                 worksheet.write_number(i,16,fit_al.get())
