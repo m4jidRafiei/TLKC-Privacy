@@ -6,7 +6,7 @@
 #Output: violating (list) all minimal violating subtraces
 import numpy as np
 import operator
-class MVS():
+class MVS3():
 
     def __init__(self, T, logsimple, sensitive, cont, sensitives, count=False, set1=False, dict_safe={}):
         self.T = T
@@ -26,13 +26,13 @@ class MVS():
         i = L-1
         if self.count:
             self.allEl = list(set([item for sublist in self.T for item in sublist])).copy()
-        w = [[] for i in range(0,i+1)]
-        violating = [[] for i in range(0,i+1)]
+        w = [[] for i in range(0, i+1)]
+        violating = [[] for i in range(0, i+1)]
         while i > 0:
-            if self.dict_safe[L][K][C][type]["w"] != []:
-                w[i] = self.dict_safe[L][K][C][type]["w"]
-                X1 = self.dict_safe[L][K][C][type]["x"]
-                violating[i] = self.dict_safe[L][K][C][type]["w"]
+            if self.dict_safe[i]["w"] != []:
+                w[i] = self.dict_safe[i]["w"]
+                X1 = self.dict_safe[i]["x"]
+                violating[i] = self.dict_safe[i]["v"]
                 break
             i -= 1
 
@@ -119,11 +119,11 @@ class MVS():
             i += 1
         # 19: end while
         # 20: return V (T) = V1 ' · · · ' Vi−1;
-        self.dict_safe[i][K][C][type]["w"] = w[i-1]
-        self.dict_safe[i][K][C][type]["x"] = X1
+        self.dict_safe[i]["w"] = w[i-1]
+        self.dict_safe[i]["x"] = X1
 
         violatingConj = [item for sublist in violating for item in sublist]
-        self.dict_safe[i][K][C][type]["v"] = violatingConj
+        self.dict_safe[i]["v"] = violatingConj
         return violatingConj, self.dict_safe
 
 
