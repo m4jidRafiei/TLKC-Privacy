@@ -22,8 +22,11 @@ class MVS3():
 
 
     def mvs(self, L, K, C,t, type=None, contbound=None):
-        i = L-1
+        i = L
+        if type == "dev":
+            self.contbound = contbound
         while i > 0:
+            i -= 1
             if contbound is not None:
                 if self.dict_safe[i][K][C][t][contbound["Age"]]["x"] != []:
                     w = self.dict_safe[i][K][C][t][contbound["Age"]]["w"]
@@ -49,7 +52,6 @@ class MVS3():
                 if self.dict_safe[i][K][C][t]["x"] != []:
                     w = self.dict_safe[i][K][C][t]["w"]
                     X1 = self.dict_safe[i][K][C][t]["x"]
-                    print(len(X1))
                     violating = self.dict_safe[i][K][C][t]["v"]
                     count = {tuple(el): 0 for el in X1}
                     prob = {tuple(v): {el: [] for el in self.sensitive} for v in X1}
@@ -60,19 +62,15 @@ class MVS3():
                     prob, count, el_trace = self.prob(X1, count, el_trace, prob, i, type, first=True)
                     gen = [q for q in X1 if count[tuple(q)] > 0]
                     w, violating = self.w_violating(gen, count, violating, prob, K, C, w, i)
-                    print(len(w[i]))
                     # 10: end if
                     # 11: end for
                     X1.clear()
                     # 12: Xi+1 ! Wi ! Wi;
                     X1 = self.w_create(w, i, X1, violating)
-                    print(len(X1))
                     i += 1
                     break
-            i -= 1
 
-        if type == "dev":
-            self.contbound = contbound
+
         # 1: X1 <- set of all distinct pairs in T;
         if i == 0:
             flat_list = [item for sublist in self.T for item in sublist]
@@ -151,10 +149,15 @@ class MVS3():
             i += 1
         # 19: end while
         # 20: return V (T) = V1 ' · · · ' Vi−1;
-        self.dict_safe[i - 1][K][C][t]["w"] = w.copy()
-        self.dict_safe[i - 1][K][C][t]["x"] = X1.copy()
+        if contbound is None:
+            self.dict_safe[i - 1][K][C][t]["w"] = w.copy()
+            self.dict_safe[i - 1][K][C][t]["x"] = X1.copy()
+            self.dict_safe[i - 1][K][C][t]["v"] = violating.copy()
+        else:
+            self.dict_safe[i - 1][K][C][t][contbound["Age"]]["w"] = w.copy()
+            self.dict_safe[i - 1][K][C][t][contbound["Age"]]["x"] = X1.copy()
+            self.dict_safe[i - 1][K][C][t][contbound["Age"]]["v"] = violating.copy()
         violatingConj = [item for sublist in violating for item in sublist]
-        self.dict_safe[i - 1][K][C][t]["v"] = violating.copy()
         return violatingConj, self.dict_safe
 
 
@@ -181,8 +184,8 @@ class MVS3():
                             # 15: Remove q from Xi+1;
                             if len(X1) == 0:
                                 break
+                            included = False
                             for v in violating[i]:
-                                included = False
                                 for j in range(0, i + 1):
                                     if j == 0:
                                         if v[j] in X1[len(X1) - 1]:
@@ -332,12 +335,36 @@ class MVS3():
                 for key, value in self.logsimple.items():
                     tr = value["trace"]
                     S = value["sensitive"]
-                    if all(elem in tr for elem in q):
-                        count[tuple(q)] += 1
-                        el_trace[tuple(q)].append(value)
-                        #listing all values of the different sensitive attributes (key2)
-                        for key2, value2 in S.items():
-                            prob[tuple(q)][key2].append(value2)
+                    if self.set:
+                        if all(elem in tr for elem in q):
+                            count[tuple(q)] += 1
+                            el_trace[tuple(q)].append(value)
+                            #listing all values of the different sensitive attributes (key2)
+                            for key2, value2 in S.items():
+                                prob[tuple(q)][key2].append(value2)
+                    else:
+                        included = False
+                        for j in range(0, len(q)):
+                            if j == 0:
+                                if q[j] in tr:
+                                    index = tr.index(q[j])
+                                else:
+                                    break
+                            else:
+                                if q[j] in tr[index + 1::]:
+                                    index = tr.index(q[j])
+                                    if j == len(q) - 1:
+                                        included = True
+                                        break
+                                else:
+                                    break
+                            # if all(elem in X1[len(X1) - 1] for elem in v):
+                        if included:
+                            count[tuple(q)] += 1
+                            el_trace[tuple(q)].append(value)
+                            # listing all values of the different sensitive attributes (key2)
+                            for key2, value2 in S.items():
+                                prob[tuple(q)][key2].append(value2)
                 #calculating the distribution of s for q
             for q in X1:
                 if type == "dev":
@@ -393,9 +420,8 @@ class MVS3():
                                 S = value["sensitive"]
                                 included = True
                                 if self.count:
+                                    #if something went wrong
                                     if q[i-1] not in tr:
-                                        print(tuple(q[0:i]))
-                                        #print(tr)
                                         included = False
                                     elif q[i] not in tr[tr.index(q[i-1]) + 1::]:
                                         included = False
@@ -418,8 +444,10 @@ class MVS3():
                                 tr = value["trace"]
                                 S = value["sensitive"]
                                 included = True
-                                if q[i] not in tr:
-                                    included = False
+                                for i in range(0,len(q)):
+                                    if q[i] not in tr:
+                                        included = False
+                                        break
                                 if included:
                                     count[tuple(q)] += 1
                                     newel_trace[tuple(q)].append(value.copy())
@@ -429,8 +457,10 @@ class MVS3():
                                 tr = value["trace"]
                                 S = value["sensitive"]
                                 included = True
-                                if q[i] not in tr:
-                                    included = False
+                                for i in range(0, len(q)):
+                                    if q[i] not in tr:
+                                        included = False
+                                        break
                                 if included:
                                     count[tuple(q)] += 1
                                     newel_trace[tuple(q)].append(value.copy())

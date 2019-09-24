@@ -26,5 +26,5 @@ class Results():
         activ1.remove("")
         activ = len(activ1)
         variants = sum([1 for x in var_with_count])
-        return fitness, precision, perc_fit_tr, average_fitness, activ, variants, activ1
-
+        f1_score = 2*precision*fitness/(precision+fitness)
+        return fitness, precision, perc_fit_tr, average_fitness, activ, variants, activ1, f1_score
