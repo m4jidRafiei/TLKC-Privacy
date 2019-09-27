@@ -8,7 +8,6 @@ class ELRepresentation():
     def __init__(self, log):
         self.log = log
 
-
     def simplify_variants(self):
         classifier = ["concept:name"]
         el =[]
@@ -23,10 +22,7 @@ class ELRepresentation():
         counts =[]
         for var in el:
             counts.append(el.count(var))
-
-
         return el, counts
-
 
     def simplify_LKC_with_time(self, sensitive, spectime):
         concept = ["concept:name"]
@@ -109,9 +105,6 @@ class ELRepresentation():
                 # basis for tuple of (event,time)
                 pair = [[], []]
                 for key, value in event.items():
-                    # Filtering out the needed attributes and create new log out of it
-
-                    # simplify timestamp to timeintervalls as precise as spectime
                     if key in concept:
                         pair[0] = value
                     elif key in sensitive:

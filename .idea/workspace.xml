@@ -2,56 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server_version/count1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/count_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/create_xes_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_count_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/time_dev3800.8.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/Annonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Annonymizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/ELRepresentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/ELRepresentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/create_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -297,7 +251,9 @@
       <workItem from="1567598940399" duration="249000" />
       <workItem from="1567599209563" duration="59689000" />
       <workItem from="1568375351083" duration="10527000" />
-      <workItem from="1568455183409" duration="149213000" />
+      <workItem from="1568455183409" duration="149215000" />
+      <workItem from="1569481584906" duration="1949000" />
+      <workItem from="1569521636161" duration="1302000" />
     </task>
     <servers />
   </component>
@@ -389,24 +345,9 @@
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/server_version/Annonymizer.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="197" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/server_version/create_results.py</url>
-          <line>285</line>
+          <line>288</line>
           <option name="timeStamp" value="206" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/server_version/MVS3.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/server_version/MVS3.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="218" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
