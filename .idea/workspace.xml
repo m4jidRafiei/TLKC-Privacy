@@ -2,148 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server_version/original.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/original_results.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results_combined.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev1800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev1800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev2800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev2800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev3800.4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev3800.8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/set1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/todo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.45_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/results/count1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/results/set1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/results/set_count1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/results/time1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.35_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.45_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.35_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.45_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.35_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.45_0.7_minutes.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ELRepresentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/ELRepresentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LKC_Artificial.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/LKC_Artificial.xes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LKC_Artificial2.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/LKC_Artificial2.xes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVS.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MVS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVS2.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MVS2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVS3.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MVS3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotUsed/testscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/NotUsed/testscript.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/Readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sepsis Cases - Event Log.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/Sepsis Cases - Event Log.xes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrajectoryDataAnonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/TrajectoryDataAnonymizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allresults.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/allresults.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/count_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exportedLog.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/exportedLog.xes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files until 17-8/testscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/files until 17-8/testscript.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultscounttest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/resultscounttest.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultstime.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/resultstime.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/runFunction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/Annonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Annonymizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/MVS3.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/MVS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/Results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count_dev1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count_dev1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count_dev2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count_dev2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count_dev3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/count_dev3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/create_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/create_xes_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/create_xes_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/count2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/count2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/count3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/count3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/count_dev3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/count_dev3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set_count1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_count1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set_count3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_count3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set_count_dev3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_count_dev3.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/second run/set_dev1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_dev1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_dev1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_dev1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_dev2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_dev2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_dev3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/set_dev3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_dev1800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_dev1800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_dev2800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_dev2800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_dev3800.4.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_dev3800.8.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/set_count_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/set_count_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/set_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/set_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/time_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/time_results.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -415,7 +284,7 @@
       <workItem from="1568375351083" duration="10527000" />
       <workItem from="1568455183409" duration="149215000" />
       <workItem from="1569481584906" duration="1949000" />
-      <workItem from="1569521636161" duration="8969000" />
+      <workItem from="1569521636161" duration="10065000" />
     </task>
     <servers />
   </component>
