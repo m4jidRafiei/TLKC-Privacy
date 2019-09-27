@@ -24,7 +24,7 @@ K = 5
 C = 0.5
 # Output: Minimal violating sequence V (T )
 
-mvs = MVS.MVS(T,logsimple,sensitive,cont,sensitives)
+mvs = MVS.MVS(T, logsimple, sensitive, cont, sensitives)
 contBound = {'Age': 10}
 violating = mvs.mvs(L,K,C,"dev",contBound)
 

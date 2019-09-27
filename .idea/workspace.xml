@@ -2,10 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server_version/original.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/original_results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/results_combined.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/count_dev3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_count_dev3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/set_dev3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev1800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev1800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev2800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev2800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev3800.4.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/second run/xes/time_dev3800.8.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/set1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/todo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.45_0.7_minutes.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ELRepresentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/ELRepresentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LKC_Artificial.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/LKC_Artificial.xes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LKC_Artificial2.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/LKC_Artificial2.xes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVS.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MVS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVS2.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MVS2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVS3.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/MVS3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotUsed/testscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/NotUsed/testscript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sepsis Cases - Event Log.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/Sepsis Cases - Event Log.xes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrajectoryDataAnonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/TrajectoryDataAnonymizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allresults.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/allresults.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/count_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/count_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exportedLog.xes" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/exportedLog.xes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files until 17-8/testscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/files until 17-8/testscript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultscounttest.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/resultscounttest.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultstime.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/resultstime.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/runFunction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_version/Annonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Annonymizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/ELRepresentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/ELRepresentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/MVS3.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/MVS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/Results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count_dev1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count_dev1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count_dev2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count_dev2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count_dev3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/count_dev3800.8.xes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server_version/create_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/create_xes_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/create_xes_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/count2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/count2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/count3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/count3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/count_dev3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/count_dev3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set_count1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_count1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set_count3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_count3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set_count_dev3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_count_dev3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/second run/set_dev1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/second run/set_dev1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_count_dev3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_dev1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_dev1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_dev2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_dev2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_dev3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/set_dev3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time_dev1800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time_dev1800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time_dev2800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time_dev2800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time_dev3800.4.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_version/time_dev3800.8.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/set_count_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/set_count_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/set_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/set_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/time_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/until 27.9/time_results.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,22 +172,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server_version/create_xes_files.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server_version/original_results.py" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server_version" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\NotUsed" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server_version" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server version" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\running 16.08" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\version2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server_version" />
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\NotUsed" />
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -64,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.xes-files">
+  <component name="RunManager" selected="Python.server">
     <configuration name="count_set_results" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +217,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set_count_results.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\set_count_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +239,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/count_results.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\count_results.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="original" type="PythonConfigurationType" factoryName="Python">
+      <module name="PythonCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/original_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,7 +305,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/set_results.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\set_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +327,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,7 +349,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/time_results.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\time_results.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,7 +371,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/create_xes_files.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\create_xes_files.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,6 +388,7 @@
       <item itemvalue="Python.count_set_results" />
       <item itemvalue="Python.server" />
       <item itemvalue="Python.xes-files" />
+      <item itemvalue="Python.original" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -253,7 +415,7 @@
       <workItem from="1568375351083" duration="10527000" />
       <workItem from="1568455183409" duration="149215000" />
       <workItem from="1569481584906" duration="1949000" />
-      <workItem from="1569521636161" duration="1302000" />
+      <workItem from="1569521636161" duration="8969000" />
     </task>
     <servers />
   </component>
@@ -290,7 +452,7 @@
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MVS.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/MVS.py</url>
           <line>385</line>
           <option name="timeStamp" value="85" />
         </line-breakpoint>
@@ -305,48 +467,48 @@
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/set_results.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/set_results.py</url>
           <line>111</line>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/set_results.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/set_results.py</url>
           <line>76</line>
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ELRepresentation.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/ELRepresentation.py</url>
           <line>80</line>
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MVS2.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/MVS2.py</url>
           <line>310</line>
           <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/time_results.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/time_results.py</url>
           <line>31</line>
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/set_count_results.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/set_count_results.py</url>
           <line>199</line>
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/set_count_results.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/set_count_results.py</url>
           <line>78</line>
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/allresults.py</url>
+          <url>file://$PROJECT_DIR$/until 27.9/allresults.py</url>
           <line>115</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/server_version/create_results.py</url>
-          <line>288</line>
+          <line>269</line>
           <option name="timeStamp" value="206" />
         </line-breakpoint>
       </breakpoints>
@@ -366,7 +528,9 @@
     <SUITE FILE_PATH="coverage/PythonCode$count_set_results.coverage" NAME="count_set_results Coverage Results" MODIFIED="1568721241273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1565775460611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$PythonCode.coverage" NAME="Algorithmalt Coverage Results" MODIFIED="1564751483013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$original.coverage" NAME="original Coverage Results" MODIFIED="1569572039433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
     <SUITE FILE_PATH="coverage/PythonCode$Algorthm5.coverage" NAME="Algorthm5 Coverage Results" MODIFIED="1565116992626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$server.coverage" NAME="server Coverage Results" MODIFIED="1569590412733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
     <SUITE FILE_PATH="coverage/PythonCode$testscript3.coverage" NAME="testscript3 Coverage Results" MODIFIED="1567535703210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$AlgorithmStand3_8.coverage" NAME="Algorithm7 Coverage Results" MODIFIED="1565181592538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$Algorithm.coverage" NAME="Algorithm Coverage Results" MODIFIED="1565775343823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

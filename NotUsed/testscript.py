@@ -33,5 +33,5 @@ for l in L:
                 for spec in spectime:
                     for contb in contbound:
                         print(str(l) + str(c)+ str(k)+ str(k2) + str(spec) + str(contb))
-                        runFunction.runfunction(l,k,c,k2,sensitive, cont, spec, contb)
+                        runFunction.runfunction(l, k, c, k2, sensitive, cont, spec, contb)
                         gc.collect()
