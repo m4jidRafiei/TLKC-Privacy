@@ -1,12 +1,12 @@
 results should be in a result folder
 
-rename mvs3
+rename mvs3 ->done
 
-names of result should correspond to annonymizer
+names of result should correspond to annonymizer -> done
 
 exported logs folder -> export all logs 
 
-add underlines between the names with parameter annonymizer_L_k_c_k'_t
+add underlines between the names with parameter annonymizer_L_k_c_k'_t ->done
 
 get the numbers of activites for all versions
 

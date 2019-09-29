@@ -21,17 +21,17 @@ class MVS():
         self.dict_safe = dict_safe
 
 
-    def mvs(self, L, K, C,t, type=None, contbound=None):
+    def mvs(self, L, K, C,t,k2, type=None, contbound=None):
         i = L
         if type == "dev":
             self.contbound = contbound
         while i > 0:
             i -= 1
             if contbound is not None:
-                if self.dict_safe[i][K][C][t][contbound["Age"]]["x"] != []:
-                    w = self.dict_safe[i][K][C][t][contbound["Age"]]["w"]
-                    X1 = self.dict_safe[i][K][C][t][contbound["Age"]]["x"]
-                    violating = self.dict_safe[i][K][C][t][contbound["Age"]]["v"]
+                if self.dict_safe[i][K][C][t][k2][contbound["Age"]]["x"] != []:
+                    w = self.dict_safe[i][K][C][t][k2][contbound["Age"]]["w"]
+                    X1 = self.dict_safe[i][K][C][t][k2][contbound["Age"]]["x"]
+                    violating = self.dict_safe[i][K][C][t][k2][contbound["Age"]]["v"]
                     count = {tuple(el): 0 for el in X1}
                     prob = {tuple(v): {el: [] for el in self.sensitive} for v in X1}
                     el_trace = {tuple(el): [] for el in X1}
@@ -49,10 +49,10 @@ class MVS():
                     i += 1
                     break
             else:
-                if self.dict_safe[i][K][C][t]["x"] != []:
-                    w = self.dict_safe[i][K][C][t]["w"]
-                    X1 = self.dict_safe[i][K][C][t]["x"]
-                    violating = self.dict_safe[i][K][C][t]["v"]
+                if self.dict_safe[i][K][C][t][k2]["x"] != []:
+                    w = self.dict_safe[i][K][C][t][k2]["w"]
+                    X1 = self.dict_safe[i][K][C][t][k2]["x"]
+                    violating = self.dict_safe[i][K][C][t][k2]["v"]
                     count = {tuple(el): 0 for el in X1}
                     prob = {tuple(v): {el: [] for el in self.sensitive} for v in X1}
                     el_trace = {tuple(el): [] for el in X1}
@@ -150,13 +150,13 @@ class MVS():
         # 19: end while
         # 20: return V (T) = V1 ' · · · ' Vi−1;
         if contbound is None:
-            self.dict_safe[i - 1][K][C][t]["w"] = w.copy()
-            self.dict_safe[i - 1][K][C][t]["x"] = X1.copy()
-            self.dict_safe[i - 1][K][C][t]["v"] = violating.copy()
+            self.dict_safe[i - 1][K][C][t][k2]["w"] = w.copy()
+            self.dict_safe[i - 1][K][C][t][k2]["x"] = X1.copy()
+            self.dict_safe[i - 1][K][C][t][k2]["v"] = violating.copy()
         else:
-            self.dict_safe[i - 1][K][C][t][contbound["Age"]]["w"] = w.copy()
-            self.dict_safe[i - 1][K][C][t][contbound["Age"]]["x"] = X1.copy()
-            self.dict_safe[i - 1][K][C][t][contbound["Age"]]["v"] = violating.copy()
+            self.dict_safe[i - 1][K][C][t][k2][contbound["Age"]]["w"] = w.copy()
+            self.dict_safe[i - 1][K][C][t][k2][contbound["Age"]]["x"] = X1.copy()
+            self.dict_safe[i - 1][K][C][t][k2][contbound["Age"]]["v"] = violating.copy()
         violatingConj = [item for sublist in violating for item in sublist]
         return violatingConj, self.dict_safe
 
@@ -274,7 +274,7 @@ class MVS():
                                         else:
                                             break
                                     else:
-                                        if v[i] in X1[len(X1) - 1][index +1::]:
+                                        if v[j] in X1[len(X1) - 1][index +1::]:
                                             index = X1[len(X1) - 1].index(v[j])
                                             if j == i:
                                                 included = True
@@ -444,8 +444,8 @@ class MVS():
                                 tr = value["trace"]
                                 S = value["sensitive"]
                                 included = True
-                                for i in range(0,len(q)):
-                                    if q[i] not in tr:
+                                for j in range(0,len(q)):
+                                    if q[j] not in tr:
                                         included = False
                                         break
                                 if included:
@@ -457,8 +457,8 @@ class MVS():
                                 tr = value["trace"]
                                 S = value["sensitive"]
                                 included = True
-                                for i in range(0, len(q)):
-                                    if q[i] not in tr:
+                                for j in range(0, len(q)):
+                                    if q[j] not in tr:
                                         included = False
                                         break
                                 if included:
