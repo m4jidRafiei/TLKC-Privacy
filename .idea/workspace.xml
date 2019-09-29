@@ -2,146 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server_version/results/count3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/set3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/set_count3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/time3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_1_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_3_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_150_0.8_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.35_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.35_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.35_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.35_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.8_0.7_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.8_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.8_0.9_days.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_80_0.8_0.9_minutes.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_version/Annonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Annonymizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/MVS.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/MVS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_version/create_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/results/count1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/results/count1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/results/set1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/results/set1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/results/set_count1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/results/set_count1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/results/time1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/results/time1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/todo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/xes/seq_count_1_80_0.45_0.7_minutes.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/xes/seq_time_1_80_0.45_0.7_minutes.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/xes/set_1_80_0.45_0.7_minutes.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.45_0.7_minutes.xes" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -413,7 +276,8 @@
       <workItem from="1568375351083" duration="10527000" />
       <workItem from="1568455183409" duration="149215000" />
       <workItem from="1569481584906" duration="1949000" />
-      <workItem from="1569521636161" duration="31278000" />
+      <workItem from="1569521636161" duration="31538000" />
+      <workItem from="1569774816101" duration="398000" />
     </task>
     <servers />
   </component>

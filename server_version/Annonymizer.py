@@ -17,8 +17,9 @@ class Annonymizer:
         mvs = MVS.MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
         violating_count, dict1 = mvs.mvs(l, k, c, t,k2)
         violating_length = len(violating_count.copy())
+        frequent_length = len(frequent_count.copy())
         sup_count = repres.suppression(violating_count, frequent_count)
-        frequent_length = len(frequent_count)
+
         T_count = repres.suppressT(logsimple_count.copy(), sup_count)
         log_count, d_count, d_l_count = repres.createEventLog(T_count, t)
         return log_count, frequent_length, violating_length, d_count, d_l_count, dict1
@@ -31,7 +32,7 @@ class Annonymizer:
         frequent_time = mfs.frequent_seq_activityTime(T, k2*len(T))
         mvs = MVS.MVS(T, logsimple, sensitive, cont, sensitives, dict_safe= dict1)
         violating_time, dict1 = mvs.mvs(l, k, c,t,k2)
-        frequent_length_time = len(frequent_time)
+        frequent_length_time = len(frequent_time.copy())
         violating_length_time = len(violating_time.copy())
         sup_time = repres.suppression(violating_time, frequent_time)
         T_time = repres.suppressT(logsimple, sup_time)
@@ -45,9 +46,11 @@ class Annonymizer:
         frequent_set = mfs.frequent_set_miner(T_set, k2)
         mvs = MVS.MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set1=True,dict_safe=dict1)
         violating_set,dict1 = mvs.mvs(l, k, c,t,k2)
+        frequent_length_set = len(frequent_set.copy())
+        violating_length_set = len(violating_set.copy())
         sup_set = repres.suppression(violating_set, frequent_set)
         log_set, d_set, d_l_set = repres.suppression2(sup_set, logsimple_set, t)
-        return log_set, len(frequent_set.copy()), len(violating_set.copy()), d_set, d_l_set, dict1
+        return log_set, frequent_length_set, violating_length_set, d_set, d_l_set, dict1
 
     def set_count(self, log, sensitive,cont,t,l,k,c,k2,dict1):
         mfs = MFS.MFS()
@@ -56,7 +59,7 @@ class Annonymizer:
         frequent_set_count = mfs.frequent_set_miner(T_set_count, k2)
         mvs = MVS.MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True, True,dict_safe=dict1)
         violating_set_count, dict1 = mvs.mvs(l, k, c,t,k2)
-        frequent_length_set_count = len(frequent_set_count)
+        frequent_length_set_count = len(frequent_set_count.copy())
         violating_length_set_count = len(violating_set_count.copy())
         sup_set_count = repres.suppression(violating_set_count, frequent_set_count)
         logsimple_set_count, T_set_count, sensitives_set_count = repres.simplify_LKC_without_time_count(sensitive)
