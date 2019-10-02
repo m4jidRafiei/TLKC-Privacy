@@ -1,6 +1,6 @@
-from server_version import ELRepresentation
-from server_version import MFS
-from server_version import MVS
+from ELRepresentation import ELRepresentation
+from MFS import MFS
+from MVS import MVS
 
 
 class Annonymizer:
@@ -9,12 +9,12 @@ class Annonymizer:
         self = self
 
     def seq_count(self, log, sensitive,cont,t,l,k,c,k2,dict1):
-        mfs = MFS.MFS()
-        repres = ELRepresentation.ELRepresentation(log)
+        mfs = MFS()
+        repres = ELRepresentation(log)
         logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(
             sensitive)
         frequent_count = mfs.frequent_seq_activity(T_count, k2 * len(T_count))
-        mvs = MVS.MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
+        mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
         violating_count, dict1 = mvs.mvs(l, k, c, t,k2)
         violating_length = len(violating_count.copy())
         frequent_length = len(frequent_count.copy())
@@ -26,11 +26,11 @@ class Annonymizer:
 
 
     def seq_time(self, log, sensitive,cont,t,l,k,c,k2,dict1):
-        mfs = MFS.MFS()
-        repres = ELRepresentation.ELRepresentation(log)
+        mfs = MFS()
+        repres = ELRepresentation(log)
         logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive, t)
         frequent_time = mfs.frequent_seq_activityTime(T, k2*len(T))
-        mvs = MVS.MVS(T, logsimple, sensitive, cont, sensitives, dict_safe= dict1)
+        mvs = MVS(T, logsimple, sensitive, cont, sensitives, dict_safe= dict1)
         violating_time, dict1 = mvs.mvs(l, k, c,t,k2)
         frequent_length_time = len(frequent_time.copy())
         violating_length_time = len(violating_time.copy())
@@ -40,11 +40,11 @@ class Annonymizer:
         return log_time, frequent_length_time, violating_length_time, d_time, d_l_time, dict1
 
     def set_1(self, log, sensitive,cont,t,l,k,c,k2,dict1):
-        mfs = MFS.MFS()
-        repres = ELRepresentation.ELRepresentation(log)
+        mfs = MFS()
+        repres = ELRepresentation(log)
         logsimple_set, T_set, sensitives_set = repres.simplify_LKC_without_time_set(sensitive)
         frequent_set = mfs.frequent_set_miner(T_set, k2)
-        mvs = MVS.MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set1=True,dict_safe=dict1)
+        mvs = MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set1=True,dict_safe=dict1)
         violating_set,dict1 = mvs.mvs(l, k, c,t,k2)
         frequent_length_set = len(frequent_set.copy())
         violating_length_set = len(violating_set.copy())
@@ -53,11 +53,11 @@ class Annonymizer:
         return log_set, frequent_length_set, violating_length_set, d_set, d_l_set, dict1
 
     def set_count(self, log, sensitive,cont,t,l,k,c,k2,dict1):
-        mfs = MFS.MFS()
-        repres = ELRepresentation.ELRepresentation(log)
+        mfs = MFS()
+        repres = ELRepresentation(log)
         logsimple_set_count, T_set_count, sensitives_set_count = repres.simplify_LKC_without_time_count_set(sensitive)
         frequent_set_count = mfs.frequent_set_miner(T_set_count, k2)
-        mvs = MVS.MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True, True,dict_safe=dict1)
+        mvs = MVS(T_set_count, logsimple_set_count, sensitive, cont, sensitives_set_count, True, True,dict_safe=dict1)
         violating_set_count, dict1 = mvs.mvs(l, k, c,t,k2)
         frequent_length_set_count = len(frequent_set_count.copy())
         violating_length_set_count = len(violating_set_count.copy())

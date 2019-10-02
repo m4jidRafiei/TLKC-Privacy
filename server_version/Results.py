@@ -1,7 +1,7 @@
 from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.evaluation.replay_fitness import factory as replay_factory
 from pm4py.evaluation.precision import factory as precision_factory
-from pm4py.statistics.traces.tracelog import case_statistics
+from pm4py.statistics.traces.log import case_statistics
 from pm4py.evaluation.replay_fitness import factory as replay_fitness_factory
 from pm4py.algo.conformance.alignments import factory as align_factory
 
@@ -26,5 +26,8 @@ class Results():
         activ1.remove("")
         activ = len(activ1)
         variants = sum([1 for x in var_with_count])
-        f1_score = 2*precision*average_fitness/(precision+average_fitness)
+        if(precision+average_fitness != 0):
+            f1_score = 2*precision*average_fitness/(precision+average_fitness)
+        else:
+            f1_score = 0
         return fitness, precision, perc_fit_tr, average_fitness, activ, variants, activ1, f1_score
