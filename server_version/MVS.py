@@ -186,20 +186,21 @@ class MVS():
                                 break
                             included = False
                             for v in violating[i]:
-                                for j in range(0, i + 1):
-                                    if j == 0:
-                                        if v[j] in X1[len(X1) - 1]:
-                                            index = X1[len(X1) - 1].index(v[j])
-                                        else:
-                                            break
-                                    else:
-                                        if v[j] in X1[len(X1) - 1][index + 1::]:
-                                            index = X1[len(X1) - 1].index(v[j])
-                                            if j == i:
-                                                included = True
+                                if all(elem in X1[len(X1) - 1] for elem in v):
+                                    for j in range(0, i + 1):
+                                        if j == 0:
+                                            if v[j] in X1[len(X1) - 1]:
+                                                index = X1[len(X1) - 1].index(v[j])
+                                            else:
                                                 break
                                         else:
-                                            break
+                                            if v[j] in X1[len(X1) - 1][index + 1::]:
+                                                index = X1[len(X1) - 1].index(v[j])
+                                                if j == i:
+                                                    included = True
+                                                    break
+                                            else:
+                                                break
                                 # if all(elem in X1[len(X1) - 1] for elem in v):
                                 if included:
                                     del X1[-1]
@@ -267,20 +268,21 @@ class MVS():
                                 if len(X1) == 0:
                                     break
                                 included = False
-                                for j in range(0,i+1):
-                                    if j == 0:
-                                        if v[j] in X1[len(X1) - 1]:
-                                            index = X1[len(X1) - 1].index(v[j])
-                                        else:
-                                            break
-                                    else:
-                                        if v[j] in X1[len(X1) - 1][index +1::]:
-                                            index = X1[len(X1) - 1].index(v[j])
-                                            if j == i:
-                                                included = True
+                                if all(elem in X1[len(X1) - 1] for elem in v):
+                                    for j in range(0,i+1):
+                                        if j == 0:
+                                            if v[j] in X1[len(X1) - 1]:
+                                                index = X1[len(X1) - 1].index(v[j])
+                                            else:
                                                 break
                                         else:
-                                            break
+                                            if v[j] in X1[len(X1) - 1][index +1::]:
+                                                index = X1[len(X1) - 1].index(v[j])
+                                                if j == i:
+                                                    included = True
+                                                    break
+                                            else:
+                                                break
                                 #if all(elem in X1[len(X1) - 1] for elem in v):
                                 if included:
                                     del X1[-1]
