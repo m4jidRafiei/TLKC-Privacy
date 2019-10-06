@@ -1,6 +1,7 @@
 from ELRepresentation import ELRepresentation
 from MFS import MFS
 from MVS import MVS
+import time
 
 
 class Annonymizer:
@@ -14,12 +15,15 @@ class Annonymizer:
         logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(
             sensitive)
         frequent_count = mfs.frequent_seq_activity(T_count, k2 * len(T_count))
+        freqt = time.time()
         mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
         violating_count, dict1 = mvs.mvs(l, k, c, t,k2)
+        vt = time.time()
+        print("violating")
+        print(vt - freqt)
         violating_length = len(violating_count.copy())
         frequent_length = len(frequent_count.copy())
         sup_count = repres.suppression(violating_count, frequent_count)
-
         T_count = repres.suppressT(logsimple_count.copy(), sup_count)
         log_count, d_count, d_l_count = repres.createEventLog(T_count, t)
         return log_count, frequent_length, violating_length, d_count, d_l_count, dict1

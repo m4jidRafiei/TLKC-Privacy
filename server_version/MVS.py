@@ -97,7 +97,9 @@ class MVS():
                 while len(w[0]) > 1:
                     candidate = w[0].pop(0)
                     for comb in w[0]:
-                        if comb[0][1] >= candidate[0][1]:
+                        if comb[1] > candidate[1]:
+                            X1.append([candidate, comb])
+                        elif comb[0] != candidate[0] and comb[1] == candidate[1]:
                             X1.append([candidate, comb])
             elif not self.set and self.count:
                 while len(w[0]) > 1:
@@ -105,7 +107,7 @@ class MVS():
                     for comb in w[0]:
                         if comb[0] != candidate[0]:
                             X1.append([candidate, comb])
-                        elif comb[1] != candidate[1]:
+                        elif comb[1] > candidate[1]:
                             X1.append([candidate, comb])
             elif self.set and not self.count:
                 while len(w[0]) > 1:
@@ -210,12 +212,7 @@ class MVS():
                 candidate = w[i].pop()
                 for comb in w[i]:
                     add = False
-                    if candidate[0:i - 1] == comb[0:i - 1] and comb[i][0] != candidate[i][0]:
-                        add = True
-                    elif candidate[0:i - 1] == comb[0:i - 1] and comb[i][0] == candidate[i][0] \
-                            and comb[i][1] != candidate[i][1]:
-                        add = True
-                    if add:
+                    if candidate[0:i - 1] == comb[0:i - 1] and comb[i] not in candidate:
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
@@ -238,6 +235,7 @@ class MVS():
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
+                        X1[len(X1) - 1] = sorted(X1[len(X1) - 1])
                         if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
                             del X1[-1]
                         else:
