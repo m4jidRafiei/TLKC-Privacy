@@ -169,9 +169,9 @@ class MVS():
                 candidate = w[i].pop()
                 for comb in w[i]:
                     add = False
-                    if candidate[0:i - 1] == comb[0:i - 1] and comb[i][0] != candidate[i][0]:
+                    if candidate[0:i] == comb[0:i] and comb[i][0] != candidate[i][0]:
                         add = True
-                    elif candidate[0:i - 1] == comb[0:i - 1] and comb[i][0] == candidate[i][0] \
+                    elif candidate[0:i] == comb[0:i] and comb[i][0] == candidate[i][0] \
                             and comb[i][1] > candidate[i][1]:
                         add = True
                     if add:
@@ -211,8 +211,7 @@ class MVS():
             while len(w[i]) > 0:
                 candidate = w[i].pop()
                 for comb in w[i]:
-                    add = False
-                    if candidate[0:i - 1] == comb[0:i - 1] and comb[i] not in candidate:
+                    if candidate[0:i] == comb[0:i] and comb[i] not in candidate:
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
@@ -231,7 +230,7 @@ class MVS():
         elif self.set and not self.count:
             for candidate in w[i]:
                 for comb in w[i]:
-                    if candidate[0:i - 1] == comb[0:i - 1] and comb[i] not in candidate:
+                    if candidate[0:i] == comb[0:i] and comb[i] not in candidate:
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
@@ -252,7 +251,7 @@ class MVS():
                 for comb in w[i]:
                     if comb[i][1] < candidate[i][1]:
                         break
-                    if candidate[0:i - 1] == comb[0:i - 1] and candidate[i][1] <= comb[i][1]:
+                    if candidate[0:i] == comb[0:i] and candidate[i][1] <= comb[i][1]:
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
