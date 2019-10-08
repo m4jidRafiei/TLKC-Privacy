@@ -1,7 +1,7 @@
 from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.evaluation.replay_fitness import factory as replay_factory
 from pm4py.evaluation.precision import factory as precision_factory
-from pm4py.statistics.traces.log import case_statistics
+from pm4py.statistics.traces.tracelog import case_statistics
 from pm4py.evaluation.replay_fitness import factory as replay_fitness_factory
 from pm4py.algo.conformance.alignments import factory as align_factory
 

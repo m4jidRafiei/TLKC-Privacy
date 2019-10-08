@@ -101,6 +101,8 @@ class MVS():
                             X1.append([candidate, comb])
                         elif comb[0] != candidate[0] and comb[1] == candidate[1]:
                             X1.append([candidate, comb])
+                        elif comb[1] < candidate[1]:
+                            X1.append([comb, candidate])
             elif not self.set and self.count:
                 while len(w[0]) > 1:
                     candidate = w[0].pop(0)
@@ -109,6 +111,8 @@ class MVS():
                             X1.append([candidate, comb])
                         elif comb[1] > candidate[1]:
                             X1.append([candidate, comb])
+                        elif comb[1] < candidate[1]:
+                            X1.append([comb, candidate])
             elif self.set and not self.count:
                 while len(w[0]) > 1:
                     candidate = w[0].pop(0)
@@ -169,15 +173,24 @@ class MVS():
                 candidate = w[i].pop()
                 for comb in w[i]:
                     add = False
+                    add2 = False
                     if candidate[0:i] == comb[0:i] and comb[i][0] != candidate[i][0]:
                         add = True
                     elif candidate[0:i] == comb[0:i] and comb[i][0] == candidate[i][0] \
                             and comb[i][1] > candidate[i][1]:
                         add = True
+                    elif candidate[0:i] == comb[0:i] and comb[i][0] == candidate[i][0] \
+                            and comb[i][1] < candidate[i][1]:
+                        add2 = True
                     if add:
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
+                    elif add2:
+                        X1.append([])
+                        X1[len(X1) - 1] = comb[:]
+                        X1[len(X1) - 1].append(candidate[i])
+                    if add or add2:
                         if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
                             del X1[-1]
                         else:
@@ -207,6 +220,7 @@ class MVS():
                                 if included:
                                     del X1[-1]
                                     break
+
         elif self.set and self.count:
             while len(w[i]) > 0:
                 candidate = w[i].pop()
@@ -249,41 +263,45 @@ class MVS():
         else:
             for candidate in w[i]:
                 for comb in w[i]:
-                    if comb[i][1] < candidate[i][1]:
-                        break
-                    if candidate[0:i] == comb[0:i] and candidate[i][1] <= comb[i][1]:
+                    if candidate[0:i] == comb[0:i] and candidate[i][1] > comb[i][1]:
+                        X1.append([])
+                        X1[len(X1) - 1] = comb[:]
+                        X1[len(X1) - 1].append(candidate[i])
+                    elif candidate[0:i] == comb[0:i] and candidate[i][1] <= comb[i][1] and candidate[i][1] != comb[i][1]:
                         X1.append([])
                         X1[len(X1) - 1] = candidate[:]
                         X1[len(X1) - 1].append(comb[i])
-                        if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
-                            del X1[-1]
-                        else:
-                            # 13: for %q & Xi+1 do
-                            # 14: if q is a super sequence of any v & Vi then
-                            # 15: Remove q from Xi+1;
-                            for v in violating[i]:
-                                if len(X1) == 0:
-                                    break
-                                included = False
-                                if all(elem in X1[len(X1) - 1] for elem in v):
-                                    for j in range(0,i+1):
-                                        if j == 0:
-                                            if v[j] in X1[len(X1) - 1]:
-                                                index = X1[len(X1) - 1].index(v[j])
-                                            else:
+                    else:
+                        break
+                    if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
+                        del X1[-1]
+                    else:
+                        # 13: for %q & Xi+1 do
+                        # 14: if q is a super sequence of any v & Vi then
+                        # 15: Remove q from Xi+1;
+                        for v in violating[i]:
+                            if len(X1) == 0:
+                                break
+                            included = False
+                            if all(elem in X1[len(X1) - 1] for elem in v):
+                                for j in range(0, i + 1):
+                                    if j == 0:
+                                        if v[j] in X1[len(X1) - 1]:
+                                            index = X1[len(X1) - 1].index(v[j])
+                                        else:
+                                            break
+                                    else:
+                                        if v[j] in X1[len(X1) - 1][index + 1::]:
+                                            index = X1[len(X1) - 1].index(v[j])
+                                            if j == i:
+                                                included = True
                                                 break
                                         else:
-                                            if v[j] in X1[len(X1) - 1][index +1::]:
-                                                index = X1[len(X1) - 1].index(v[j])
-                                                if j == i:
-                                                    included = True
-                                                    break
-                                            else:
-                                                break
-                                #if all(elem in X1[len(X1) - 1] for elem in v):
-                                if included:
-                                    del X1[-1]
-                                    break
+                                            break
+                            # if all(elem in X1[len(X1) - 1] for elem in v):
+                            if included:
+                                del X1[-1]
+                                break
         return X1
 
     def w_violating(self,gen,count,violating,prob, K,C,w, i):

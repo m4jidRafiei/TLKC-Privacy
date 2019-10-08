@@ -1,22 +1,22 @@
 import gc
 from pm4py.objects.log.importer.xes import factory as xes_import_factory
 from pm4py.objects.log.exporter.xes import factory as xes_exporter
-from Annonymizer import Annonymizer
-from Results import Results
+from server_version import Annonymizer
+from server_version import Results
 import time
 import xlsxwriter
 
 gc.collect()
 
-annonymizer = Annonymizer()
-results = Results()
+annonymizer = Annonymizer.Annonymizer()
+results = Results.Results()
 
 event_log = "Sepsis Cases - Event Log.xes"
 
-L = [1, 2, 4, 8, 16]
-C = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6]
-K = [20, 40, 80, 160]
-K2 = [0.5, 0.6, 0.7, 0.8, 0.9]
+L = [1, 3]#, 4, 8, 16]
+C = [0.1, 0.6]
+K = [ 20, 160]
+K2 = [0.5,0.9]
 sensitive = ['Age', 'Diagnose']
 spectime2 = ["hours", "minutes"]
 cont = ['Age']

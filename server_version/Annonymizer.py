@@ -19,8 +19,6 @@ class Annonymizer:
         mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
         violating_count, dict1 = mvs.mvs(l, k, c, t,k2)
         vt = time.time()
-        print("violating")
-        print(vt - freqt)
         violating_length = len(violating_count.copy())
         frequent_length = len(frequent_count.copy())
         sup_count = repres.suppression(violating_count, frequent_count)

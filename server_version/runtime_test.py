@@ -40,26 +40,26 @@ contbound2 = [{"Age":1}]#, {"Age": 2}]
 #                     print("set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + ":" + str(runtime))
 # gc.collect()
 
-dict1 = {l: {k: {c: {t: {k2: {"w": [],"x": [], "v": []} for k2 in K2} for t in spectime2} for c in C}for k in K}
-             for l in range(0,L[len(L)-1]+1)}
-for l in L:
-    print("Set_count variant for l = " + str(l) + " is running...")
-    i = 0
-    for k2 in K2:
-        for k in K:
-            for c in C:
-                for t in spectime2:
-                    i += 1
-                    start = time.time()
-                    # try:
-                    log = xes_import_factory.apply(event_log)
-                    log_set_count, frequent_length_set_count, violating_length_set_count, d_set_count, d_l_set_count, dict2 = \
-                        annonymizer.set_count(log, sensitive,cont,t,l,k,c,k2,dict1)
-                    finish1 = time.time()
-                    dict1 = dict2
-                    runtime = finish1 - start
-                    print("set_count" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + ":" + str(runtime))
-gc.collect()
+# dict1 = {l: {k: {c: {t: {k2: {"w": [],"x": [], "v": []} for k2 in K2} for t in spectime2} for c in C}for k in K}
+#              for l in range(0,L[len(L)-1]+1)}
+# for l in L:
+#     print("Set_count variant for l = " + str(l) + " is running...")
+#     i = 0
+#     for k2 in K2:
+#         for k in K:
+#             for c in C:
+#                 for t in spectime2:
+#                     i += 1
+#                     start = time.time()
+#                     # try:
+#                     log = xes_import_factory.apply(event_log)
+#                     log_set_count, frequent_length_set_count, violating_length_set_count, d_set_count, d_l_set_count, dict2 = \
+#                         annonymizer.set_count(log, sensitive,cont,t,l,k,c,k2,dict1)
+#                     finish1 = time.time()
+#                     dict1 = dict2
+#                     runtime = finish1 - start
+#                     print("set_count" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + ":" + str(runtime))
+# gc.collect()
 
 dict1 = {l: {k: {c: {t: {k2: {"w": [],"x": [], "v": []} for k2 in K2} for t in spectime2} for c in C}for k in K}
              for l in range(0,L[len(L)-1]+1)}
