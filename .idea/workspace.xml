@@ -2,210 +2,189 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server_version/results/seq_count1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/seq_count3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/seq_time1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/seq_time3.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/results/set_count1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_160_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_160_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_160_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_160_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_20_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_20_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_20_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_1_20_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_160_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_160_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_160_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_160_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_20_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_20_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_20_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_count_3_20_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.1_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_160_0.6_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.1_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_1_20_0.6_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.1_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_160_0.6_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.1_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/seq_time_3_20_0.6_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.1_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.1_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.1_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.2_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.2_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.2_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.2_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.3_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.3_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.3_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.3_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.4_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.4_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.4_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.4_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.5_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.5_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.5_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.5_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.6_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.6_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_160_0.6_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.1_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.2_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.2_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.2_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.2_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.2_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.2_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.3_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.3_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.3_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.3_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.3_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.3_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.4_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.4_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.4_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.4_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.4_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.4_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.5_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.5_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.5_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.5_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.5_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.5_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.9_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_20_0.6_0.9_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.1_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.1_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.1_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.1_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.2_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.2_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.2_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.2_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.2_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.2_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.3_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.3_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.3_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.3_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.3_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.3_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.4_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.4_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.4_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.4_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.4_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.4_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.5_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.5_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.5_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.5_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.5_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.5_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.6_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.6_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.6_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_40_0.6_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.1_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.1_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.1_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.1_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.2_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.2_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.2_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.2_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.2_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.2_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.3_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.3_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.3_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.3_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.3_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.3_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.4_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.4_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.4_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.4_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.4_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.4_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.5_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.5_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.5_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.5_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.5_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.5_0.7_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.6_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.6_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.6_0.6_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.6_0.6_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_1_80_0.6_0.7_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.1_0.5_hours.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.1_0.5_minutes.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/Annonymizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/ELRepresentation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/MFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/MVS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/Results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/Sepsis Cases - Event Log.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/create_results_seq_count.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/create_results_seq_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/create_results_set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/create_results_set_count.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/original.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/original_results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/seq_count1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/seq_count2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/seq_count4.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/set1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/set2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/set4.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/set_count1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/results/set_count2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/runtime_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_1_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_2_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_count_4_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_1_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_1_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_2_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_4_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_1_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_2_20_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/results/set_count3.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.1_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.1_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.6_0.5_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_160_0.6_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.1_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.1_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.6_0.5_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.6_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_version/xes/set_count_3_20_0.6_0.9_minutes.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_version/Annonymizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Annonymizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/MVS.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/MVS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/Results.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/Results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/create_results_seq_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results_seq_count.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/create_results_seq_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results_seq_time.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/create_results_set_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/create_results_set_count.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/runtime_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/runtime_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_version/time_change.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/server_version/time_change.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,23 +213,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server_version/create_results_set_count.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home_version/runtime_test.py" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\home_version" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server_version" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server version" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode" />
+      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\running 16.08" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server_version" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\NotUsed" />
       <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\files until 17-8" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server_version" />
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\server version" />
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode" />
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\running 16.08" />
-      <recent name="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\version2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.runtime_test">
+  <component name="RunManager" selected="Python.time_results">
     <configuration name="count_set_results" type="PythonConfigurationType" factoryName="Python">
       <module name="PythonCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -274,12 +253,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_version" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\set_count_results.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_version/create_results_set_count.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,100 +275,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_version" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\count_results.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="original" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/original_results.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="results_count" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/create_results_seq_count.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="results_time" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/create_results_seq_time.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="reults_set_count" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/create_results_set_count.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_version/create_results_seq_count.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -406,34 +297,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_version" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/runtime_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server_version/create_results.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_version/runtime_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -450,34 +319,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_version" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\set_results.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_version/create_results_set.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -494,34 +341,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/home_version" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\time_results.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="xes-files" type="PythonConfigurationType" factoryName="Python">
-      <module name="PythonCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Miriam Wagner\AppData\Local\Programs\Python\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server_version" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Miriam Wagner\Documents\Masterarbeit\PythonCode\until 27.9\create_xes_files.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/home_version/create_results_seq_time.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -531,18 +356,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.time_results" />
       <item itemvalue="Python.countresults" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.set_results" />
       <item itemvalue="Python.count_set_results" />
-      <item itemvalue="Python.server" />
       <item itemvalue="Python.runtime_test" />
-      <item itemvalue="Python.results_time" />
-      <item itemvalue="Python.reults_set_count" />
-      <item itemvalue="Python.results_count" />
-      <item itemvalue="Python.xes-files" />
-      <item itemvalue="Python.original" />
+      <item itemvalue="Python.time_results" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -573,7 +391,7 @@
       <workItem from="1569774816101" duration="494000" />
       <workItem from="1569843933387" duration="313000" />
       <workItem from="1570028409333" duration="8024000" />
-      <workItem from="1570375931857" duration="12355000" />
+      <workItem from="1570375931857" duration="30505000" />
     </task>
     <servers />
   </component>
@@ -665,13 +483,29 @@
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/server_version/Results.py</url>
-          <option name="timeStamp" value="226" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/server_version/runtime_test.py</url>
           <line>44</line>
           <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/home_version/ELRepresentation.py</url>
+          <line>397</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/home_version/ELRepresentation.py</url>
+          <line>405</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/home_version/create_results_set_count.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/home_version/MVS.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="242" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -690,11 +524,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonCode$results.coverage" NAME="server Coverage Results" MODIFIED="1569356106307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
-    <SUITE FILE_PATH="coverage/PythonCode$countresults.coverage" NAME="countresults Coverage Results" MODIFIED="1568660644609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$xes_files.coverage" NAME="xes-files Coverage Results" MODIFIED="1569390021683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
-    <SUITE FILE_PATH="coverage/PythonCode$count_set_results.coverage" NAME="count_set_results Coverage Results" MODIFIED="1568721241273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$countresults.coverage" NAME="countresults Coverage Results" MODIFIED="1570532737228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home_version" />
     <SUITE FILE_PATH="coverage/PythonCode$reults_set_count.coverage" NAME="reults_set_count Coverage Results" MODIFIED="1570511628533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
-    <SUITE FILE_PATH="coverage/PythonCode$runtime_test.coverage" NAME="runtime_test Coverage Results" MODIFIED="1570523191687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
+    <SUITE FILE_PATH="coverage/PythonCode$count_set_results.coverage" NAME="count_set_results Coverage Results" MODIFIED="1570532716512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home_version" />
+    <SUITE FILE_PATH="coverage/PythonCode$runtime_test.coverage" NAME="runtime_test Coverage Results" MODIFIED="1570562039515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home_version" />
     <SUITE FILE_PATH="coverage/PythonCode$testscript.coverage" NAME="testscript Coverage Results" MODIFIED="1565775460611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$PythonCode.coverage" NAME="Algorithmalt Coverage Results" MODIFIED="1564751483013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$results_time.coverage" NAME="results_time Coverage Results" MODIFIED="1570431936124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
@@ -706,11 +540,11 @@
     <SUITE FILE_PATH="coverage/PythonCode$Algorithm.coverage" NAME="Algorithm Coverage Results" MODIFIED="1565775343823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$Algorithm7.coverage" NAME="Algorithm7 Coverage Results" MODIFIED="1565181728979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$main.coverage" NAME="main Coverage Results" MODIFIED="1565532130715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/version2" />
-    <SUITE FILE_PATH="coverage/PythonCode$time_results.coverage" NAME="time_results Coverage Results" MODIFIED="1568827155897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$results_count.coverage" NAME="results_count Coverage Results" MODIFIED="1570426330152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/server_version" />
+    <SUITE FILE_PATH="coverage/PythonCode$time_results.coverage" NAME="time_results Coverage Results" MODIFIED="1570562278607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home_version" />
     <SUITE FILE_PATH="coverage/PythonCode$testscript2.coverage" NAME="testscript2 Coverage Results" MODIFIED="1565774282574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$testscriptFinal.coverage" NAME="testscriptFinal Coverage Results" MODIFIED="1567535714970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonCode$test.coverage" NAME="test Coverage Results" MODIFIED="1568655733688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonCode$set_results.coverage" NAME="set_results Coverage Results" MODIFIED="1568741241224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonCode$set_results.coverage" NAME="set_results Coverage Results" MODIFIED="1570532746032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/home_version" />
   </component>
 </project>

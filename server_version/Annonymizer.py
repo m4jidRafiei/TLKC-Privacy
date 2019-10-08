@@ -15,10 +15,8 @@ class Annonymizer:
         logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(
             sensitive)
         frequent_count = mfs.frequent_seq_activity(T_count, k2 * len(T_count))
-        freqt = time.time()
         mvs = MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
         violating_count, dict1 = mvs.mvs(l, k, c, t,k2)
-        vt = time.time()
         violating_length = len(violating_count.copy())
         frequent_length = len(frequent_count.copy())
         sup_count = repres.suppression(violating_count, frequent_count)
