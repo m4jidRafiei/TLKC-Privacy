@@ -313,7 +313,8 @@ class ELRepresentation():
     def suppressT(self,logsimple, sup):
         for key in logsimple.keys():
             list_trace = logsimple[key]['trace']
-            for sub in list_trace:
+            for i in range(len(list_trace)-1, -1, -1):
+                sub = list_trace[i]
                 if sub in sup:
                     list_trace.remove(sub)
             logsimple[key]['trace'] = list_trace
@@ -326,6 +327,8 @@ class ELRepresentation():
         d_l = 0
         for i in range(0, len(log)):
             caseId = log[i].attributes["concept:name"]
+            #if caseId == "IA":
+            #    print("tesdt")
             if caseId not in simplifiedlog.keys():
                 deleteLog.append(i)
                 continue
@@ -391,10 +394,11 @@ class ELRepresentation():
                 else:
                     log[i]._list.remove(log[i][j])
                     d += 1
-            while j < len(log[i]):
-                log[i]._list.remove(log[i][j])
-                d += 1
-                j += 1
+            if j < len(log[i]):
+                for k in range(len(log[i])-1, j - 1 ,-1):
+                    log[i]._list.remove(log[i][k])
+                    d += 1
+                    j += 1
             if len(log[i]) == 0:
                 deleteLog.append(i)
         for i in sorted(deleteLog, reverse=True):

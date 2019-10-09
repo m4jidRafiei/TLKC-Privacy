@@ -1,6 +1,7 @@
 import gc
 from pm4py.objects.log.importer.xes import factory as xes_import_factory
 from pm4py.objects.log.exporter.xes import factory as xes_exporter
+from pm4py.statistics.traces.tracelog import case_statistics
 from home_version import Annonymizer
 from home_version import Results
 import time

@@ -59,7 +59,6 @@ class MVS():
             X1 = list(set(flat_list))
             # 2: i = 1;
             #count(q)
-
             #prob(q|s)
             count = {el: 0 for el in X1}
             prob = {v: {el: [] for el in self.sensitive} for v in X1}
