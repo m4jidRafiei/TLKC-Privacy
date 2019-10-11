@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xes/baseline_160-Annonymity.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xes/baseline_20-Annonymity.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xes/baseline_40-Annonymity.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xes/baseline_80-Annonymity.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseline_k-annonymity.py" beforeDir="false" afterPath="$PROJECT_DIR$/baseline_k-annonymity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xes/baseline_0.7-Annonymity.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xes/baseline_0.8-Annonymity.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xes/baseline_0.9-Annonymity.xes" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -265,7 +257,7 @@
       <workItem from="1569843933387" duration="313000" />
       <workItem from="1570028409333" duration="8024000" />
       <workItem from="1570375931857" duration="54218000" />
-      <workItem from="1570712178288" duration="16932000" />
+      <workItem from="1570712178288" duration="19631000" />
     </task>
     <servers />
   </component>
