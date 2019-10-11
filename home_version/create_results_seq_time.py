@@ -12,10 +12,10 @@ annonymizer = Annonymizer.Annonymizer()
 results = Results.Results()
 
 event_log = "Sepsis Cases - Event Log.xes"
-L = [1, 2, 4]#, 8, 16]
-C = [0.1,0.6]#, 0.2, 0.3, 0.4, 0.5, 0.6]
-K = [20,160]#, 40, 80, 160]
-K2 = [0.5,0.9]#, 0.6, 0.7, 0.8, 0.9]
+L = [1, 2, 4, 8, 16]
+C = [0.2, 0.3, 0.4, 0.5]
+K = [20, 40, 80, 160]
+K2 = [0.7, 0.8, 0.9]
 sensitive = ['Age', 'Diagnose']
 spectime2 = ["hours", "minutes"]
 cont = ['Age']
@@ -60,7 +60,6 @@ for l in L:
                     start = time.time()
                     try:
                         log = xes_import_factory.apply(event_log)
-
                         log_time, frequent_length_time, violating_length_time, d_time, d_l_time, dict2 = \
                             annonymizer.seq_time(log, sensitive,cont,t,l,k,c,k2,dict1)
                         finish1 = time.time()

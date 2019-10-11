@@ -16,9 +16,9 @@ event_log = "Sepsis Cases - Event Log.xes"
 L = [1, 2, 4, 8, 16]
 C = [0.2, 0.3, 0.4, 0.5]
 K = [20, 40, 80, 160]
-K2 = [0.5, 0.6, 0.7, 0.8, 0.9]
+K2 = [0.7, 0.8, 0.9]
 sensitive = ['Age', 'Diagnose']
-spectime2 = ["hours", "minutes"]
+spectime2 = ["hours"]
 cont = ['Age']
 
 dict1 = {l: {k: {c: {k2: {"w": [],"x": [], "v": []} for k2 in K2} for c in C}for k in K}

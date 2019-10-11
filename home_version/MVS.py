@@ -22,19 +22,19 @@ class MVS():
 
     def mvs(self, L, K, C,k2,t = None):
         i = L
-        while i > 0:
+        while i > 0 and i < L + 1:
             i -= 1
-            if t is not None:
-                if self.dict_safe[i][K][C][t][k2]["x"] != []:
-                    w = self.dict_safe[i][K][C][t][k2]["w"]
-                    X1 = self.dict_safe[i][K][C][t][k2]["x"]
-                    violating = self.dict_safe[i][K][C][t][k2]["v"]
-            else:
-                if self.dict_safe[i][K][C][k2]["x"] != []:
+            if t is None:
+                if self.dict_safe[i][K][C][k2]["v"] != []:
                     w = self.dict_safe[i][K][C][k2]["w"]
                     X1 = self.dict_safe[i][K][C][k2]["x"]
                     violating = self.dict_safe[i][K][C][k2]["v"]
-            if 'X1' in locals():
+            else:
+                if self.dict_safe[i][K][C][t][k2]["v"] != []:
+                    w = self.dict_safe[i][K][C][t][k2]["w"]
+                    X1 = self.dict_safe[i][K][C][t][k2]["x"]
+                    violating = self.dict_safe[i][K][C][t][k2]["v"]
+            if 'X1' in locals() and len(X1) > 0:
                 count = {tuple(el): 0 for el in X1}
                 prob = {tuple(v): {el: [] for el in self.sensitive} for v in X1}
                 el_trace = {tuple(el): [] for el in X1}
@@ -51,8 +51,8 @@ class MVS():
                 X1 = self.w_create(w, i, X1, violating)
                 i += 1
                 break
-
-
+            elif 'X1' in locals() and len(X1) == 0:
+                i = L+1
         # 1: X1 <- set of all distinct pairs in T;
         if i == 0:
             flat_list = [item for sublist in self.T for item in sublist]
@@ -135,15 +135,14 @@ class MVS():
             i += 1
         # 19: end while
         # 20: return V (T) = V1 ' · · · ' Vi−1;
-        if t is not None:
-            self.dict_safe[i - 1][K][C][t][k2]["w"] = w.copy()
-            self.dict_safe[i - 1][K][C][t][k2]["x"] = X1.copy()
-            self.dict_safe[i - 1][K][C][t][k2]["v"] = violating.copy()
-        else:
+        if t is None:
             self.dict_safe[i - 1][K][C][k2]["w"] = w.copy()
             self.dict_safe[i - 1][K][C][k2]["x"] = X1.copy()
             self.dict_safe[i - 1][K][C][k2]["v"] = violating.copy()
-
+        else:
+            self.dict_safe[i - 1][K][C][t][k2]["w"] = w.copy()
+            self.dict_safe[i - 1][K][C][t][k2]["x"] = X1.copy()
+            self.dict_safe[i - 1][K][C][t][k2]["v"] = violating.copy()
         violatingConj = [item for sublist in violating for item in sublist]
         return violatingConj, self.dict_safe
 
@@ -406,13 +405,12 @@ class MVS():
                                 if included:
                                     count[tuple(q)] += 1
                                     newel_trace[tuple(q)].append(value.copy())
-                                    # if q[1] == ('Admission IC', 1):
-                                    #     print(value)
-                                    #     print(tuple(q))
-                                    #     print(newel_trace[tuple(q)])
                                     for key2, value2 in S.items():
                                         prob[tuple(q)][key2].append(value2)
                         else:
+                            # if tuple(q[0:i]) not in el_trace.keys():
+                            #     print(el_trace)
+                            # else:
                             for value in el_trace[tuple(q[0:i])]:
                                 tr = value["trace"]
                                 S = value["sensitive"]
@@ -462,10 +460,7 @@ class MVS():
                                     for key2, value2 in S.items():
                                         prob[tuple(q)][key2].append(value2)
                     for q in X1:
-                        if type == "dev":
-                            prob = self.sens_dev(prob, q, i)
-                        else:
-                            prob = self.sens_boxplot(prob, count, q, i)
+                        prob = self.sens_boxplot(prob, count, q, i)
                 el_trace = newel_trace.copy()
         return prob, count, el_trace
 
