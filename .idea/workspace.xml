@@ -2,6 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f956a78-d0ae-4482-8d15-7a3a8a4eb1ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home_version/results/seq_time2.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.2_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.2_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.2_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.2_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.3_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.3_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.3_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.3_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.4_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.4_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.4_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.4_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.5_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.5_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.5_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_160_0.5_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.2_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.2_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.2_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.2_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.3_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.3_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.3_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.3_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.4_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.4_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.4_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.4_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.5_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.5_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.5_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_20_0.5_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.2_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.2_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.2_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.2_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.3_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.3_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.3_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.3_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.4_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.4_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.4_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.4_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.5_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.5_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.5_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_40_0.5_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.2_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.2_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.2_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.2_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.3_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.3_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.3_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.3_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.4_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.4_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.4_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.4_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.5_0.8_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.5_0.8_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.5_0.9_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_2_80_0.5_0.9_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_160_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_20_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_40_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.3_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.4_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.4_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/seq_time_4_80_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.5_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_20_0.5_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_40_0.2_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_40_0.2_0.7_minutes.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_40_0.3_0.7_hours.xes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_version/xes/set_count_4_40_0.3_0.7_minutes.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -257,7 +384,7 @@
       <workItem from="1569843933387" duration="313000" />
       <workItem from="1570028409333" duration="8024000" />
       <workItem from="1570375931857" duration="54218000" />
-      <workItem from="1570712178288" duration="19631000" />
+      <workItem from="1570712178288" duration="22733000" />
     </task>
     <servers />
   </component>
