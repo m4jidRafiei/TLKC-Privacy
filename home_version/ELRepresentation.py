@@ -1,6 +1,6 @@
-from collections import Counter
 import operator
 import datetime
+from pm4py.objects.log.log import TraceLog
 
 
 class ELRepresentation():
@@ -305,7 +305,7 @@ class ELRepresentation():
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
-                                                                            hour=0, minute=0)
+                                                                            hour=0, minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
                             years = int(timedif.days / 365)
@@ -318,12 +318,12 @@ class ELRepresentation():
                             minutes = int(sectim / 60)
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
                                                                             day=1 + days, hour=hours,
-                                                                            minute=minutes)
+                                                                            minute=minutes,second=0)
                     elif spectime == "hours":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
-                                                                            hour=0)
+                                                                            hour=0,minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
                             years = int(timedif.days / 365)
@@ -333,7 +333,7 @@ class ELRepresentation():
                             # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
                             hours = int(sectim / 3600)
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
-                                                                            day=1 + days, hour=hours)
+                                                                            day=1 + days, hour=hours,minute=0,second=0)
                     k += 1
                     j += 1
                 else:
@@ -349,7 +349,8 @@ class ELRepresentation():
         for i in sorted(deleteLog, reverse=True):
             log._list.remove(log[i])
             d_l += 1
-        return log, d, d_l
+        log2 = TraceLog([trace for trace in log])
+        return log2, d, d_l
 
     def suppression2(self, sup, simplifiedlog, spectime):
         deleteLog = []
@@ -388,7 +389,7 @@ class ELRepresentation():
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
-                                                                            hour=0, minute=0)
+                                                                            hour=0, minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
                             years = int(timedif.days / 365)
@@ -401,12 +402,12 @@ class ELRepresentation():
                             minutes = int(sectim / 60)
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
                                                                             day=1 + days, hour=hours,
-                                                                            minute=minutes)
+                                                                            minute=minutes,second=0)
                     elif spectime == "hours":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
-                                                                            hour=0)
+                                                                            hour=0,minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
                             years = int(timedif.days / 365)
@@ -416,7 +417,7 @@ class ELRepresentation():
                             # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
                             hours = int(sectim / 3600)
                             log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
-                                                                            day=1 + days, hour=hours)
+                                                                            day=1 + days, hour=hours,minute=0,second=0)
                     j += 1
                 else:
                     log[i]._list.remove(log[i][j])
@@ -430,7 +431,8 @@ class ELRepresentation():
         for i in sorted(deleteLog, reverse=True):
             log._list.remove(log[i])
             d_l += 1
-        return log, d, d_l
+        log2 = TraceLog([trace for trace in log])
+        return log2, d, d_l
 
     def month_translate(self, daystime):
         if daystime <= 30:
