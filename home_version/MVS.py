@@ -49,7 +49,7 @@ class MVS():
                 X1.clear()
                 # 12: Xi+1 ! Wi ! Wi;
                 X1 = self.w_create(w, i, X1, violating)
-                print("X1: " + len(X1))
+                print("X1: " + str(len(X1)))
                 i += 1
                 break
             elif 'X1' in locals() and len(X1) == 0:
@@ -116,7 +116,7 @@ class MVS():
             # 16: end if
             # 17: end for
             i = 1
-            print("X1: " + len(X1))
+            print("X1: " + str(len(X1)))
         # 3: while i <= L or Xi not empty do
         while i < L and len(X1) > 0:
             # 4: Scan T to compute |T(q)| and P(s|q), for all q in Xi, for all s in S;
@@ -133,7 +133,7 @@ class MVS():
             X1.clear()
             # 12: Xi+1 ! Wi ! Wi;
             X1 = self.w_create(w, i, X1, violating)
-            print("X1: " + len(X1))
+            print("X1: " + str(len(X1)))
             # 18: i++;
             i += 1
         # 19: end while

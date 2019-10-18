@@ -54,30 +54,28 @@ class Baseline2:
         index = 0
         i = 0
         j = 0
+        #trace2 is shorter
         while j < len(trace2) and i < len(trace1):
             if trace1[i] != trace2[j]:
-                if trace2[j] in trace1[i::]:
-                    index = trace1.index(trace2[j])
-                    for m in range(i,index+1):
-                        mismatch += 1
-                    i = index + 1
-                    j += 1
-                else:
+                if trace1[i] not in trace2:
                     mismatch += 1
-                    mis_el.append(trace2[j])
-                    j += 1
+                    mis_el.append(trace1[i])
+                    i += 1
+                else:
+                    mismatch = math.inf
+                    i = len(trace1) + 2
+                    j = len(trace2) + 2
             else:
-                i +=1
+                i += 1
                 j += 1
         for i2 in range(i,len(trace1)):
             mismatch += 1
+            mis_el.append(trace1[i2])
         for j2 in range(j, len(trace2)):
             mismatch += 1
-            mis_el.append(trace2[j2])
         return mismatch
 
     def get_variants_with_count(self, logsimple):
-
         dict_variant = {tuple(var): [] for var in [logsimple[key]["trace"] for key in logsimple.keys()]}
         dict_count = {tuple(var): 0 for var in [logsimple[key]["trace"] for key in logsimple.keys()]}
         for key in list(logsimple.keys()):
@@ -103,14 +101,18 @@ class Baseline2:
                     if dist2 < dist:
                         dist = dist2
                         var = v
-                for key in dict_variant[tuple(prob)]:
-                    logsimple[key]["trace"] = var
+                if dist != math.inf:
+                    for key in dict_variant[tuple(prob)]:
+                        logsimple[key]["trace"] = var
+                else:
+                    for key in dict_variant[tuple(prob)]:
+                        del logsimple[key]
             else:
                 for key in dict_variant[tuple(prob)]:
                     del logsimple[key]
             variants, dict_variant, dict_count = self.get_variants_with_count(logsimple)
-            print(len(variants))
             prob = min(dict_count, key=dict_count.get)
+        print(dict_count)
         log, d, d_l = self.createEventLog(logsimple)
         return log, d, d_l
 

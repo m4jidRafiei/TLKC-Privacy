@@ -14,7 +14,7 @@ results = Results.Results()
 
 event_log = "Sepsis Cases - Event Log.xes"
 
-L = [16]
+L = [8]
 C = [0.2,0.3, 0.4, 0.5]
 K = [20, 40, 80, 160]
 K2 = [0.7, 0.8, 0.9]
