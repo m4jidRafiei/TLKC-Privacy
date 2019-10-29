@@ -14,6 +14,10 @@ class Results():
         net, initial_marking, final_marking = inductive_miner.apply(log_annon)
         fitness = replay_factory.apply(log, net, initial_marking, final_marking)["log_fitness"]
         precision = precision_factory.apply(log, net, initial_marking, final_marking)
+        alignments = align_factory.apply_log(log, net, initial_marking, final_marking)
+        log_fitness = replay_fitness_factory.evaluate(alignments, variant="alignments")
+        perc_fit_tr = log_fitness["percFitTraces"]
+        average_fitness = log_fitness["averageFitness"]
         var_with_count = case_statistics.get_variant_statistics(log_annon)
         activ1 = {""}
         for el in var_with_count:
@@ -22,8 +26,8 @@ class Results():
         activ1.remove("")
         activ = len(activ1)
         variants = sum([1 for x in var_with_count])
-        if(precision+fitness != 0):
-            f1_score = 2*precision*fitness/(precision+fitness)
+        if (precision + average_fitness != 0):
+            f1_score = 2 * precision * average_fitness / (precision + average_fitness)
         else:
             f1_score = 0
-        return fitness, precision, activ, variants, activ1, f1_score
+        return fitness, precision, perc_fit_tr, average_fitness, activ, variants, activ1, f1_score

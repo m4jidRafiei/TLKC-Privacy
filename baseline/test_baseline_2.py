@@ -6,7 +6,7 @@ from pm4py.statistics.traces.tracelog import case_statistics
 from pm4py.algo.filtering.tracelog.variants import variants_filter
 
 event_log = "Sepsis Cases - Event Log.xes"
-K = [20, 40, 80, 160]
+K = [10]
 sensitive = ['Age', 'Diagnose']
 spectime2 = ["hours", "minutes"]
 for k in K:
@@ -19,5 +19,5 @@ for k in K:
         print(variants_count)
         print("deleted elements: " + str(d))
         print("deleted traces: " + str(d_l))
-        xes_exporter.export_log(log, "xes/baseline2" + "_" + t + str(k) + "-" + "Annonymity" + ".xes")
+        xes_exporter.export_log(log2, "xes/baseline2" + "_" + t + str(k) + "-" + "Annonymity" + ".xes")
         print("xes/baseline2" + "_" + str(k) + "-" + "Annonymity" + ".xes" + " has been exported!")

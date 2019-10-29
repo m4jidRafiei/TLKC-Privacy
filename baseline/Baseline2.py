@@ -112,7 +112,6 @@ class Baseline2:
                     del logsimple[key]
             variants, dict_variant, dict_count = self.get_variants_with_count(logsimple)
             prob = min(dict_count, key=dict_count.get)
-        print(dict_count)
         log, d, d_l = self.createEventLog(logsimple)
         return log, d, d_l
 

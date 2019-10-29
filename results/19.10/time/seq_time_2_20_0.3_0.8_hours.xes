@@ -1,0 +1,2371 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log>
+  <trace>
+    <string key="concept:name" value="A"/>
+    <event>
+      <float key="CRP" value="21.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="C"/>
+    <event>
+      <float key="CRP" value="27.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="H"/>
+    <event>
+      <float key="CRP" value="144.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="I"/>
+    <event>
+      <float key="CRP" value="9.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="N"/>
+    <event>
+      <float key="CRP" value="153.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="S"/>
+    <event>
+      <float key="CRP" value="332.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="U"/>
+    <event>
+      <float key="Leucocytes" value="17.6"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="V"/>
+    <event>
+      <float key="CRP" value="25.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="DA"/>
+    <event>
+      <float key="Leucocytes" value="15.3"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EA"/>
+    <event>
+      <float key="CRP" value="58.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MA"/>
+    <event>
+      <float key="CRP" value="74.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SA"/>
+    <event>
+      <float key="Leucocytes" value="14.3"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TA"/>
+    <event>
+      <float key="CRP" value="140.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OB"/>
+    <event>
+      <float key="CRP" value="184.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PB"/>
+    <event>
+      <float key="CRP" value="207.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VB"/>
+    <event>
+      <float key="CRP" value="97.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YB"/>
+    <event>
+      <float key="CRP" value="63.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZB"/>
+    <event>
+      <float key="CRP" value="125.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TC"/>
+    <event>
+      <float key="CRP" value="213.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UC"/>
+    <event>
+      <float key="CRP" value="42.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AD"/>
+    <event>
+      <float key="CRP" value="102.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MD"/>
+    <event>
+      <float key="CRP" value="242.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ND"/>
+    <event>
+      <float key="Leucocytes" value="1.4"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QD"/>
+    <event>
+      <float key="CRP" value="197.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AE"/>
+    <event>
+      <float key="CRP" value="68.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GE"/>
+    <event>
+      <float key="CRP" value="133.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HE"/>
+    <event>
+      <float key="Leucocytes" value="17.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LE"/>
+    <event>
+      <float key="CRP" value="147.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UE"/>
+    <event>
+      <float key="CRP" value="18.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VE"/>
+    <event>
+      <float key="CRP" value="63.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AF"/>
+    <event>
+      <float key="Leucocytes" value="6.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EF"/>
+    <event>
+      <float key="CRP" value="6.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IF"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NF"/>
+    <event>
+      <float key="CRP" value="44.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QF"/>
+    <event>
+      <float key="Leucocytes" value="15.5"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TF"/>
+    <event>
+      <float key="Leucocytes" value="8.6"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZF"/>
+    <event>
+      <float key="Leucocytes" value="13.9"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CG"/>
+    <event>
+      <float key="CRP" value="281.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FG"/>
+    <event>
+      <float key="CRP" value="292.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IG"/>
+    <event>
+      <float key="CRP" value="23.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JG"/>
+    <event>
+      <float key="Leucocytes" value="17.8"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LG"/>
+    <event>
+      <float key="CRP" value="234.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PG"/>
+    <event>
+      <float key="CRP" value="78.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BH"/>
+    <event>
+      <float key="Leucocytes" value="12.8"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HH"/>
+    <event>
+      <float key="CRP" value="36.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IH"/>
+    <event>
+      <float key="CRP" value="124.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LH"/>
+    <event>
+      <float key="CRP" value="46.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NH"/>
+    <event>
+      <float key="CRP" value="150.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QH"/>
+    <event>
+      <float key="CRP" value="31.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="DI"/>
+    <event>
+      <float key="CRP" value="27.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UI"/>
+    <event>
+      <float key="CRP" value="10.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZI"/>
+    <event>
+      <float key="CRP" value="143.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CJ"/>
+    <event>
+      <float key="Leucocytes" value="6.5"/>
+      <string key="org:group" value="B"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="Diagnose" value="AB"/>
+      <int key="Age" value="90"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FJ"/>
+    <event>
+      <float key="CRP" value="123.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GJ"/>
+    <event>
+      <float key="CRP" value="55.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LJ"/>
+    <event>
+      <float key="CRP" value="119.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OJ"/>
+    <event>
+      <float key="Leucocytes" value="17.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PJ"/>
+    <event>
+      <float key="CRP" value="214.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TJ"/>
+    <event>
+      <float key="CRP" value="48.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VJ"/>
+    <event>
+      <float key="Leucocytes" value="12.2"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BK"/>
+    <event>
+      <float key="CRP" value="147.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MK"/>
+    <event>
+      <float key="CRP" value="189.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PK"/>
+    <event>
+      <float key="CRP" value="190.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QK"/>
+    <event>
+      <float key="CRP" value="239.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SK"/>
+    <event>
+      <float key="CRP" value="237.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UK"/>
+    <event>
+      <float key="CRP" value="106.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VK"/>
+    <event>
+      <float key="CRP" value="107.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZK"/>
+    <event>
+      <float key="Leucocytes" value="14.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AL"/>
+    <event>
+      <float key="CRP" value="67.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BL"/>
+    <event>
+      <float key="CRP" value="122.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ML"/>
+    <event>
+      <float key="CRP" value="200.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SL"/>
+    <event>
+      <float key="CRP" value="6.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TL"/>
+    <event>
+      <float key="CRP" value="126.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="WL"/>
+    <event>
+      <float key="CRP" value="102.0"/>
+      <string key="org:group" value="B"/>
+      <string key="concept:name" value="CRP"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="Diagnose" value="K"/>
+      <int key="Age" value="65"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZL"/>
+    <event>
+      <float key="CRP" value="104.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CM"/>
+    <event>
+      <float key="Leucocytes" value="9.2"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EM"/>
+    <event>
+      <float key="Leucocytes" value="8.6"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FM"/>
+    <event>
+      <float key="CRP" value="38.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IM"/>
+    <event>
+      <float key="CRP" value="275.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LM"/>
+    <event>
+      <float key="CRP" value="50.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MM"/>
+    <event>
+      <float key="CRP" value="328.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NM"/>
+    <event>
+      <float key="CRP" value="81.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XM"/>
+    <event>
+      <float key="CRP" value="87.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BN"/>
+    <event>
+      <float key="CRP" value="72.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FN"/>
+    <event>
+      <float key="CRP" value="71.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GN"/>
+    <event>
+      <float key="CRP" value="145.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HN"/>
+    <event>
+      <float key="Leucocytes" value="13.8"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MN"/>
+    <event>
+      <float key="Leucocytes" value="7.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TN"/>
+    <event>
+      <float key="CRP" value="72.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="WN"/>
+    <event>
+      <float key="CRP" value="153.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HO"/>
+    <event>
+      <float key="CRP" value="126.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IO"/>
+    <event>
+      <float key="CRP" value="88.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NO"/>
+    <event>
+      <float key="CRP" value="29.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QO"/>
+    <event>
+      <float key="Leucocytes" value="12.3"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TO"/>
+    <event>
+      <float key="CRP" value="133.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VO"/>
+    <event>
+      <float key="CRP" value="59.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="WO"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BP"/>
+    <event>
+      <float key="CRP" value="8.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="RP"/>
+    <event>
+      <float key="CRP" value="119.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CQ"/>
+    <event>
+      <float key="CRP" value="132.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EQ"/>
+    <event>
+      <float key="Leucocytes" value="14.4"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GQ"/>
+    <event>
+      <float key="CRP" value="14.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HQ"/>
+    <event>
+      <float key="Leucocytes" value="20.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IQ"/>
+    <event>
+      <float key="Leucocytes" value="19.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JQ"/>
+    <event>
+      <float key="CRP" value="232.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LQ"/>
+    <event>
+      <float key="CRP" value="26.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OQ"/>
+    <event>
+      <float key="CRP" value="216.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QQ"/>
+    <event>
+      <float key="CRP" value="152.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TQ"/>
+    <event>
+      <float key="CRP" value="10.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UQ"/>
+    <event>
+      <float key="CRP" value="7.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XQ"/>
+    <event>
+      <float key="Leucocytes" value="15.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YQ"/>
+    <event>
+      <float key="CRP" value="58.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZQ"/>
+    <event>
+      <float key="CRP" value="192.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AR"/>
+    <event>
+      <float key="CRP" value="73.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CR"/>
+    <event>
+      <float key="CRP" value="180.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NR"/>
+    <event>
+      <float key="CRP" value="32.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZR"/>
+    <event>
+      <float key="CRP" value="113.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IS"/>
+    <event>
+      <float key="CRP" value="70.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JS"/>
+    <event>
+      <float key="Leucocytes" value="7.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LS"/>
+    <event>
+      <float key="CRP" value="110.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MS"/>
+    <event>
+      <float key="CRP" value="407.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="US"/>
+    <event>
+      <float key="CRP" value="60.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VS"/>
+    <event>
+      <float key="CRP" value="181.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XS"/>
+    <event>
+      <float key="CRP" value="16.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CT"/>
+    <event>
+      <float key="Leucocytes" value="10.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LT"/>
+    <event>
+      <float key="Leucocytes" value="5.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MT"/>
+    <event>
+      <float key="CRP" value="30.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NT"/>
+    <event>
+      <float key="CRP" value="105.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OT"/>
+    <event>
+      <float key="CRP" value="64.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AU"/>
+    <event>
+      <float key="CRP" value="33.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BU"/>
+    <event>
+      <float key="CRP" value="53.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CV"/>
+    <event>
+      <float key="Leucocytes" value="13.3"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HV"/>
+    <event>
+      <float key="CRP" value="116.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MV"/>
+    <event>
+      <float key="CRP" value="20.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UV"/>
+    <event>
+      <float key="CRP" value="59.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CW"/>
+    <event>
+      <float key="Leucocytes" value="15.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="DW"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EW"/>
+    <event>
+      <float key="CRP" value="351.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FW"/>
+    <event>
+      <float key="CRP" value="250.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IW"/>
+    <event>
+      <float key="CRP" value="34.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JW"/>
+    <event>
+      <float key="CRP" value="25.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="KW"/>
+    <event>
+      <float key="CRP" value="8.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LW"/>
+    <event>
+      <float key="CRP" value="137.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MW"/>
+    <event>
+      <float key="CRP" value="12.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TW"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XW"/>
+    <event>
+      <float key="CRP" value="117.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YW"/>
+    <event>
+      <float key="CRP" value="30.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BX"/>
+    <event>
+      <float key="CRP" value="140.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CX"/>
+    <event>
+      <float key="CRP" value="31.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EX"/>
+    <event>
+      <float key="CRP" value="90.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JX"/>
+    <event>
+      <float key="CRP" value="55.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NX"/>
+    <event>
+      <float key="CRP" value="92.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OX"/>
+    <event>
+      <float key="CRP" value="112.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SX"/>
+    <event>
+      <float key="CRP" value="8.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YX"/>
+    <event>
+      <float key="CRP" value="65.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FY"/>
+    <event>
+      <float key="Leucocytes" value="11.2"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GY"/>
+    <event>
+      <float key="CRP" value="209.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OY"/>
+    <event>
+      <float key="CRP" value="129.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="RY"/>
+    <event>
+      <float key="CRP" value="342.0"/>
+      <string key="org:group" value="B"/>
+      <string key="concept:name" value="CRP"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="Diagnose" value="GA"/>
+      <int key="Age" value="50"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="DZ"/>
+    <event>
+      <float key="CRP" value="91.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FZ"/>
+    <event>
+      <float key="CRP" value="119.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HZ"/>
+    <event>
+      <float key="CRP" value="183.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="KZ"/>
+    <event>
+      <float key="CRP" value="280.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MZ"/>
+    <event>
+      <float key="CRP" value="90.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="RZ"/>
+    <event>
+      <float key="CRP" value="9.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZZ"/>
+    <event>
+      <float key="CRP" value="13.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EAA"/>
+    <event>
+      <float key="CRP" value="167.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GAA"/>
+    <event>
+      <float key="CRP" value="128.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XAA"/>
+    <event>
+      <float key="CRP" value="215.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YAA"/>
+    <event>
+      <float key="CRP" value="225.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZAA"/>
+    <event>
+      <float key="CRP" value="5.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ABA"/>
+    <event>
+      <float key="CRP" value="78.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="DBA"/>
+    <event>
+      <float key="CRP" value="14.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IBA"/>
+    <event>
+      <float key="CRP" value="79.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="KBA"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LBA"/>
+    <event>
+      <float key="Leucocytes" value="11.4"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MBA"/>
+    <event>
+      <float key="CRP" value="9.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QBA"/>
+    <event>
+      <float key="Leucocytes" value="17.5"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XBA"/>
+    <event>
+      <float key="Leucocytes" value="4.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BCA"/>
+    <event>
+      <float key="CRP" value="167.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="DCA"/>
+    <event>
+      <float key="CRP" value="62.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ECA"/>
+    <event>
+      <float key="CRP" value="290.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NCA"/>
+    <event>
+      <float key="CRP" value="20.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="RCA"/>
+    <event>
+      <float key="Leucocytes" value="11.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TCA"/>
+    <event>
+      <float key="CRP" value="94.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="WCA"/>
+    <event>
+      <float key="CRP" value="348.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LDA"/>
+    <event>
+      <float key="CRP" value="56.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ODA"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UDA"/>
+    <event>
+      <float key="CRP" value="136.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="VDA"/>
+    <event>
+      <float key="CRP" value="19.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NEA"/>
+    <event>
+      <float key="CRP" value="89.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="KFA"/>
+    <event>
+      <float key="CRP" value="307.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PFA"/>
+    <event>
+      <float key="Leucocytes" value="11.2"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XFA"/>
+    <event>
+      <float key="CRP" value="6.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YFA"/>
+    <event>
+      <float key="Leucocytes" value="12.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AGA"/>
+    <event>
+      <float key="CRP" value="120.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="RGA"/>
+    <event>
+      <float key="CRP" value="93.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YGA"/>
+    <event>
+      <float key="CRP" value="50.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZGA"/>
+    <event>
+      <float key="CRP" value="25.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="AHA"/>
+    <event>
+      <float key="Leucocytes" value="11.9"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="CHA"/>
+    <event>
+      <float key="CRP" value="8.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FHA"/>
+    <event>
+      <float key="Leucocytes" value="10.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="IHA"/>
+    <event>
+      <float key="CRP" value="21.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="LHA"/>
+    <event>
+      <float key="CRP" value="298.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OHA"/>
+    <event>
+      <float key="CRP" value="364.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SHA"/>
+    <event>
+      <float key="CRP" value="274.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YHA"/>
+    <event>
+      <float key="CRP" value="188.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZHA"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BIA"/>
+    <event>
+      <float key="Leucocytes" value="3.2"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EIA"/>
+    <event>
+      <float key="CRP" value="128.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MIA"/>
+    <event>
+      <float key="CRP" value="24.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PIA"/>
+    <event>
+      <float key="CRP" value="146.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="RIA"/>
+    <event>
+      <float key="CRP" value="162.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="UIA"/>
+    <event>
+      <float key="CRP" value="277.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="BJA"/>
+    <event>
+      <float key="Leucocytes" value="15.1"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="FJA"/>
+    <event>
+      <float key="CRP" value="385.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="GJA"/>
+    <event>
+      <float key="CRP" value="323.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JJA"/>
+    <event>
+      <float key="CRP" value="34.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="NJA"/>
+    <event>
+      <float key="Leucocytes" value="8.4"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SJA"/>
+    <event>
+      <float key="CRP" value="281.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="TJA"/>
+    <event>
+      <float key="CRP" value="75.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XJA"/>
+    <event>
+      <float key="Leucocytes" value="9.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZJA"/>
+    <event>
+      <float key="Leucocytes" value="10.5"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EKA"/>
+    <event>
+      <float key="CRP" value="49.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="JKA"/>
+    <event>
+      <float key="CRP" value="159.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="MKA"/>
+    <event>
+      <float key="CRP" value="303.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OKA"/>
+    <event>
+      <float key="CRP" value="66.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="XKA"/>
+    <event>
+      <float key="Leucocytes" value="17.7"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="PLA"/>
+    <event>
+      <float key="CRP" value="120.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="WLA"/>
+    <event>
+      <float key="CRP" value="16.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="YLA"/>
+    <event>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="EMA"/>
+    <event>
+      <float key="Leucocytes" value="6.4"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Leucocytes"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="OMA"/>
+    <event>
+      <float key="CRP" value="365.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="QMA"/>
+    <event>
+      <float key="CRP" value="360.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="SMA"/>
+    <event>
+      <float key="CRP" value="228.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="ZMA"/>
+    <event>
+      <float key="CRP" value="516.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="HNA"/>
+    <event>
+      <float key="CRP" value="573.0"/>
+      <string key="org:group" value="B"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="CRP"/>
+      <date key="time:timestamp" value="1-01-01T00:00:00.000+00:00"/>
+    </event>
+  </trace>
+</log>
