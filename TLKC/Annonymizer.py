@@ -1,6 +1,6 @@
-from home_version import ELRepresentation
-from home_version import MFS
-from home_version import MVS
+from TLKC import ELRepresentation
+from TLKC import MFS
+from TLKC import MVS
 import time
 
 
