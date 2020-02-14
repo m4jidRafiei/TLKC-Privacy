@@ -1,6 +1,6 @@
 import math
 import datetime
-from pm4py.objects.log.log import TraceLog
+from pm4py.objects.log.log import EventLog
 
 
 class Baseline2:
@@ -198,7 +198,7 @@ class Baseline2:
         for i in sorted(deleteLog, reverse=True):
             log._list.remove(log[i])
             d_l += 1
-        log2 = TraceLog([trace for trace in log])
+        log2 = EventLog([trace for trace in log])
         return log2, d, d_l
 
     def month_translate(self, daystime):

@@ -1,8 +1,0 @@
-original
-fitness{'perc_fit_traces': 100.0, 'average_trace_fitness': 1.0, 'log_fitness': 1.0}
- precision0.164739833380401time 
-fitness{'perc_fit_traces': 0.0, 'average_trace_fitness': 0.1699741277928776, 'log_fitness': 0.4524240678245123}
- precision0.2833333333333333
-time 
-fitness{'perc_fit_traces': 0.0, 'average_trace_fitness': 0.1699741277928776, 'log_fitness': 0.4524240678245123}
- precision0.2833333333333333

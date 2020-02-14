@@ -110,6 +110,25 @@ class MVS():
                                 X1.append(sorted([candidate, comb]))
                             elif comb[0] == candidate[0] and comb[1] != candidate[1]:
                                 X1.append(sorted([candidate, comb]))
+
+            # elif self.set and self.count:
+            #     while len(w[0]) > 1:
+            #         candidate = w[0].pop(0)
+            #         for comb in w[0]:
+            #             if sorted([candidate, comb]) not in X1:
+            #                 if comb[0] != candidate[0]:
+            #                     #more checks ----- if the candidate possible based on event log
+            #                     for key,process_instance in self.logsimple.items():
+            #                         if(self.sublist(process_instance['trace'],sorted([candidate, comb]))):
+            #                             X1.append(sorted([candidate, comb]))
+            #                             break
+            #                 elif comb[0] == candidate[0] and comb[1] != candidate[1]:
+            #                     for key,process_instance in self.logsimple.items():
+            #                         if(self.sublist(process_instance['trace'],sorted([candidate, comb]))):
+            #                             X1.append(sorted([candidate, comb]))
+            #                             break
+
+
             # 13: for %q & Xi+1 do
             # should not be necessary for first round
             # 15: Remove q from Xi+1;
@@ -244,6 +263,33 @@ class MVS():
                                     break
                                 if all(elem in X1[len(X1) - 1] for elem in v):
                                     del X1[-1]
+
+        # elif self.set and self.count:
+        #     while len(w[i]) > 0:
+        #         candidate = w[i].pop()
+        #         for comb in w[i]:
+        #             if candidate[0:i] == comb[0:i] and comb[i] not in candidate:
+        #                 new_element = candidate.copy()
+        #                 new_element.append(comb[i])
+        #                 # more checks ----- if the candidate possible based on event log
+        #                 for key, process_instance in self.logsimple.items():
+        #                     if (self.sublist(process_instance['trace'], sorted(new_element))):
+        #                         X1.append([])
+        #                         X1[len(X1) - 1] = candidate[:]
+        #                         X1[len(X1) - 1].append(comb[i])
+        #                         X1[len(X1) - 1] = sorted(X1[len(X1) - 1])
+        #                         if X1[len(X1) - 1] in X1[0:len(X1) - 1]:
+        #                             del X1[-1]
+        #                         else:
+        #                             # 13: for %q & Xi+1 do
+        #                             # 14: if q is a super sequence of any v & Vi then
+        #                             # 15: Remove q from Xi+1;
+        #                             for v in violating[i]:
+        #                                 if len(X1) == 0:
+        #                                     break
+        #                                 if all(elem in X1[len(X1) - 1] for elem in v):
+        #                                     del X1[-1]
+        #                         break
         else:
             while len(w[i]) > 0:
                 candidate = w[i].pop()

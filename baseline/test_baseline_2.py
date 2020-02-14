@@ -2,8 +2,9 @@ from baseline import Baseline2
 from pm4py.objects.log.importer.xes import factory as xes_import_factory
 
 from pm4py.objects.log.exporter.xes import factory as xes_exporter
-from pm4py.statistics.traces.tracelog import case_statistics
-from pm4py.algo.filtering.tracelog.variants import variants_filter
+from pm4py.statistics.traces.log import case_statistics
+from pm4py.algo.filtering.log.variants import variants_filter
+
 
 event_log = "Sepsis Cases - Event Log.xes"
 K = [10]
