@@ -1,0 +1,88 @@
+from pm4py.objects.log.importer.xes import factory as xes_importer_factory
+from pm4py.objects.log.exporter.xes import factory as xes_exporter
+from TLKC import Annonymizer
+import os
+
+
+class privacyPreserving(object):
+    '''
+    Applying privacy preserving technique
+    '''
+
+    def __init__(self, log):
+        '''
+        Constructor
+        '''
+        self.log = xes_importer_factory.apply(log)
+
+    def apply(self, T, L, K, C, K2, sensitive, cont, bk_type, directory):
+
+
+        if bk_type == "relative":
+            dict1 = {
+            l: {k: {c: {t: {k2: {"w": [], "x": [], "v": []} for k2 in K2} for t in T} for c in C} for k in K}
+            for l in range(0, L[len(L) - 1] + 1)}
+        else:
+            dict1 = {l: {k: {c: {k2: {"w": [], "x": [], "v": []} for k2 in K2} for c in C} for k in K}
+                     for l in range(0, L[len(L) - 1] + 1)}
+
+        annonymizer = Annonymizer.Annonymizer()
+
+        for l in L:
+            print("Set variant for l = " + str(l) + " is running...")
+            for k2 in K2:
+                for k in K:
+                    for c in C:
+                        try:
+                            if bk_type == "set":
+                                log2 = {t: None for t in T}
+                                for t in T:
+                                    log2[t] = self.log
+
+                                log_set, frequent_length_set, violating_length_set, d_set, d_l_set, dict2 = \
+                                    annonymizer.set_1(self.log, log2, sensitive, cont, l, k, c, k2, dict1, T)
+                                dict1 = dict2
+                                for t in T:
+                                    privacy_aware_log_path = os.path.join(directory,"set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
+                                    xes_exporter.export_log(log_set[t],privacy_aware_log_path)
+                                    print("set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(
+                                        k2) + "_" + t + ".xes" + " has been exported!")
+                            elif bk_type == "multiset":
+                                log2 = {t: None for t in T}
+                                for t in T:
+                                    log2[t] = self.log
+                                log_set_count, frequent_length_set_count, violating_length_set_count, d_set_count, d_l_set_count, dict2 = \
+                                    annonymizer.set_count(self.log, log2, sensitive, cont, l, k, c, k2, dict1, T)
+                                dict1 = dict2
+                                for t in T:
+                                    privacy_aware_log_path = os.path.join(directory, "multiset" + "_" + str(l) + "_" + str(
+                                        k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
+                                    xes_exporter.export_log(log_set_count[t], privacy_aware_log_path)
+                                    print("multiset" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(
+                                        k2) + "_" + t + ".xes" + " has been exported!")
+                            elif bk_type == "sequence":
+                                log2 = {t: None for t in T}
+                                for t in T:
+                                    log2[t] = self.log
+
+                                log_seq_count, frequent_length_seq_count, violating_length_seq_count, d_seq_count, d_l_seq_count, dict2 = \
+                                    annonymizer.seq_count(self.log, log2, sensitive, cont, l, k, c, k2, dict1, T)
+                                dict1 = dict2
+                                for t in T:
+                                    privacy_aware_log_path = os.path.join(directory, "sequence" + "_" + str(l) + "_" + str(
+                                        k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
+                                    xes_exporter.export_log(log_seq_count[t], privacy_aware_log_path)
+                                    print("sequence" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(
+                                        k2) + "_" + t + ".xes" + " has been exported!")
+                            elif bk_type == "relative":
+                                for t in T:
+                                    log_time, frequent_length_time, violating_length_time, d_time, d_l_time, dict2 = \
+                                        annonymizer.seq_time(self.log, sensitive, cont, t, l, k, c, k2, dict1)
+                                    privacy_aware_log_path = os.path.join(directory, "relative" + "_" + str(l) + "_" + str(
+                                        k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
+                                    xes_exporter.export_log(log_time, privacy_aware_log_path)
+                                    print("relative" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(
+                                        k2) + "_" + t + ".xes" + " has been exported!")
+                                    dict1 = dict2
+                        except Exception as e:
+                            print(e)
