@@ -10,12 +10,12 @@ class privacyPreserving(object):
     Applying privacy preserving technique
     '''
 
-    def __init__(self, log):
+    def __init__(self, log, log_name):
         '''
         Constructor
         '''
         self.log = xes_importer_factory.apply(log)
-        self.log_name = log[:-4]
+        self.log_name = log_name
 
     def apply(self, T, L, K, C, K2, sensitive, cont, bk_type, directory):
 
@@ -49,7 +49,7 @@ class privacyPreserving(object):
                                     anonymizer.set_1(self.log, log2, sensitive, cont, l, k, c, k2, dict1, T)
                                 dict1 = dict2
                                 for t in T:
-                                    privacy_aware_log_path = os.path.join(directory,fixed_name + "set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
+                                    privacy_aware_log_path = os.path.join(directory," " +fixed_name + "set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
                                     xes_exporter.export_log(log_set[t],privacy_aware_log_path)
                                     print(fixed_name + "set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(
                                         k2) + "_" + t + ".xes" + " has been exported!")
