@@ -1,0 +1,20 @@
+README.md
+setup.py
+baseline/Baseline1 (k-annonymity).py
+baseline/Baseline2.py
+baseline/Baseline3.py
+baseline/__init__.py
+baseline/test_baseline_2.py
+p_tlkc_privacy/Anonymizer.py
+p_tlkc_privacy/ELRepresentation.py
+p_tlkc_privacy/MFS.py
+p_tlkc_privacy/MVS.py
+p_tlkc_privacy/__init__.py
+p_tlkc_privacy/privacyPreserving.py
+p_tlkc_privacy/results.py
+p_tlkc_privacy.egg-info/PKG-INFO
+p_tlkc_privacy.egg-info/SOURCES.txt
+p_tlkc_privacy.egg-info/dependency_links.txt
+p_tlkc_privacy.egg-info/pbr.json
+p_tlkc_privacy.egg-info/requires.txt
+p_tlkc_privacy.egg-info/top_level.txt
