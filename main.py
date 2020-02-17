@@ -9,7 +9,7 @@ K2 = [0.7]
 sensitive = ['Diagnose']
 T = ["minutes"]
 cont = []
-bk_type = "multiset" #set, multiset, sequence, relative
+bk_type = "sequence" #set, multiset, sequence, relative
 
 privacy_aware_log_dir = "xes_results"
 
