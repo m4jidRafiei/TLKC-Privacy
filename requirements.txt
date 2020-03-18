@@ -1,9 +1,9 @@
-~umpy==1.14.3
-p_privacy_metadata==0.0.1
-pandas==0.24.2
-mlxtend==0.14.0
-typing==3.6.4
-setuptools==41.0.1
-pm4py==1.2.0
 pyfpgrowth==1.0
-numpy==1.18.1
+mlxtend==0.14.0
+pandas==0.24.2
+typing==3.6.4
+~umpy==1.14.3
+setuptools==41.0.1
+pm4py==1.2.10
+p_privacy_metadata==0.0.2
+numpy==1.18.2
