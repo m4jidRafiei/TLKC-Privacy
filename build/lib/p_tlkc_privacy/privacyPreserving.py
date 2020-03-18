@@ -111,5 +111,5 @@ class privacyPreserving(object):
         uri = 'paper_version_uri/privacy.xesext'
 
         privacy = privacyExtension(log, prefix, uri)
-        privacy.set_privacy_tracking('suppression', 'event', 'event')
+        privacy.set_anonymizer('suppression', 'event', 'event')
 
