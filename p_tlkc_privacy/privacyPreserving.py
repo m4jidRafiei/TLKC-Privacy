@@ -34,7 +34,7 @@ class privacyPreserving(object):
         now =datetime.now()
         date_time = now.strftime(" %m-%d-%y %H-%M-%S ")
         fixed_name = "TLKC" + date_time + self.log_name + " "
-
+        privacy_aware_log_path = ""
         for l in L:
             print("Set variant for l = " + str(l) + " is running...")
             for k2 in K2:
@@ -50,7 +50,7 @@ class privacyPreserving(object):
                                     anonymizer.set_1(self.log, log2, sensitive, cont, l, k, c, k2, dict1, T)
                                 dict1 = dict2
                                 for t in T:
-                                    privacy_aware_log_path = os.path.join(directory," " +fixed_name + "set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
+                                    privacy_aware_log_path = os.path.join(directory,fixed_name + "set" + "_" + str(l) + "_" + str(k) + "_" + str(c) + "_" + str(k2) + "_" + t + ".xes")
                                     # add privacy metadata
                                     self.add_privacy_metadata(log_set[t])
 
@@ -105,6 +105,8 @@ class privacyPreserving(object):
                                     dict1 = dict2
                         except Exception as e:
                             print(e)
+
+        return privacy_aware_log_path
 
     def add_privacy_metadata(self,log):
         prefix = 'privacy:'
