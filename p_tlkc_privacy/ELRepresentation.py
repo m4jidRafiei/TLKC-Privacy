@@ -285,7 +285,7 @@ class ELRepresentation():
                     if spectime == "seconds":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0, minute=0, second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -298,13 +298,13 @@ class ELRepresentation():
                             sectim = sectim - hours * 3600
                             minutes = int(sectim / 60)
                             sectim = sectim - minutes * 60
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                             day=1 + days, hour=hours,
                                                                             minute=minutes, second=sectim)
                     elif spectime == "minutes":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0, minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -316,13 +316,13 @@ class ELRepresentation():
                             hours = int(sectim / 3600)
                             sectim = sectim - hours * 3600
                             minutes = int(sectim / 60)
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                             day=1 + days, hour=hours,
                                                                             minute=minutes,second=0)
                     elif spectime == "hours":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0,minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -332,12 +332,12 @@ class ELRepresentation():
                             sectim = timedif.seconds
                             # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
                             hours = int(sectim / 3600)
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                           day=1 + days, hour=hours,minute=0,second=0)
                     elif spectime == "days":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0,minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -347,7 +347,7 @@ class ELRepresentation():
                             sectim = timedif.seconds
                             # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
                             # days = int(sectim / 3600 * 24)
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                             day= 1+ days, hour=0,minute=0,second=0)
                     k += 1
                     j += 1
@@ -384,7 +384,7 @@ class ELRepresentation():
                     if spectime == "seconds":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0, minute=0, second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -397,13 +397,13 @@ class ELRepresentation():
                             sectim = sectim - hours * 3600
                             minutes = int(sectim / 60)
                             sectim = sectim - minutes * 60
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                             day=1 + days, hour=hours,
                                                                             minute=minutes, second=sectim)
                     elif spectime == "minutes":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0, minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -415,13 +415,13 @@ class ELRepresentation():
                             hours = int(sectim / 3600)
                             sectim = sectim - hours * 3600
                             minutes = int(sectim / 60)
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                             day=1 + days, hour=hours,
                                                                             minute=minutes,second=0)
                     elif spectime == "hours":
                         if j == 0:
                             starttime = log[i][j]['time:timestamp']
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1, day=1,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1, day=1,
                                                                             hour=0,minute=0,second=0)
                         else:
                             timedif = log[i][j]['time:timestamp'] - starttime
@@ -431,7 +431,7 @@ class ELRepresentation():
                             sectim = timedif.seconds
                             # 60sec -> 1 min, 60*60sec -> 60 min -> 1 hour
                             hours = int(sectim / 3600)
-                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR, month=1 + month,
+                            log[i][j]['time:timestamp'] = datetime.datetime(year=datetime.MINYEAR + 1970, month=1 + month,
                                                                             day=1 + days, hour=hours,minute=0,second=0)
                     j += 1
                 else:
