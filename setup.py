@@ -29,7 +29,7 @@ setuptools.setup(
         'pyfpgrowth==1.0',
         'pandas==0.24.2',
         'numpy==1.18.1',
-        'p_privacy_metadata==0.0.3'
+        'p_privacy_metadata==0.0.4'
     ],
     project_urls={
         'Source': 'https://github.com/m4jidRafiei/TLKC-Privacy'
