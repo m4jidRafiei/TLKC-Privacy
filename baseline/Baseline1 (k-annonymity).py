@@ -4,7 +4,7 @@ from pm4py.statistics.traces.log import case_statistics
 from pm4py.algo.filtering.log.variants import variants_filter
 
 
-K = [10]
+K = [20]
 for k in K:
     event_log = "Sepsis Cases - Event Log.xes"
     log = xes_import_factory.apply(event_log)
