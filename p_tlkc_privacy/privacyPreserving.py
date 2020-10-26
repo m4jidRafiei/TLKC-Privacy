@@ -36,12 +36,13 @@ class privacyPreserving(object):
         fixed_name = "TLKC" + date_time + self.log_name + " "
         privacy_aware_log_path = os.path.join(directory,file_path)
         for l in L:
-            print("Set variant for l = " + str(l) + " is running...")
+            print("l = " + str(l) + " is running...")
             for k2 in K2:
                 for k in K:
                     for c in C:
                         try:
                             if bk_type == "set":
+                                print("l = " + str(l) + " type = " + str(bk_type) + " is running...")
                                 log2 = {t: None for t in T}
                                 for t in T:
                                     log2[t] = self.log
@@ -57,6 +58,7 @@ class privacyPreserving(object):
                                     xes_exporter.export_log(log_set[t],privacy_aware_log_path)
                                     print(file_path + " has been exported!")
                             elif bk_type == "multiset":
+                                print("l = " + str(l) + " type = " + str(bk_type) + " is running...")
                                 log2 = {t: None for t in T}
                                 for t in T:
                                     log2[t] = self.log
@@ -72,6 +74,7 @@ class privacyPreserving(object):
                                     xes_exporter.export_log(log_set_count[t], privacy_aware_log_path)
                                     print(file_path + " has been exported!")
                             elif bk_type == "sequence":
+                                print("l = " + str(l) + " type = " + str(bk_type) + " is running...")
                                 log2 = {t: None for t in T}
                                 for t in T:
                                     log2[t] = self.log
@@ -88,6 +91,7 @@ class privacyPreserving(object):
                                     xes_exporter.export_log(log_seq_count[t], privacy_aware_log_path)
                                     print(file_path + " has been exported!")
                             elif bk_type == "relative":
+                                print("l = " + str(l) + " type = " + str(bk_type) + " is running...")
                                 for t in T:
                                     log_time, frequent_length_time, violating_length_time, d_time, d_l_time, dict2 = \
                                         anonymizer.seq_time(self.log, sensitive, cont, t, l, k, c, k2, dict1)

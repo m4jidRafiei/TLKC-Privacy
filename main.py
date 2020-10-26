@@ -1,16 +1,20 @@
 from p_tlkc_privacy.privacyPreserving import privacyPreserving
+import os
 
 event_log = "Sepsis Cases - Event Log.xes"
 
-L = [6]
+L = [2]
 C = [1]
-K = [100]
-K2 = [0.5]
+K = [200]
+K2 = [0.9]
 # sensitive = ['creator']
 sensitive = []
 T = ["seconds"]
 cont = []
-bk_type = "sequence" #set, multiset, sequence, relative
+bk_type = "set" #set, multiset, sequence, relative
+
+if not os.path.exists("./xes_results"):
+    os.makedirs("./xes_results")
 
 privacy_aware_log_dir = "xes_results"
 privacy_aware_log_path = "Sepsis Cases - Event Log - anon.xes"

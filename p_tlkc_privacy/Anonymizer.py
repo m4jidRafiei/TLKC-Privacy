@@ -1,4 +1,4 @@
-from p_tlkc_privacy import MFS, ELRepresentation, MVS
+from p_tlkc_privacy import MFS, MVS, ELRepresentation
 
 
 class Anonymizer:
@@ -9,8 +9,7 @@ class Anonymizer:
     def seq_count(self, log, log2, sensitive,cont,l,k,c,k2,dict1,spectime):
         mfs = MFS.MFS()
         repres = ELRepresentation.ELRepresentation(log)
-        logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(
-            sensitive)
+        logsimple_count, T_count, sensitives_count = repres.simplify_LKC_without_time_count(sensitive)
         frequent_count = mfs.frequent_seq_activity(T_count, k2 * len(T_count))
         mvs = MVS.MVS(T_count, logsimple_count, sensitive, cont, sensitives_count, True, dict_safe= dict1)
         violating_count, dict1 = mvs.mvs(l, k, c,k2)
@@ -30,8 +29,10 @@ class Anonymizer:
 
     def seq_time(self, log, sensitive,cont,t,l,k,c,k2,dict1):
         mfs = MFS.MFS()
+
         repres = ELRepresentation.ELRepresentation(log)
         logsimple, T, sensitives = repres.simplify_LKC_with_time(sensitive, t)
+
         frequent_time = mfs.frequent_seq_activityTime(T, k2*len(T))
         mvs = MVS.MVS(T, logsimple, sensitive, cont, sensitives, dict_safe= dict1)
         violating_time, dict1 = mvs.mvs(l, k, c,k2,t)
@@ -44,10 +45,13 @@ class Anonymizer:
 
     def set_1(self, log,log2, sensitive,cont,l,k,c,k2,dict1,spectime):
         mfs = MFS.MFS()
+
         repres = ELRepresentation.ELRepresentation(log)
         logsimple_set, T_set, sensitives_set = repres.simplify_LKC_without_time_set(sensitive)
+
         frequent_set = mfs.frequent_set_miner(T_set, k2)
         mvs = MVS.MVS(T_set, logsimple_set, sensitive, cont, sensitives_set, count=False, set1=True, dict_safe=dict1)
+
         violating_set,dict1 = mvs.mvs(l, k, c,k2)
         frequent_length_set = len(frequent_set.copy())
         violating_length_set = len(violating_set.copy())
