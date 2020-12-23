@@ -28,7 +28,7 @@ setuptools.setup(
         'mlxtend==0.14.0',
         'pyfpgrowth==1.0',
         'pandas==0.24.2',
-        'numpy==1.18.1',
+        'numpy>=1.18.1',
         'p_privacy_metadata==0.0.4'
     ],
     project_urls={
